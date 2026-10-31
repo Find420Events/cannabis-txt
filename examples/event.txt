@@ -1,0 +1,88 @@
+CANNABIS-EVENTS.TXT — EXAMPLE PUBLISHER FILE
+
+Example for an event organizer or events platform publishing its own
+cannabis-events.txt.
+Replace bracketed placeholders with your own information.
+
+======================================================================
+EXAMPLE — Events publisher
+======================================================================
+
+Title: Cannabis Events Knowledge File
+Version: 1.0.0
+Status: Proposed
+Publisher: [Organization Name]
+Canonical URL: https://[domain]/cannabis-events.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Contact: https://[domain]/contact
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+ABOUT THIS PUBLISHER
+
+[Organization Name] publishes cannabis-related event information for
+[jurisdiction(s)/scope]. This file describes the event vocabulary used
+on this website and its relationship to listed events. A listing is not
+proof of event licensure, compliance, or organizer verification.
+
+EVENT TYPES USED (cannabis-events.txt §4)
+
+- [Expo | Festival | Pop-Up | Vendor Market | Networking Event |
+   Educational Event | Workshop | ...]
+
+EVENT STATUS TERMS USED (cannabis-events.txt §6)
+
+- Announced
+- Scheduled
+- Registration Open
+- Sold Out
+- Postponed
+- Cancelled
+- Rescheduled
+- Live
+- Completed
+- Unknown
+
+EXAMPLE EVENT RECORD (§11 data model)
+
+- Event Name: [Example Cannabis Expo 2027]
+- Event URL: https://[domain]/events/[slug]
+- Event Type: Expo
+- Organizer: [Organization Name] — https://[organizer-page]
+- Start Date and Time: [2027-04-20 10:00]
+- End Date and Time: [2027-04-20 18:00]
+- Timezone: America/Los_Angeles
+- Event Status: Scheduled
+- Event Format: In Person
+- Venue: [Venue Name]
+- City: [City]
+- State, Province, or Region: [State]
+- Country: [Country]
+- Registration URL: https://[official-registration-page]
+- Admission Information: Paid, Age Restricted (21+)
+- Last Verified Date: [YYYY-MM-DD]
+- Source of Information: [Organizer confirmed | Venue reported |
+  User-submitted | Independently reported]
+
+VERIFICATION
+
+Verification status: [Organizer confirmed]
+Last verified date: [YYYY-MM-DD]
+Verifying source: [URL or description]
+Correction contact: https://[domain]/contact
+
+JURISDICTION NOTE
+
+A cannabis-related event listing does not establish that cannabis
+sales, consumption, distribution, advertising, or product sampling are
+lawful at that event. Applicable rules vary by jurisdiction, venue,
+and activity. Official source: [URL]
+
+RELATED FILES
+
+- https://[domain]/cannabis.txt
+- https://[domain]/sitemap.xml
+
+This file is an informational convention under cannabis-events.txt
+version 1.0.0. It does not verify event legitimacy, admission
+availability, organizer identity, legal compliance, or safety.

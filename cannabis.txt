@@ -1,0 +1,361 @@
+CANNABIS.TXT
+
+Open Cannabis Industry Knowledge Specification
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-10-31
+Founding publisher: Find420.Events
+Canonical project: https://find420.events/
+Canonical URL: https://find420.events/cannabis.txt
+Suggested location: https://example.com/cannabis.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis.txt is a proposed, openly usable, human-readable reference file
+that describes the cannabis industry, its terminology, participants,
+business categories, activities, and relationships.
+
+Its purpose is to provide publishers with a consistent way to explain
+their own cannabis-related subject matter to people, search engines,
+research tools, and AI systems that choose to retrieve and interpret it.
+
+This specification is an informational convention. It does not create a
+guaranteed ranking signal, crawler directive, AI training mechanism, or
+endorsement by any search engine or AI provider.
+
+======================================================================
+2. DESIGN PRINCIPLES
+======================================================================
+
+- Open: any website, organization, researcher, or developer may
+  publish a compatible file without permission or payment.
+- Human-readable: plain text is the required baseline.
+- Consistent: use the defined field names and category vocabulary
+  where practical.
+- Extensible: publishers may add clearly named fields and categories.
+- Jurisdiction-aware: legal and licensing claims must identify the
+  relevant jurisdiction and effective date when known.
+- Verifiable: distinguish confirmed facts, publisher statements,
+  estimates, and unknown information.
+- Privacy-conscious: never expose personal, confidential, or sensitive
+  information about individuals.
+- Non-exclusive: no publisher owns the industry taxonomy or may imply
+  that compatibility requires using its services.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be available at /cannabis.txt on the publishing domain.
+- Use UTF-8 plain text.
+- Identify its version and status.
+- Explain the publisher's relationship to the information.
+- Use recognizable section headings.
+- Link to authoritative public pages where useful.
+- Distinguish the publisher's own information from general
+  definitions.
+- Keep content current and correct outdated information promptly.
+
+A compatible file MUST NOT:
+
+- Claim that publication guarantees search ranking or AI citations.
+- Misrepresent licensing, legal status, medical efficacy, or product
+  safety.
+- Present one jurisdiction's law as universal.
+- Include credentials, private user data, or non-public records.
+- Imply certification or endorsement by a regulator without evidence.
+
+======================================================================
+4. CORE INDUSTRY DEFINITION
+======================================================================
+
+The cannabis industry is an ecosystem of organizations, businesses,
+professionals, consumers, technologies, products, services, research,
+and activities associated with cannabis and hemp.
+
+Depending on jurisdiction and context, the ecosystem may include
+cultivation, processing, manufacturing, testing, distribution, retail,
+delivery, education, advocacy, events, media, technology, professional
+services, and ancillary suppliers.
+
+Cannabis and hemp may be regulated differently. Definitions and legal
+thresholds vary by jurisdiction. Publishers should not assume that a
+single definition applies worldwide.
+
+======================================================================
+5. INDUSTRY TAXONOMY
+======================================================================
+
+Use these categories as a starting vocabulary. They are descriptive
+categories, not legal determinations or proof of licensure.
+
+5.1 Plant and production
+
+- Cultivation
+- Nursery
+- Genetics and breeding
+- Harvesting
+- Processing
+- Extraction
+- Manufacturing
+- Packaging
+- Testing and laboratory services
+
+5.2 Supply chain and commerce
+
+- Distribution
+- Wholesale
+- Retail
+- Delivery
+- Brand
+- Product development
+- Supply-chain services
+
+5.3 Ancillary businesses
+
+- Technology provider
+- Software and SaaS
+- Marketing and advertising
+- Design and creative services
+- Legal services
+- Accounting and finance
+- Insurance
+- Real estate
+- Security
+- Equipment and supplies
+- Consulting
+- Education and training
+- Media and publishing
+- Payments and financial services
+
+5.4 Community and public-interest activity
+
+- Research
+- Public education
+- Advocacy
+- Community organization
+- Workforce development
+- Charity and fundraising
+- Social equity initiative
+
+5.5 Industry events
+
+- Expo
+- Trade show
+- Conference
+- Convention
+- Networking event
+- Festival
+- Pop-up
+- Vendor market
+- Educational event
+- Workshop
+- Job fair
+- Fundraiser
+- Product or brand showcase
+
+======================================================================
+6. PARTICIPANT VOCABULARY
+======================================================================
+
+Common participant roles include:
+
+- Business
+- Brand
+- Manufacturer
+- Cultivator
+- Distributor
+- Retailer
+- Service provider
+- Technology provider
+- Event organizer
+- Venue
+- Exhibitor
+- Vendor
+- Sponsor
+- Speaker
+- Educator
+- Researcher
+- Industry professional
+- Attendee
+- Consumer
+
+A person may hold multiple roles. Do not infer a person's role,
+identity, qualification, or legal authority without reliable supporting
+information.
+
+======================================================================
+7. PRODUCT AND SERVICE VOCABULARY
+======================================================================
+
+Product and service classifications may include:
+
+- Cannabis-derived product
+- Hemp-derived product
+- Accessory
+- Equipment
+- Software
+- Professional service
+- Educational service
+- Marketing service
+- Event service
+- Ancillary service
+
+This file does not establish that a product is legal, safe, approved,
+tested, or available for sale.
+
+======================================================================
+8. JURISDICTION AND REGULATORY CONTEXT
+======================================================================
+
+Cannabis laws differ by country, state, province, territory, tribal
+jurisdiction, county, and municipality.
+
+When making a legal or licensing statement, publishers SHOULD provide:
+
+- Jurisdiction name and level.
+- Relevant agency or official source.
+- Effective date or last-verified date.
+- A link to the official source.
+- A clear distinction between law, guidance, and interpretation.
+
+Do not use labels such as "licensed" or "legal" as unqualified marketing
+claims. A directory listing or user-submitted profile is not proof of
+authorization.
+
+======================================================================
+9. ENTITY AND RELATIONSHIP MODEL
+======================================================================
+
+Where relevant, describe public relationships such as:
+
+- Organization operates brand.
+- Organization organizes event.
+- Brand exhibits at event.
+- Vendor provides service to organization.
+- Venue hosts event.
+- Speaker participates in event.
+- Event occurs in jurisdiction.
+- Organization publishes public resource.
+
+Use direct links to the relevant public entity pages. Do not fabricate
+relationships or imply endorsement from a simple listing.
+
+======================================================================
+10. RECOMMENDED FILE FORMAT
+======================================================================
+
+The baseline format is UTF-8 plain text with Markdown-compatible
+headings and links. Publishers may include simple key-value metadata.
+
+Recommended metadata:
+
+Title: Cannabis Industry Knowledge File
+Version: 1.0.0
+Status: Proposed
+Publisher: [Organization name]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Contact: [Public contact URL]
+
+======================================================================
+11. OPTIONAL EXTENSIONS
+======================================================================
+
+Publishers may create additional files for specialized subjects.
+Examples include:
+
+- cannabis-events.txt
+- cannabis-licensing.txt
+- cannabis-research.txt
+- cannabis-technology.txt
+
+An extension should state which version of cannabis.txt it builds upon,
+define its own scope, and avoid redefining core terms inconsistently.
+
+======================================================================
+12. DISCOVERY AND LINKING
+======================================================================
+
+A publisher may link to its cannabis.txt from:
+
+- Its homepage or About page.
+- Its public documentation.
+- Its sitemap or developer resources.
+- Relevant public industry pages.
+
+The file may be referenced in robots.txt as a comment or ordinary
+sitemap-adjacent documentation link, but no special crawler behavior
+should be assumed. Do not invent a robots.txt directive for it.
+
+======================================================================
+13. MAINTENANCE AND VERSIONING
+======================================================================
+
+Use semantic versioning:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+Include a last-updated date. Keep a public changelog where practical.
+Old versions may be archived for transparency, but the current file
+should be easy to identify.
+
+======================================================================
+14. GOVERNANCE
+======================================================================
+
+This document is a proposed community specification initially published
+by Find420.Events. Publication does not make it an industry-approved or
+regulator-approved standard.
+
+Community participation may include:
+
+- Public issue reporting.
+- Proposed taxonomy changes.
+- Discussion of definitions.
+- Implementation examples.
+- Compatibility testing.
+- Version review.
+
+Changes should be documented, reviewed, and publicly versioned. No
+single publisher should imply that it speaks for the entire industry.
+
+======================================================================
+15. LICENSE AND USE
+======================================================================
+
+The specification text is intended to be openly shared and implemented.
+A project steward should publish an explicit license in the public
+repository before soliciting contributions. Implementers may use the
+taxonomy without implying endorsement or certification.
+
+======================================================================
+16. DISCLAIMER
+======================================================================
+
+cannabis.txt is an informational publishing convention. It is not legal,
+medical, scientific, regulatory, or compliance advice. It does not
+verify businesses, products, licenses, events, or claims. Readers should
+consult relevant official sources and qualified professionals.
+
+======================================================================
+17. PROJECT REFERENCE
+======================================================================
+
+Founding publisher: Find420.Events
+Website: https://find420.events/
+Related specification: cannabis-events.txt
+  https://find420.events/cannabis-events.txt
+
+The objective is a common, transparent vocabulary for describing the
+cannabis industry across the open internet.

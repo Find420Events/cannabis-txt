@@ -1,0 +1,422 @@
+CANNABIS-EVENTS.TXT
+
+Open Cannabis Events Knowledge Specification
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-10-31
+Founding publisher: Find420.Events
+Canonical project: https://find420.events/
+Canonical URL: https://find420.events/cannabis-events.txt
+Suggested location: https://example.com/cannabis-events.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-events.txt is a proposed, human-readable extension for
+describing cannabis-related events and the entities connected to them.
+
+It defines shared vocabulary for event types, organizers, venues, dates,
+locations, participation, exhibitors, sponsors, access, registration,
+and event status.
+
+It is intended to complement cannabis.txt, not replace event pages,
+event feeds, structured data, APIs, or official event information.
+
+It does not guarantee search ranking, AI retrieval, event eligibility,
+or inclusion in any search or recommendation system.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This specification covers public information about events connected to
+the cannabis and hemp ecosystems, including industry, educational,
+cultural, community, professional, and ancillary-business events.
+
+An event may be cannabis-focused or may include a cannabis-industry
+track, exhibitor, sponsor, or audience. Publishers should describe the
+actual connection rather than applying a cannabis label loosely.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published at /cannabis-events.txt.
+- Identify version, status, publisher, and update date.
+- Reference cannabis.txt where available.
+- Define event categories and status terms.
+- Link to authoritative event detail pages.
+- Make timezone and location clear.
+- Distinguish confirmed details from tentative or user-submitted data.
+- Update or remove information when an event changes or is cancelled.
+
+A compatible file MUST NOT:
+
+- Invent event dates, venues, organizers, or attendance figures.
+- Present a submitted event as verified unless verification occurred.
+- Claim an event is licensed or compliant without evidence.
+- Expose private attendee lists, personal contact information, or
+  non-public access codes.
+- Suggest that an event listing guarantees admission or availability.
+
+======================================================================
+4. EVENT TAXONOMY
+======================================================================
+
+Recommended primary event types:
+
+- Expo
+- Trade Show
+- Conference
+- Convention
+- Networking Event
+- Festival
+- Pop-Up
+- Vendor Market
+- Educational Event
+- Workshop
+- Seminar
+- Webinar
+- Livestream
+- Job Fair
+- Charity Event
+- Fundraiser
+- Business-to-Business Event
+- Brand Showcase
+- Product Showcase
+- Community Event
+- Industry Meeting
+
+A publisher may add subcategories. Preserve the primary type and use a
+descriptive subtype when needed.
+
+======================================================================
+5. EVENT PARTICIPANTS AND ROLES
+======================================================================
+
+Common roles include:
+
+- Organizer
+- Co-organizer
+- Host
+- Venue
+- Exhibitor
+- Vendor
+- Sponsor
+- Speaker
+- Presenter
+- Instructor
+- Performer
+- Partner
+- Media Partner
+- Attendee
+
+A listing should only identify a participant in a role supported by the
+event organizer or another reliable source.
+
+======================================================================
+6. EVENT STATUS VOCABULARY
+======================================================================
+
+Recommended public statuses:
+
+- Draft: not publicly announced.
+- Announced: publicly announced; details may still change.
+- Scheduled: event is planned for the stated date.
+- Registration Open: registration is available.
+- Sold Out: organizer reports no remaining admission capacity.
+- Postponed: event moved from its original date.
+- Cancelled: organizer has cancelled the event.
+- Rescheduled: a replacement date has been announced.
+- Live: event is currently taking place.
+- Completed: event has ended.
+- Unknown: status cannot be established.
+
+A platform may use internal moderation statuses such as pending review,
+approved, rejected, or expired. Internal workflow statuses should not be
+confused with public event status.
+
+======================================================================
+7. DATE, TIME, AND TIMEZONE
+======================================================================
+
+Event records SHOULD include:
+
+- Start date and time.
+- End date and time, when known.
+- Timezone using an IANA timezone identifier where possible.
+- Whether the event is all-day or has multiple sessions.
+
+Use ISO 8601 date-time values with an explicit timezone or UTC offset in
+structured event data. A human-readable file should state the local
+timezone clearly.
+
+Do not silently convert local event times or infer a timezone solely
+from a city name.
+
+======================================================================
+8. LOCATION AND FORMAT
+======================================================================
+
+Recommended event formats:
+
+- In Person
+- Online
+- Hybrid
+- Multiple Locations
+- Location To Be Announced
+
+For physical events, include the public venue name and address when
+appropriate. For online events, link to the official event or access
+page. Do not publish private meeting links or restricted access codes.
+
+======================================================================
+9. REGISTRATION AND ACCESS
+======================================================================
+
+Possible access descriptions include:
+
+- Free
+- Paid
+- Invitation Only
+- Registration Required
+- Public
+- Restricted
+- Age Restricted
+- Members Only
+
+These labels describe access conditions and do not establish legal
+eligibility. Any age, licensing, or admission restrictions must be based
+on the organizer's current rules and applicable law.
+
+Link to the organizer's official registration page when available. Do
+not claim tickets or reservations are available unless confirmed.
+
+======================================================================
+10. EXHIBITORS, VENDORS, AND SPONSORS
+======================================================================
+
+Event pages may identify:
+
+- Exhibiting organizations.
+- Participating brands.
+- Vendors.
+- Sponsors.
+- Speakers.
+- Community partners.
+
+Describe the relationship accurately. A brand appearing in a directory
+is not necessarily an exhibitor, sponsor, or event partner.
+
+======================================================================
+11. EVENT DATA MODEL
+======================================================================
+
+A public event record SHOULD include these fields when known:
+
+- Event Name
+- Event URL
+- Event Type
+- Description
+- Organizer
+- Start Date and Time
+- End Date and Time
+- Timezone
+- Event Status
+- Event Format
+- Venue
+- Address or Online Location
+- City
+- State, Province, or Region
+- Country
+- Registration URL
+- Admission Information
+- Event Image
+- Last Verified Date
+- Source of Information
+
+Optional fields:
+
+- Exhibitors
+- Vendors
+- Sponsors
+- Speakers
+- Accessibility Information
+- Contact URL
+- Schedule
+- Capacity
+- Languages
+- Related Events
+- Related Organizations
+
+Do not publish empty fields as though they contain known information.
+Use "Unknown" or omit a field when the information is unavailable.
+
+======================================================================
+12. RELATIONSHIPS
+======================================================================
+
+Useful relationships include:
+
+- Organization organizes event.
+- Organization co-organizes event.
+- Venue hosts event.
+- Brand exhibits at event.
+- Vendor participates in event.
+- Organization sponsors event.
+- Person speaks at event.
+- Event is part of a series.
+- Event takes place in a jurisdiction.
+- Event is related to another event.
+
+Each relationship should link to the relevant public entity or event
+page where possible.
+
+======================================================================
+13. EVENT SERIES AND RECURRING EVENTS
+======================================================================
+
+A recurring event series should have a stable series page and separate
+records or pages for each actual occurrence.
+
+Do not assume that an annual event will take place next year simply
+because it occurred previously. Future dates must be announced or
+clearly labeled as tentative.
+
+======================================================================
+14. DATA QUALITY AND VERIFICATION
+======================================================================
+
+Publishers should distinguish:
+
+- Organizer-confirmed information.
+- Information reported by an official venue or partner.
+- User-submitted information awaiting review.
+- Independently reported information.
+- Estimated or unknown information.
+
+Recommended verification metadata:
+
+- Verification status.
+- Last verified date.
+- Verifying source.
+- Correction contact.
+
+If an event is postponed or cancelled, update its public status and date
+information promptly. Preserve historical information when useful but do
+not leave obsolete details presented as current.
+
+======================================================================
+15. STRUCTURED DATA AND WEB COMPATIBILITY
+======================================================================
+
+For eligible event pages, publishers may use Schema.org Event structured
+data in addition to this text specification.
+
+Use accurate values for:
+
+- name
+- description
+- startDate
+- endDate
+- eventStatus
+- eventAttendanceMode
+- location
+- organizer
+- performer
+- image
+- offers, when applicable
+
+Structured data must match visible page content. This specification does
+not replace search-engine documentation or eligibility rules.
+
+Publishers may also provide feeds or APIs in formats such as JSON,
+JSON-LD, RSS, or iCalendar. Those formats are optional extensions and
+should use the same event facts and terminology.
+
+======================================================================
+16. JURISDICTION AND COMPLIANCE
+======================================================================
+
+Event rules can vary by jurisdiction, venue, event type, and activity. A
+cannabis-related event listing does not establish that cannabis sales,
+consumption, distribution, advertising, or product sampling are lawful
+at that event.
+
+Where relevant, identify the jurisdiction and link to official
+regulatory or venue information. Avoid unsupported claims such as "fully
+licensed," "legal everywhere," or "regulator approved."
+
+======================================================================
+17. PRIVACY AND SAFETY
+======================================================================
+
+Do not publish:
+
+- Private attendee identities or lists.
+- Personal phone numbers or home addresses.
+- Private invitation codes.
+- Non-public venue access instructions.
+- Sensitive personal information.
+- Information that could compromise event security.
+
+Use public organizational contact channels where possible.
+
+======================================================================
+18. DISCOVERY AND FILE RELATIONSHIP
+======================================================================
+
+A publisher may provide both:
+
+- /cannabis.txt
+- /cannabis-events.txt
+
+The events file should identify the compatible cannabis.txt version. The
+main cannabis.txt file should reference this events extension.
+
+A publisher may link to both files from public documentation, its About
+page, or developer resources. No special crawler behavior or search
+ranking benefit should be assumed.
+
+======================================================================
+19. VERSIONING AND GOVERNANCE
+======================================================================
+
+Use semantic versioning:
+
+- MAJOR: incompatible changes to required fields or definitions.
+- MINOR: compatible additions.
+- PATCH: clarifications and corrections.
+
+Maintain a changelog and public process for proposed changes. The
+initial specification is proposed and maintained by Find420.Events.
+Community feedback and compatible implementations are encouraged.
+
+======================================================================
+20. DISCLAIMER
+======================================================================
+
+cannabis-events.txt is an informational convention. It does not verify
+event legitimacy, admission availability, organizer identity, legal
+compliance, or safety. It is not legal advice and does not replace
+official event information.
+
+======================================================================
+21. PROJECT REFERENCE
+======================================================================
+
+Founding publisher: Find420.Events
+Website: https://find420.events/
+Parent specification: cannabis.txt
+  https://find420.events/cannabis.txt
+Suggested public path: /cannabis-events.txt
+
+The objective is a shared vocabulary that makes cannabis-related events
+easier to describe, discover, compare, and understand.

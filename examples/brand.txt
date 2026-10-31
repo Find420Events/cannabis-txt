@@ -1,0 +1,63 @@
+CANNABIS.TXT — EXAMPLE PUBLISHER FILE
+
+Example for a cannabis brand publishing its own cannabis.txt.
+Replace bracketed placeholders with your own information.
+
+======================================================================
+EXAMPLE — Brand publisher
+======================================================================
+
+Title: Cannabis Industry Knowledge File
+Version: 1.0.0
+Status: Proposed
+Publisher: [Brand Name]
+Canonical URL: https://[brand-domain]/cannabis.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Contact: https://[brand-domain]/contact
+Compatible with: cannabis.txt version 1.0.0
+
+ABOUT THIS PUBLISHER
+
+[Brand Name] is a cannabis brand operating in [jurisdiction(s)].
+This file describes how this website classifies itself using the
+cannabis.txt vocabulary. It is a publisher statement, not a legal or
+licensing claim.
+
+ENTITY CLASSIFICATION
+
+Industry categories (cannabis.txt §5):
+- Brand
+- Product development
+
+Participant roles (cannabis.txt §6):
+- Brand
+
+Products and services (cannabis.txt §7):
+- Cannabis-derived product
+- [Accessory | Hemp-derived product | ...]
+
+JURISDICTION AND LICENSING
+
+[Brand Name] operates under [license type, if any] issued by
+[regulatory agency] in [jurisdiction], license number [number],
+last verified [YYYY-MM-DD].
+Official source: [URL]
+
+Licensing claims apply only to the stated jurisdiction and only as of
+the last-verified date. Laws differ by jurisdiction; consult the
+relevant official source.
+
+RELATIONSHIPS
+
+- [Brand Name] operates brand: https://[brand-domain]/
+- [Brand Name] exhibits at event: [event page URL]
+- [Parent organization] operates [Brand Name]: [URL]
+
+RELATED FILES
+
+- https://[brand-domain]/sitemap.xml
+- https://[brand-domain]/robots.txt
+
+This file is an informational convention under cannabis.txt version
+1.0.0. It does not verify licensure, product safety, or legal status.

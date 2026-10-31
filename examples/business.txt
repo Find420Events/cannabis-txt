@@ -1,0 +1,61 @@
+CANNABIS.TXT — EXAMPLE PUBLISHER FILE
+
+Example for an ancillary cannabis business (technology, professional
+services, media, etc.) publishing its own cannabis.txt.
+Replace bracketed placeholders with your own information.
+
+======================================================================
+EXAMPLE — Ancillary business publisher
+======================================================================
+
+Title: Cannabis Industry Knowledge File
+Version: 1.0.0
+Status: Proposed
+Publisher: [Business Name]
+Canonical URL: https://[business-domain]/cannabis.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Contact: https://[business-domain]/contact
+Compatible with: cannabis.txt version 1.0.0
+
+ABOUT THIS PUBLISHER
+
+[Business Name] is an ancillary business serving the cannabis and hemp
+industries from [jurisdiction(s)]. This file describes how this website
+classifies itself using the cannabis.txt vocabulary.
+
+ENTITY CLASSIFICATION
+
+Industry categories (cannabis.txt §5.3):
+- [Technology provider | Marketing and advertising | Legal services |
+   Consulting | Media and publishing | ...]
+
+Participant roles (cannabis.txt §6):
+- Service provider
+- [Technology provider | Event organizer | Sponsor | ...]
+
+Products and services (cannabis.txt §7):
+- [Software | Professional service | Marketing service | Event service |
+   Ancillary service]
+
+JURISDICTION NOTE
+
+Ancillary businesses are typically not plant-touching and may not
+require cannabis-specific licensure. If your business holds regulated
+licenses, state the jurisdiction, agency, license number, and
+last-verified date, and link the official source. Do not imply
+licensure you do not hold.
+
+RELATIONSHIPS
+
+- [Business Name] provides service to organization: [client/partner URL]
+- [Business Name] sponsors event: [event page URL]
+- [Business Name] publishes public resource: [URL]
+
+RELATED FILES
+
+- https://[business-domain]/sitemap.xml
+- https://[business-domain]/robots.txt
+
+This file is an informational convention under cannabis.txt version
+1.0.0. It does not verify licensure, product safety, or legal status.
