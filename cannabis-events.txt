@@ -6,7 +6,7 @@ Version: 1.0.0
 Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
-Canonical project: https://find420.events/
+Canonical project: https://github.com/Find420Events/cannabis-txt
 Canonical URL: https://find420.events/cannabis-events.txt
 Suggested location: https://example.com/cannabis-events.txt
 Encoding: UTF-8
@@ -414,6 +414,7 @@ official event information.
 
 Founding publisher: Find420.Events
 Website: https://find420.events/
+Repository: https://github.com/Find420Events/cannabis-txt
 Parent specification: cannabis.txt
   https://find420.events/cannabis.txt
 Suggested public path: /cannabis-events.txt
