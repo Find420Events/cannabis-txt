@@ -10,7 +10,9 @@ products, services, classifications, and relationships.
 cannabis-events.txt is a specialized extension covering the events ecosystem:
 event types, organizers, venues, schedules, participation, status, and
 verification. The dispensary and delivery specifications add focused
-vocabularies for retail operations and delivery services.
+vocabularies for retail operations and delivery services. The flower, edible,
+and concentrate brand specifications describe product-brand information; the
+physician extension covers public professional profiles and practice services.
 
 Together, these specifications give developers, businesses, publishers, search
 engines, research tools, and AI systems a common frame of reference for
@@ -24,6 +26,10 @@ understanding cannabis-related subject matter.
 | [`cannabis-events.txt`](./cannabis-events.txt) | Specialized | Events, organizers, venues, schedules, participation, and event status |
 | [`cannabis-dispensary.txt`](./cannabis-dispensary.txt) | Specialized | Retail dispensaries, storefronts, menus, inventory, access, and customer services |
 | [`cannabis-delivery.txt`](./cannabis-delivery.txt) | Specialized | Delivery operators, ordering, service areas, fulfillment, dispatch, and handoff |
+| [`cannabis-flower-brand.txt`](./cannabis-flower-brand.txt) | Specialized | Flower brands, product formats, public product attributes, testing references, and supply-chain roles |
+| [`cannabis-edible-brand.txt`](./cannabis-edible-brand.txt) | Specialized | Edible brands, product and label information, ingredients, package values, and testing references |
+| [`cannabis-concentrate-brand.txt`](./cannabis-concentrate-brand.txt) | Specialized | Concentrate brands, product vocabulary, public composition claims, testing, and supply-chain roles |
+| [`cannabis-physician.txt`](./cannabis-physician.txt) | Specialized | Physician profiles, credential sources, practice services, jurisdiction context, and patient privacy |
 
 Specialized extensions depend on `cannabis.txt` version 1.0.0 or a compatible
 version. A business may publish more than one extension when it performs more
@@ -32,14 +38,22 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Version:** 1.0.0 for the core and events specifications; 1.0.0 initial
-  proposed versions for the dispensary and delivery extensions
+- **Family changelog:** 1.2.0
+- **File versions:** 1.0.0 for the core and all current extensions
 - **Status:** Proposed Community Specifications
-- **Published:** 2026-10-31 for the core and events specifications
+- **Published:** 2026-10-31 for the core and events specifications; 2026-11-01
+  for the dispensary, delivery, flower-brand, edible-brand, concentrate-brand,
+  and physician extensions
 - **Founding publisher:** [Find420.Events](https://find420.events/)
 - **Reference implementation:** https://find420.events/cannabis.txt ·
   https://find420.events/cannabis-events.txt
 - **Public validator:** https://find420.events/validator
+- **Extension specifications:** https://find420.events/cannabis-dispensary.txt,
+  https://find420.events/cannabis-delivery.txt,
+  https://find420.events/cannabis-flower-brand.txt,
+  https://find420.events/cannabis-edible-brand.txt,
+  https://find420.events/cannabis-concentrate-brand.txt, and
+  https://find420.events/cannabis-physician.txt
 - **Canonical project:** https://github.com/Find420Events/cannabis-txt
 
 ## What this is — and is not
@@ -65,16 +79,24 @@ Find420 services required.
 4. Qualify legal and licensing claims with jurisdiction, source, and effective
    date.
 5. Publish applicable extensions at the domain root and declare the parent
-   `cannabis.txt` version. Use the events, dispensary, and delivery extensions
-   only where they describe your public information.
+   `cannabis.txt` version. Use the relevant events, dispensary, delivery,
+   product-brand, or physician extension only where it describes your public
+   information.
 
 See [`specification/implementation.md`](./specification/implementation.md) for
 conformance rules and [`examples/`](./examples/) for starter files.
 
+New extension examples:
+
+- [`examples/flower-brand.txt`](./examples/flower-brand.txt)
+- [`examples/edible-brand.txt`](./examples/edible-brand.txt)
+- [`examples/concentrate-brand.txt`](./examples/concentrate-brand.txt)
+- [`examples/physician.txt`](./examples/physician.txt)
+
 ## Documentation
 
 - [`specification/taxonomy.md`](./specification/taxonomy.md) — shared
-  industry, participant, event, dispensary, and delivery vocabulary
+  industry, participant, event, retail, product-brand, and physician vocabulary
 - [`specification/implementation.md`](./specification/implementation.md) — how
   to publish compatible files
 - [`specification/governance.md`](./specification/governance.md) — versioning

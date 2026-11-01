@@ -1,0 +1,292 @@
+CANNABIS-EDIBLE-BRAND.TXT
+
+Open Cannabis Edible Brand Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-edible-brand.txt
+Suggested location: https://example.com/cannabis-edible-brand.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-edible-brand.txt is a proposed, human-readable extension for
+describing brands whose public catalogs include cannabis edible products.
+
+It defines shared vocabulary for brand identity, edible product formats,
+public ingredient and label information, serving and package values,
+testing references, and relationships among brands, manufacturers, and
+retailers.
+
+This extension complements cannabis.txt. It does not replace official
+product labels, menus, inventory systems, laboratory records, APIs, or
+regulatory sources.
+
+Publication does not guarantee search ranking, AI retrieval, product
+availability, licensing, product quality, or regulatory compliance.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public information about brands that market
+cannabis edible products, including:
+
+- Food products containing cannabis-derived ingredients
+- Beverages containing cannabis-derived ingredients
+- Sublingual or ingestible products when classified as edibles by the
+  applicable source or jurisdiction
+- Product names, formats, label information, and public testing references
+- Brand ownership, manufacturing, distribution, and retail relationships
+
+Product definitions and regulatory classifications vary by jurisdiction.
+Describe the source's classification and avoid treating any category as
+universally regulated in the same way.
+
+This extension does not provide consumption instructions, dosing advice,
+medical advice, or legal advice.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published as UTF-8 plain text at /cannabis-edible-brand.txt.
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify whether the publisher is the brand owner, an authorized
+  representative, a retailer, or an independent source.
+- Distinguish brand-level statements from product- and batch-level facts.
+- Link to public labels, product pages, and authoritative sources.
+- Identify jurisdiction and date for legal or licensing statements.
+- Mark unknown, estimated, and time-sensitive information clearly.
+
+A compatible file MUST NOT:
+
+- Claim publication guarantees ranking, citations, traffic, or sales.
+- Recommend a dose, frequency, or method of consumption.
+- Claim medical benefit, safety, onset time, or effect as a guarantee.
+- Infer potency, ingredients, allergens, or suitability from a product name.
+- Describe a product as tested, certified, organic, or compliant without
+  a source that supports the specific claim.
+- Publish private customer, patient, employee, or non-public business data.
+
+======================================================================
+4. BRAND AND PRODUCT ENTITIES
+======================================================================
+
+Describe these entities separately when they are not the same:
+
+- Brand: the public-facing name used to identify a product line.
+- Brand owner: the organization that owns or controls the brand.
+- Licensee: an organization authorized to use the brand under an agreement.
+- Manufacturer or processor: the organization responsible for making or
+  packaging a product, where known.
+- Distributor: the organization responsible for distribution, where known.
+- Product: a named edible item, format, or package.
+- Batch or lot: a production unit with its own identifiers and records.
+
+Do not imply that a brand owns, manufactures, or distributes a product
+unless the relationship is supported by a public source.
+
+======================================================================
+5. EDIBLE PRODUCT VOCABULARY
+======================================================================
+
+Descriptive formats may include:
+
+- Baked good
+- Chocolate or confection
+- Gummy or chew
+- Hard candy or lozenge
+- Beverage
+- Powder or mix
+- Capsule or tablet (cross-reference other applicable product standards)
+- Other ingestible format (describe)
+
+Use the product category stated on the label or by the responsible source.
+Do not infer that a product is an edible based only on its name or imagery.
+
+======================================================================
+6. PUBLIC BRAND INFORMATION
+======================================================================
+
+Brand-level information may include:
+
+- Brand name and public aliases
+- Brand website and public contact page
+- Brand owner or responsible organization
+- Public statement of the brand's role in the supply chain
+- Publicly stated markets and jurisdictions
+- Public product catalog or retailer menu links
+- Publicly available product, ingredient, allergen, and accessibility
+  information links
+
+Keep factual descriptions distinct from marketing language, opinions, and
+third-party statements.
+
+======================================================================
+7. PRODUCT AND LABEL ATTRIBUTES
+======================================================================
+
+Where published by a reliable source, a product entry may include:
+
+- Product name, format, and public product URL
+- Brand and responsible manufacturer, if known
+- Package size, number of units, and serving information as labeled
+- Cannabinoid values per serving and per package as separately stated
+- Ingredient list and allergen statements as displayed by the source
+- Nutrition information as displayed by the source
+- Storage or handling statements copied from the label, if relevant
+- Batch or lot identifier and packaging date when public
+- Public certificate of analysis or test record URL
+- Publicly listed price and currency, if relevant
+- Availability status and last-verified timestamp
+
+Preserve the source's units and context. Do not calculate, normalize, or
+combine per-serving and per-package values in a way that could mislead.
+If serving information is absent or unclear, report it as unknown.
+
+======================================================================
+8. INGREDIENTS, ALLERGENS, AND TESTING
+======================================================================
+
+Ingredient, allergen, and nutrition statements should be attributed to
+the package label or other identified source. Do not infer that a product
+is allergen-free, vegan, gluten-free, non-intoxicating, or suitable for a
+particular person unless the source explicitly supports the claim.
+
+If a certificate of analysis or test record is linked, identify the
+laboratory, tested batch or lot when public, report date, and source URL.
+A record for one batch does not establish results for other batches.
+Do not describe test results as a guarantee of safety, purity, efficacy,
+or legal compliance.
+
+======================================================================
+9. RESPONSIBLE PUBLIC INFORMATION
+======================================================================
+
+Present label values and serving information as factual product data, not
+as a recommendation. Do not state that a product is appropriate for a
+person based on age, health status, medication use, or experience.
+
+Avoid claims that a product is safe for children, pregnancy, or any
+medical condition. Do not omit source limitations or jurisdictional
+restrictions when summarizing a label or public health notice.
+
+======================================================================
+10. AVAILABILITY AND RETAIL
+======================================================================
+
+Availability may be described as in stock, limited, out of stock,
+discontinued, coming soon, or unknown. Identify the source and update time.
+Do not imply real-time inventory unless supported by the source.
+
+Distinguish brand-operated sales channels from retailer listings. Retail,
+delivery, promotion, and purchase rules vary by jurisdiction. See
+cannabis-dispensary.txt and cannabis-delivery.txt where applicable.
+
+======================================================================
+11. LICENSE AND JURISDICTION CONTEXT
+======================================================================
+
+For a public licensing or authorization statement, provide where known:
+
+- The organization and activity the authorization applies to
+- License or authorization type and number, only if public
+- Issuing authority and jurisdiction
+- Status as reported by the cited source
+- Effective date or date checked
+- Official public lookup URL
+
+A product listing, brand website, or retailer menu does not prove that a
+brand or supply-chain participant is authorized.
+
+======================================================================
+12. DATA QUALITY AND FRESHNESS
+======================================================================
+
+Identify whether information is brand-submitted, copied from an official
+label or source, reported by a retailer, or supplied by another third
+party. Use ISO 8601 dates where practical. Labels, formulas, ingredients,
+batch records, prices, and availability may change; date time-sensitive
+claims and correct stale information promptly.
+
+======================================================================
+13. PRIVACY AND SAFETY
+======================================================================
+
+Publish public business and product information only. Do not publish
+customer identities, purchase histories, patient status, private employee
+details, or non-public production and security records.
+
+Do not include instructions that facilitate evasion of age checks,
+purchase limits, packaging requirements, or applicable law.
+
+======================================================================
+14. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+Describe ownership, licensing, manufacturing, distribution, retail, and
+event relationships explicitly and link to public sources. Do not imply
+endorsement from a simple listing or event appearance.
+
+For general industry terminology, see cannabis.txt. For retail context,
+see cannabis-dispensary.txt. For delivery context, see
+cannabis-delivery.txt.
+
+======================================================================
+15. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+Title: [Cannabis Edible Brand Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Organization]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Brand Name: [Name]
+Brand Owner: [Organization or unknown]
+Website: [URL]
+Products: [Public product URLs]
+Markets: [Jurisdictions]
+Sources: [Public source URLs]
+
+Publishers may extend this structure with clearly named fields.
+
+======================================================================
+16. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows semantic versioning:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+17. DISCLAIMER
+======================================================================
+
+This file is an informational publishing convention, not legal, medical,
+scientific, product-safety, or compliance advice. It does not verify a
+brand, product, label, test result, license, or claim. Consult relevant
+official sources and qualified professionals.
+
+======================================================================
+END OF CANNABIS-EDIBLE-BRAND.TXT
+======================================================================

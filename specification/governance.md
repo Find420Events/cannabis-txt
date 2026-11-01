@@ -1,8 +1,9 @@
 # Governance
 
-cannabis.txt and cannabis-events.txt are proposed community specifications
-initially published by [Find420.Events](https://find420.events/). Publication
-does not make them industry-approved or regulator-approved standards.
+The cannabis.txt specification family is a set of proposed community
+specifications initially published by [Find420.Events](https://find420.events/).
+Publication does not make them industry-approved or regulator-approved
+standards.
 
 ## Stewardship
 
@@ -13,15 +14,16 @@ imply that compatibility requires using its services.
 
 ## Versioning
 
-Both files use [semantic versioning](https://semver.org):
+Each specification file uses [semantic versioning](https://semver.org):
 
 - **MAJOR** — incompatible changes to definitions or required fields
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
-Each file carries a version number, status, published date, and last-updated
-date. The current version lives at the repository root; history is preserved
-in [CHANGELOG.md](../CHANGELOG.md) and git tags.
+Each file carries its own version number, status, published date, and
+last-updated date where applicable. The current versions live at the repository
+root; family-level changes are recorded in [CHANGELOG.md](../CHANGELOG.md) and
+git tags.
 
 ## How to propose changes
 

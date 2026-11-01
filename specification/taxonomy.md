@@ -1,6 +1,7 @@
 # Taxonomy
 
-The shared vocabulary defined by cannabis.txt and cannabis-events.txt.
+The shared vocabulary defined by cannabis.txt and its event, retail, delivery,
+product-brand, and physician extensions.
 Categories are descriptive — they are not legal determinations, proof of
 licensure, or endorsements.
 
@@ -297,3 +298,107 @@ These describe access conditions and do not establish legal eligibility.
 Publishers may add subcategories. Preserve the shared primary term and use a
 descriptive subtype when needed. See each extension for definitions and
 safeguards.
+
+## Flower brand vocabulary (`cannabis-flower-brand.txt`)
+
+### Product formats
+
+- Whole flower
+- Ground flower
+- Small buds or popcorn flower
+- Pre-roll
+- Multi-pack pre-roll
+- Other flower format
+
+### Public product attributes
+
+- Cultivar or strain name as stated by the source
+- Indoor, greenhouse, outdoor, or other source-supported cultivation
+  descriptor
+- Package weight and unit count
+- Cannabinoid or terpene values, with source units and package context
+- Public batch or lot identifier and testing record URL
+
+Terms such as indica, sativa, hybrid, and strain may not have consistent
+definitions. Do not treat them as verified genetics or guaranteed predictors
+of effects or quality.
+
+## Edible brand vocabulary (`cannabis-edible-brand.txt`)
+
+### Product formats
+
+- Baked good
+- Chocolate or confection
+- Gummy or chew
+- Hard candy or lozenge
+- Beverage
+- Powder or mix
+- Other ingestible format
+
+### Label information
+
+- Product ingredients and source attribution
+- Allergen and nutrition statements as displayed by the source
+- Package size and unit count
+- Serving information as labeled
+- Cannabinoid values per serving and per package, separately stated
+- Public batch or lot identifier and testing record URL
+
+Label information is descriptive, not consumption or dosing guidance. Do not
+infer allergen-free status, suitability, safety, or effect.
+
+## Concentrate brand vocabulary (`cannabis-concentrate-brand.txt`)
+
+### Product categories
+
+- Rosin
+- Resin
+- Wax
+- Shatter
+- Badder or batter
+- Crumble
+- Oil
+- Distillate
+- Isolate
+- Hash or hash-derived concentrate
+- Cartridge or vaporizer product
+- Other concentrate format
+
+Use category names as stated by the product source. Names may vary across
+producers and regions; do not infer manufacturing process, composition,
+potency, purity, or quality from a category name.
+
+### Public composition and testing attributes
+
+- Cannabinoid and terpene values with source units
+- Ingredients or additives as stated on a public label
+- Public source-material or cultivar attribution
+- Batch or lot identifier
+- Public certificate of analysis or test record URL
+
+These are source-reported attributes, not guarantees of safety, efficacy, or
+regulatory compliance.
+
+## Physician vocabulary (`cannabis-physician.txt`)
+
+### Professional and practice entities
+
+- Physician
+- Healthcare professional
+- Practice or clinic
+- Public practice location
+- Professional license
+- Separate jurisdiction-specific service authorization
+
+### Public service descriptors
+
+- General health education
+- Clinical consultation
+- Follow-up care
+- Referral to another qualified professional
+- Telehealth service, where permitted
+
+Use professional titles and credentials as supported by public verification
+sources. Distinguish professional licensure from authorization for a
+cannabis-related service. Do not include patient information or imply
+eligibility, treatment outcome, or universal clinical guidance.

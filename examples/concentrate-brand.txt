@@ -1,0 +1,59 @@
+Illustrative example only. Replace placeholders and publish only verified
+public information.
+
+Title: Cannabis Concentrate Brand Knowledge File
+Version: 1.0.0
+Status: Example
+Publisher: [Brand owner or authorized representative]
+Canonical URL: https://[brand-domain]/cannabis-concentrate-brand.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Contact: https://[brand-domain]/contact
+
+BRAND
+
+Brand Name: [Public brand name]
+Brand Owner: [Organization or unknown]
+Website: https://[brand-domain]/
+Markets: [Jurisdictions where public product information applies]
+
+SUPPLY-CHAIN ROLES
+
+- Licensee: [Organization or unknown]
+- Processor or manufacturer: [Organization or unknown]
+- Cultivator or source supplier: [Organization or unknown]
+- Distributor: [Organization or unknown]
+- Source: [Public source URL for each stated relationship]
+
+PRODUCT EXAMPLE
+
+- Product Name: [Public product name]
+- Product URL: [Public product page]
+- Category: [Rosin / resin / wax / oil / other label-stated category]
+- Format: [Publicly stated format]
+- Package Size: [Value and unit as labeled]
+- Cannabinoid Values: [Value, unit, and package context as sourced]
+- Terpene Values: [Value, unit, and source or unknown]
+- Ingredients or Additives: [As stated on public label or unknown]
+- Source Material: [Public attribution or unknown]
+- Batch or Lot: [Public identifier, if appropriate]
+- Certificate of Analysis: [Public URL, if available]
+
+JURISDICTION AND AUTHORIZATION
+
+- Jurisdiction: [Jurisdiction]
+- Responsible Organization: [Organization]
+- Public Regulator Source: [Official URL]
+- Date Checked: [YYYY-MM-DD]
+
+RELATED FILES
+
+- https://[brand-domain]/cannabis.txt
+- https://[brand-domain]/cannabis-dispensary.txt, if applicable
+
+This example does not describe extraction or processing instructions and
+does not verify potency, purity, safety, quality, effects, or legal status.
+Attribute composition and testing claims to the specific public source
+and batch where available.

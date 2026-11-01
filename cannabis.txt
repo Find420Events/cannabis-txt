@@ -274,6 +274,12 @@ Publishers may create additional files for specialized subjects.
 Examples include:
 
 - cannabis-events.txt
+- cannabis-dispensary.txt
+- cannabis-delivery.txt
+- cannabis-flower-brand.txt
+- cannabis-edible-brand.txt
+- cannabis-concentrate-brand.txt
+- cannabis-physician.txt
 - cannabis-licensing.txt
 - cannabis-research.txt
 - cannabis-technology.txt
@@ -355,8 +361,14 @@ consult relevant official sources and qualified professionals.
 Founding publisher: Find420.Events
 Website: https://find420.events/
 Repository: https://github.com/Find420Events/cannabis-txt
-Related specification: cannabis-events.txt
-  https://find420.events/cannabis-events.txt
+Related specifications:
+- cannabis-events.txt: https://find420.events/cannabis-events.txt
+- cannabis-dispensary.txt: https://find420.events/cannabis-dispensary.txt
+- cannabis-delivery.txt: https://find420.events/cannabis-delivery.txt
+- cannabis-flower-brand.txt: https://find420.events/cannabis-flower-brand.txt
+- cannabis-edible-brand.txt: https://find420.events/cannabis-edible-brand.txt
+- cannabis-concentrate-brand.txt: https://find420.events/cannabis-concentrate-brand.txt
+- cannabis-physician.txt: https://find420.events/cannabis-physician.txt
 
 The objective is a common, transparent vocabulary for describing the
 cannabis industry across the open internet.

@@ -1,0 +1,59 @@
+Illustrative example only. Replace placeholders and publish only verified
+public information.
+
+Title: Cannabis Edible Brand Knowledge File
+Version: 1.0.0
+Status: Example
+Publisher: [Brand owner or authorized representative]
+Canonical URL: https://[brand-domain]/cannabis-edible-brand.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Contact: https://[brand-domain]/contact
+
+BRAND
+
+Brand Name: [Public brand name]
+Brand Owner: [Organization or unknown]
+Website: https://[brand-domain]/
+Markets: [Jurisdictions where public product information applies]
+
+SUPPLY-CHAIN ROLES
+
+- Licensee: [Organization or unknown]
+- Manufacturer or packager: [Organization or unknown]
+- Distributor: [Organization or unknown]
+- Source: [Public source URL for each stated relationship]
+
+PRODUCT EXAMPLE
+
+- Product Name: [Public product name]
+- Product URL: [Public product page]
+- Format: [Gummy / beverage / confection / other source-stated format]
+- Package Size: [Value and unit as labeled]
+- Unit Count: [Count as labeled]
+- Serving Information: [Copy source label or state unknown]
+- Cannabinoid Values per Serving: [Value, unit, and source or unknown]
+- Cannabinoid Values per Package: [Value, unit, and source or unknown]
+- Ingredients: [Public label URL or source-attributed list]
+- Allergen Statement: [As displayed by source or unknown]
+- Nutrition Information: [Public label URL or unknown]
+- Batch or Lot: [Public identifier, if appropriate]
+- Certificate of Analysis: [Public URL, if available]
+
+JURISDICTION AND AUTHORIZATION
+
+- Jurisdiction: [Jurisdiction]
+- Responsible Organization: [Organization]
+- Public Regulator Source: [Official URL]
+- Date Checked: [YYYY-MM-DD]
+
+RELATED FILES
+
+- https://[brand-domain]/cannabis.txt
+- https://[brand-domain]/cannabis-dispensary.txt, if applicable
+
+This example is not consumption or dosing advice. Preserve the label's
+serving and package context; do not infer product contents, allergen
+status, suitability, safety, effects, or medical benefit.

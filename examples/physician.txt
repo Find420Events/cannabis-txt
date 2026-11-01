@@ -1,0 +1,55 @@
+Illustrative example only. Replace placeholders with public, verified
+professional information. Never include patient information.
+
+Title: Cannabis Physician Knowledge File
+Version: 1.0.0
+Status: Example
+Publisher: [Physician / practice / directory]
+Canonical URL: https://[practice-domain]/cannabis-physician.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Physician / practice / third party]
+Contact: https://[practice-domain]/contact
+
+PROFESSIONAL PROFILE
+
+Professional Name: [Public professional name]
+Professional Title: [Exact title supported by a verification source]
+Credentials: [Credential and public source URL]
+Specialty: [Publicly verified specialty or unknown]
+Professional Website: https://[practice-domain]/
+
+LICENSE AND AUTHORIZATION
+
+- Jurisdiction: [Jurisdiction]
+- License Type: [As displayed by official source]
+- License Status: [As displayed by official source]
+- Issuing Authority: [Professional board or regulator]
+- Official Verification URL: [Public source URL]
+- Date Checked: [YYYY-MM-DD]
+- Separate Service Authorization: [Public source or unknown]
+
+PRACTICE
+
+Practice Name: [Public clinic or practice name]
+Public Locations: [Practice location URLs]
+Public Contact: [Official appointment or contact URL]
+Languages: [Publicly confirmed languages or unknown]
+Telehealth: [Publicly stated availability and jurisdictions, if applicable]
+
+PUBLIC SERVICE DESCRIPTIONS
+
+- [General health education / consultation / follow-up / referral]
+- Service information: [Public URL]
+- Applicable Jurisdictions: [Jurisdictions]
+
+RELATED FILES
+
+- https://[practice-domain]/cannabis.txt
+- https://[practice-domain]/cannabis-events.txt, if applicable
+
+This example does not verify credentials or authorization and is not medical
+or legal advice. Do not publish patient identities, medical records, private
+contact details, or individualized recommendations. Do not guarantee
+eligibility, treatment, or clinical outcomes.

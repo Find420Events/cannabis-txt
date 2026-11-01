@@ -1,11 +1,38 @@
 # Changelog
 
-All notable changes to cannabis.txt and cannabis-events.txt are documented
-here. Both specifications use [semantic versioning](https://semver.org):
+All notable changes to the cannabis.txt specification family are documented
+here. Each specification uses [semantic versioning](https://semver.org):
 
 - **MAJOR** — incompatible changes to definitions or required fields
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
+
+## [1.2.0] - 2026-11-01
+
+Backward-compatible additions of four specialized extensions. The core
+vocabulary and existing extension definitions remain compatible with
+`cannabis.txt` version 1.0.0.
+
+### New extensions
+
+- Added `cannabis-flower-brand.txt` for flower brand identity, product formats,
+  public product attributes, testing references, and supply-chain roles.
+- Added `cannabis-edible-brand.txt` for edible brand identity, product and
+  label information, ingredients, serving and package values, and testing.
+- Added `cannabis-concentrate-brand.txt` for concentrate brand identity,
+  product vocabulary, public composition claims, testing, and supply-chain
+  roles.
+- Added `cannabis-physician.txt` for public physician profiles, credential
+  sources, practice services, jurisdiction context, and patient privacy.
+- Added illustrative publisher examples for all four extensions.
+
+### Documentation
+
+- Added the extension references to the core specification and README.
+- Expanded implementation guidance and shared taxonomy for product-brand and
+  physician profiles.
+- Updated governance and versioning language to describe the full specification
+  family.
 
 ## [1.1.0] — 2026-11-01
 

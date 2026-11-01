@@ -1,0 +1,288 @@
+CANNABIS-CONCENTRATE-BRAND.TXT
+
+Open Cannabis Concentrate Brand Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-concentrate-brand.txt
+Suggested location: https://example.com/cannabis-concentrate-brand.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-concentrate-brand.txt is a proposed, human-readable extension for
+describing brands whose public catalogs include cannabis concentrates.
+
+It defines shared vocabulary for brand identity, concentrate product
+formats, publicly stated composition and sourcing, testing references,
+and relationships among brands, processors, manufacturers, and retailers.
+
+This extension complements cannabis.txt. It does not replace official
+product labels, menus, inventory systems, laboratory records, APIs, or
+regulatory sources.
+
+Publication does not guarantee search ranking, AI retrieval, product
+availability, licensing, product quality, or regulatory compliance.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public information about brands that market
+cannabis concentrate products, including:
+
+- Extracts and other concentrated cannabis products
+- Solvent-based and solventless product categories, as named by the source
+- Cartridge, vaporizer, dab, or other concentrate formats when applicable
+- Product names, label information, and public testing references
+- Brand ownership, processing, manufacturing, distribution, and retail
+  relationships
+
+Product definitions, permitted formats, and regulated activities vary
+by jurisdiction. Describe the source's terminology without treating a
+category as universally regulated in the same way.
+
+This extension is descriptive. It does not provide extraction, processing,
+consumption, or medical instructions.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published as UTF-8 plain text at /cannabis-concentrate-brand.txt.
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify whether the publisher is the brand owner, an authorized
+  representative, a retailer, or an independent source.
+- Distinguish brand-level statements from product- and batch-level facts.
+- Link to public product pages, labels, and authoritative sources.
+- Identify jurisdiction and date for legal or licensing statements.
+- Mark unknown, estimated, and time-sensitive information clearly.
+
+A compatible file MUST NOT:
+
+- Claim publication guarantees ranking, citations, traffic, or sales.
+- Provide operational instructions for extracting, processing, or using
+  concentrates.
+- Infer potency, effects, purity, safety, quality, or medical benefit.
+- Describe a product as tested, certified, solvent-free, or compliant
+  without a source that supports the specific claim.
+- Publish private customer, patient, employee, or non-public business data.
+
+======================================================================
+4. BRAND AND PRODUCT ENTITIES
+======================================================================
+
+Describe these entities separately when they are not the same:
+
+- Brand: the public-facing name used to identify a product line.
+- Brand owner: the organization that owns or controls the brand.
+- Licensee: an organization authorized to use the brand under an agreement.
+- Processor or manufacturer: the organization responsible for processing,
+  making, or packaging a product, where known.
+- Cultivator or source supplier: an organization responsible for source
+  material, where known.
+- Distributor: the organization responsible for distribution, where known.
+- Product: a named concentrate item, format, or package.
+- Batch or lot: a production unit with its own identifiers and records.
+
+Do not infer or imply a supply-chain relationship without a public source.
+
+======================================================================
+5. CONCENTRATE PRODUCT VOCABULARY
+======================================================================
+
+Descriptive product categories may include:
+
+- Rosin
+- Resin
+- Wax
+- Shatter
+- Badder or batter
+- Crumble
+- Oil
+- Distillate
+- Isolate
+- Hash or hash-derived concentrate
+- Cartridge or vaporizer product
+- Infused product (cross-reference its relevant product extension)
+- Other concentrate format (describe)
+
+Use terms as stated by the product label or responsible source. These
+names may not have consistent definitions across producers or regions.
+Do not infer process, ingredients, quality, or composition from a category
+name alone.
+
+======================================================================
+6. PUBLIC BRAND INFORMATION
+======================================================================
+
+Brand-level information may include:
+
+- Brand name and public aliases
+- Brand website and public contact page
+- Brand owner or responsible organization
+- Public statement of the brand's role in the supply chain
+- Publicly stated markets and jurisdictions
+- Public product catalog or retailer menu links
+- Public sourcing, processing, and quality-control descriptions, attributed
+  to the source
+
+Keep factual descriptions distinct from marketing language, opinions, and
+third-party statements.
+
+======================================================================
+7. PRODUCT ATTRIBUTES
+======================================================================
+
+Where published by a reliable source, a product entry may include:
+
+- Product name, category, and public product URL
+- Brand and responsible processor or manufacturer, if known
+- Format and package size
+- Cannabinoid values, units, and package or serving context
+- Terpene values when published, including units and source
+- Ingredients, additives, or diluents as stated by the label
+- Source material or cultivar attribution, if publicly documented
+- Batch or lot identifier and packaging date when public
+- Public certificate of analysis or test record URL
+- Publicly listed price and currency, if relevant
+- Availability status and last-verified timestamp
+
+Report values as stated by the source. Do not infer a product's contents,
+potency, or intended use from marketing terms, category, or appearance.
+
+======================================================================
+8. TESTING AND COMPOSITION CLAIMS
+======================================================================
+
+If a certificate of analysis or other test record is linked, identify the
+laboratory, tested batch or lot when public, report date, and source URL.
+A record for one batch does not establish results for other batches.
+
+Attribute claims such as solvent-free, pesticide-free, contaminant-free,
+or full-spectrum to a specific public source and batch where applicable.
+Do not treat a test record or marketing claim as a guarantee of safety,
+purity, efficacy, or legal compliance.
+
+Distinguish laboratory-reported results from brand statements and
+third-party claims. Preserve units and explain whether values apply to a
+sample, package, or another stated basis.
+
+======================================================================
+9. AVAILABILITY AND RETAIL
+======================================================================
+
+Availability may be described as in stock, limited, out of stock,
+discontinued, coming soon, or unknown. Identify the source and update time.
+Do not imply real-time inventory unless supported by the source.
+
+Distinguish brand-operated sales channels from retailer listings. Retail,
+delivery, promotion, and purchase rules vary by jurisdiction. See
+cannabis-dispensary.txt and cannabis-delivery.txt where applicable.
+
+======================================================================
+10. LICENSE AND JURISDICTION CONTEXT
+======================================================================
+
+For a public licensing or authorization statement, provide where known:
+
+- The organization and activity the authorization applies to
+- License or authorization type and number, only if public
+- Issuing authority and jurisdiction
+- Status as reported by the cited source
+- Effective date or date checked
+- Official public lookup URL
+
+A brand listing or product menu does not prove that a brand or any
+supply-chain participant is authorized.
+
+======================================================================
+11. DATA QUALITY AND FRESHNESS
+======================================================================
+
+Identify whether information is brand-submitted, copied from an official
+label or source, reported by a retailer, or supplied by another third
+party. Use ISO 8601 dates where practical. Product formulations, labels,
+batch records, prices, and availability may change; date time-sensitive
+claims and correct stale information promptly.
+
+======================================================================
+12. PRIVACY AND SAFETY
+======================================================================
+
+Publish public business and product information only. Do not publish
+customer identities, purchase histories, patient status, private employee
+details, or non-public production and security records.
+
+Do not include instructions that facilitate evasion of age checks,
+purchase limits, product safeguards, or applicable law.
+
+======================================================================
+13. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+Describe ownership, licensing, processing, manufacturing, distribution,
+retail, and event relationships explicitly and link to public sources.
+Do not imply endorsement from a simple listing or event appearance.
+
+For general industry terminology, see cannabis.txt. For retail context,
+see cannabis-dispensary.txt. For delivery context, see
+cannabis-delivery.txt.
+
+======================================================================
+14. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+Title: [Cannabis Concentrate Brand Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Organization]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Brand Name: [Name]
+Brand Owner: [Organization or unknown]
+Website: [URL]
+Products: [Public product URLs]
+Markets: [Jurisdictions]
+Sources: [Public source URLs]
+
+Publishers may extend this structure with clearly named fields.
+
+======================================================================
+15. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows semantic versioning:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+16. DISCLAIMER
+======================================================================
+
+This file is an informational publishing convention, not legal, medical,
+scientific, product-safety, or compliance advice. It does not verify a
+brand, product, test result, license, or claim. Consult relevant official
+sources and qualified professionals.
+
+======================================================================
+END OF CANNABIS-CONCENTRATE-BRAND.TXT
+======================================================================

@@ -1,0 +1,288 @@
+CANNABIS-PHYSICIAN.TXT
+
+Open Cannabis Physician Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-physician.txt
+Suggested location: https://example.com/cannabis-physician.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-physician.txt is a proposed, human-readable extension for
+describing physicians and physician practices that publicly provide
+cannabis-related clinical, educational, or consultation services.
+
+It defines shared vocabulary for public professional profiles, credentials,
+practice locations, service descriptions, jurisdiction-specific
+authorizations, and source attribution.
+
+This extension complements cannabis.txt. It does not replace official
+medical board records, clinic websites, appointment systems, medical
+records, or regulatory sources.
+
+Publication does not guarantee search ranking, AI retrieval, professional
+qualification, licensure, patient eligibility, treatment access, or
+clinical outcomes.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public professional information about:
+
+- Physicians who discuss cannabis in a clinical or educational context
+- Practices that publicly offer cannabis-related consultations
+- Publicly stated professional credentials and practice locations
+- Public patient information links and appointment contact channels
+- Jurisdiction-specific authorization statements, where applicable
+
+The term "physician" should be used only when supported by a verifiable
+professional credential. Other clinicians and healthcare professionals
+may be described using their accurate professional titles instead.
+
+This extension is not a medical directory verification service and does
+not provide clinical guidance, diagnosis, prescribing, or legal advice.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published as UTF-8 plain text at /cannabis-physician.txt.
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify the physician or practice's relationship to the information.
+- Use the professional title and credentials exactly as publicly verified.
+- Link to official licensing or board sources when available.
+- Identify jurisdictions and dates for licensing or authorization claims.
+- Distinguish general education from patient-specific clinical services.
+- Mark unknown, estimated, and time-sensitive information clearly.
+
+A compatible file MUST NOT:
+
+- Imply that publication verifies a credential, license, or medical claim.
+- Guarantee eligibility, authorization, diagnosis, treatment, or outcome.
+- Present cannabis as appropriate or safe for every person or condition.
+- Make unsupported efficacy, safety, or cure claims.
+- Publish patient identities, medical records, or private health information.
+- Collect or expose sensitive personal, credential, or account data.
+
+======================================================================
+4. PROFESSIONAL AND PRACTICE ENTITIES
+======================================================================
+
+Describe these entities separately when they are not the same:
+
+- Physician: an individual using a verified professional title.
+- Practice: the organization or clinic through which services are offered.
+- License: an authorization issued by a named professional authority.
+- Service: a publicly described consultation, educational, or clinical
+  offering.
+- Location: a public practice address or service area.
+- Referral source: an organization or professional listed as a referral
+  contact, without implying endorsement.
+
+A practice profile must not imply that every listed clinician provides
+every service, or that the practice's authorization applies to all
+locations or jurisdictions.
+
+======================================================================
+5. PROFESSIONAL PROFILE
+======================================================================
+
+Public profile information may include:
+
+- Public professional name and title
+- Public professional biography and practice website
+- Degree or credential as represented by an official source
+- Specialty or board certification with source and date checked
+- Public professional license jurisdiction and status
+- Practice name and public contact page
+- Public clinic locations or telehealth availability
+- Languages and accessibility information, if publicly confirmed
+- Educational publications or public presentations
+
+Do not include private home addresses, personal phone numbers, private
+email addresses, birth dates, personal identifiers, or unpublished
+employment details.
+
+======================================================================
+6. SERVICE VOCABULARY
+======================================================================
+
+Publicly stated service categories may include:
+
+- General cannabis-related health education
+- Clinical consultation
+- Discussion of cannabis and health considerations
+- Patient eligibility assessment, where permitted
+- Follow-up care
+- Referral to another qualified professional
+- Telehealth consultation, where permitted
+
+Describe services using the practice's own public wording. A listed
+service does not establish that an individual is eligible, that a specific
+product will be recommended, or that a particular outcome will occur.
+Avoid implying that a physician sells or endorses a product unless this
+relationship is explicitly and accurately disclosed.
+
+======================================================================
+7. CREDENTIALS AND LICENSE VERIFICATION
+======================================================================
+
+For each public credential or license claim, provide where available:
+
+- Exact credential or professional title
+- Issuing authority or educational institution
+- Jurisdiction, if relevant
+- Public verification source URL
+- Status as displayed by the source
+- Date checked
+
+Distinguish a physician's professional license from any separate
+authorization required to provide a cannabis-related service. Do not infer
+one authorization from another. A directory listing, self-description, or
+practice website is not independent verification.
+
+======================================================================
+8. MEDICAL CLAIMS AND EDUCATIONAL CONTENT
+======================================================================
+
+Attribute medical or scientific statements to a dated, reliable source.
+Distinguish clinical evidence, professional opinion, general education,
+and promotional material. Do not present preliminary findings as settled
+consensus or make unsupported claims about efficacy, safety, interactions,
+or suitability.
+
+This file must not include individualized treatment recommendations,
+diagnosis, dosing guidance, or instructions to start, stop, or change a
+medication. Readers should seek advice from a qualified professional who
+can assess their individual circumstances.
+
+======================================================================
+9. PATIENT ACCESS AND APPOINTMENTS
+======================================================================
+
+Public appointment information may include:
+
+- Official scheduling URL
+- Public phone number or contact form
+- Public clinic address and operating hours
+- Telehealth availability and applicable jurisdictions
+- Publicly stated eligibility or documentation requirements
+- Accessibility and language support
+
+Do not guarantee that a person qualifies for a service. Requirements
+depend on jurisdiction and individual circumstances. Direct readers to
+the practice and relevant official authorities for current requirements.
+
+======================================================================
+10. JURISDICTION AND AUTHORIZATION CONTEXT
+======================================================================
+
+For each legal or authorization statement, identify where known:
+
+- The physician, practice, and activity the statement applies to
+- Relevant jurisdiction and issuing authority
+- License or authorization status as reported by the cited source
+- Effective date or date checked
+- Official public source URL
+
+Do not characterize a physician as authorized to recommend, certify,
+prescribe, or provide a service unless the applicable jurisdiction's
+official source supports that specific claim. Do not present one
+jurisdiction's rules as universal.
+
+======================================================================
+11. DATA QUALITY AND FRESHNESS
+======================================================================
+
+Identify whether information is physician-submitted, practice-submitted,
+copied from an official source, or supplied by a third party. Use ISO 8601
+dates where practical. Credentials, license status, practice locations,
+service availability, and jurisdictional rules may change; date these
+claims and correct stale information promptly.
+
+======================================================================
+12. PRIVACY AND CONFIDENTIALITY
+======================================================================
+
+Publish public professional information only. Never include patient
+identities, appointment details, medical records, health conditions,
+contact information, or other information that could identify a patient.
+
+Do not collect patient information through this text file. Route any
+appointment or clinical contact to the practice's own secure channels.
+
+======================================================================
+13. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+Describe practice affiliations, referrals, employment, sponsorships, and
+commercial relationships accurately. Disclose material relationships
+where relevant. Do not imply endorsement, partnership, or referral from
+a simple listing.
+
+For general industry terminology, see cannabis.txt. For events and public
+education activity, see cannabis-events.txt where applicable.
+
+======================================================================
+14. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+Title: [Cannabis Physician Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Physician / practice / directory]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Physician / practice / third party]
+Professional Name: [Public name]
+Professional Title: [Verified title]
+Credentials: [Credential and public verification source]
+License Jurisdictions: [Jurisdictions and official sources]
+Practice: [Name and public URL]
+Services: [Public service descriptions]
+Locations: [Public location URLs]
+Appointment Contact: [Official public contact URL]
+
+Publishers may extend this structure with clearly named fields. Do not
+include patient information or private personal identifiers.
+
+======================================================================
+15. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows semantic versioning:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+16. DISCLAIMER
+======================================================================
+
+This file is an informational publishing convention, not medical, legal,
+scientific, or professional credentialing advice. It does not verify a
+physician, practice, license, service, or claim, and it is not a substitute
+for individualized care from a qualified professional.
+
+======================================================================
+END OF CANNABIS-PHYSICIAN.TXT
+======================================================================

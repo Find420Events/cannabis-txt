@@ -1,0 +1,288 @@
+CANNABIS-FLOWER-BRAND.TXT
+
+Open Cannabis Flower Brand Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-flower-brand.txt
+Suggested location: https://example.com/cannabis-flower-brand.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-flower-brand.txt is a proposed, human-readable extension for
+describing brands whose public catalog includes cannabis flower products.
+
+It defines shared vocabulary for brand identity, flower product formats,
+publicly stated sourcing and cultivation information, product attributes,
+testing references, and relationships among brands, manufacturers, and
+retailers.
+
+This extension complements cannabis.txt. It does not replace product
+labels, official brand websites, menus, inventory systems, laboratory
+records, APIs, or regulatory sources.
+
+Publication does not guarantee search ranking, AI retrieval, product
+availability, licensing, product quality, or regulatory compliance.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public information about brands that market
+cannabis flower products, including:
+
+- Dried or cured cannabis flower
+- Whole flower and ground flower formats
+- Pre-rolls when the brand identifies them as flower products
+- Cultivar, strain, or product-line names as used by the source
+- Brand ownership, licensing, manufacturing, and distribution relationships
+- Publicly stated product attributes and testing references
+
+This extension describes brand and product information. It does not
+provide cultivation, consumption, medical, or legal advice, and it does
+not establish that a product is lawful or safe.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published as UTF-8 plain text at /cannabis-flower-brand.txt.
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify whether the publisher is the brand owner, an authorized
+  representative, a retailer, or an independent source.
+- Distinguish brand-level information from product- and batch-level facts.
+- Link to public product pages and authoritative sources where available.
+- Identify jurisdiction and date for legal or licensing statements.
+- Mark unknown, estimated, and time-sensitive information clearly.
+
+A compatible file MUST NOT:
+
+- Claim that publication guarantees ranking, citations, traffic, or sales.
+- Present a cultivar name as proof of genetics, lineage, or consistent
+  effects without reliable supporting evidence.
+- Infer potency, effects, safety, quality, or medical benefit.
+- Describe a product as tested, certified, organic, or compliant without
+  a source that supports the specific claim.
+- Publish private customer, patient, employee, or non-public business data.
+
+======================================================================
+4. BRAND AND PRODUCT ENTITIES
+======================================================================
+
+Describe these entities separately when they are not the same:
+
+- Brand: the public-facing name used to identify a product line.
+- Brand owner: the organization that owns or controls the brand.
+- Licensee: an organization authorized to use the brand under an agreement.
+- Manufacturer or processor: the organization responsible for making or
+  packaging a product, where known.
+- Cultivator: the organization responsible for growing the source crop,
+  where known.
+- Distributor: the organization responsible for distribution, where known.
+- Product: a named flower item, format, or package.
+- Batch or lot: a production unit with its own identifiers and records.
+
+Do not imply that a brand owns, cultivates, manufactures, or distributes
+a product unless the relationship is supported by a public source.
+
+======================================================================
+5. FLOWER PRODUCT VOCABULARY
+======================================================================
+
+Descriptive product formats may include:
+
+- Whole flower
+- Ground flower
+- Small buds or popcorn flower
+- Pre-roll
+- Multi-pack pre-roll
+- Infused pre-roll (cross-reference the relevant product extension)
+- Other flower format (describe)
+
+Publishers may identify a product as indoor, greenhouse, outdoor, or
+another cultivation descriptor only when the source supports that claim.
+These descriptors are not quality ratings.
+
+Cultivar names may be presented as the publisher or label states them.
+Terms such as indica, sativa, hybrid, and strain are descriptive labels
+whose use and meaning may vary. Do not treat them as guaranteed predictors
+of effects or as verified genetic classifications.
+
+======================================================================
+6. PUBLIC BRAND INFORMATION
+======================================================================
+
+Brand-level information may include:
+
+- Brand name and public aliases
+- Brand website and public contact page
+- Brand owner or responsible organization
+- Public statement of the brand's role in the supply chain
+- Publicly stated markets and jurisdictions
+- Public brand history or positioning, attributed to the publisher
+- Public product catalog or retailer menu links
+- Accessibility and language options for public materials
+
+Keep factual descriptions distinct from marketing language, opinions, and
+third-party statements.
+
+======================================================================
+7. PRODUCT ATTRIBUTES
+======================================================================
+
+Where published by a reliable source, a product entry may include:
+
+- Product name and public product URL
+- Brand and product format
+- Cultivar or strain name as labeled
+- Net weight and package units
+- Publicly stated cannabinoid values and units
+- Publicly stated terpene values and units
+- Cultivation or processing descriptors
+- Ingredient or additive information, if applicable
+- Packaging date, batch identifier, or lot identifier when public
+- Manufacturer, cultivator, and distributor attribution
+- Publicly listed price and currency, if relevant
+- Availability status and last-verified timestamp
+
+Report values as stated by the source, including units and whether they
+refer to the product, serving, or package. Do not calculate or infer a
+value from incomplete data.
+
+======================================================================
+8. TESTING AND PRODUCT CLAIMS
+======================================================================
+
+If a certificate of analysis or other test record is linked, identify the
+laboratory, tested batch or lot when publicly available, report date, and
+source URL. A link to one batch's report does not establish results for
+other batches or future products.
+
+Distinguish laboratory-reported results from brand statements and third-
+party claims. Do not describe a test result as a guarantee of safety,
+purity, efficacy, or legal compliance.
+
+Claims about aroma, taste, appearance, effects, or quality should be
+attributed to their source and should not be represented as universal
+experience or medical fact.
+
+======================================================================
+9. AVAILABILITY AND RETAIL
+======================================================================
+
+Availability may be described as in stock, limited, out of stock,
+discontinued, coming soon, or unknown. Identify the source and update time.
+Do not imply real-time inventory unless the source supports it.
+
+A brand may link to retailers or menus that carry its products. Distinguish
+retailer listings from brand-operated sales channels. Retail, delivery,
+promotion, and purchase rules vary by jurisdiction. See cannabis-dispensary.txt
+and cannabis-delivery.txt where applicable.
+
+======================================================================
+10. LICENSE AND JURISDICTION CONTEXT
+======================================================================
+
+For a public licensing or authorization statement, provide where known:
+
+- The organization and activity the authorization applies to
+- License or authorization type and number, only if public
+- Issuing authority and jurisdiction
+- Status as reported by the cited source
+- Effective date or date checked
+- Official public lookup URL
+
+A brand's presence in a catalog, retailer menu, or directory does not
+prove that the brand or any supply-chain participant is authorized.
+
+======================================================================
+11. DATA QUALITY AND FRESHNESS
+======================================================================
+
+Identify whether information is brand-submitted, copied from an official
+source, reported by a retailer, or provided by another third party.
+Use ISO 8601 dates where practical. Product formulations, labels, batch
+records, prices, and availability may change; date each time-sensitive
+claim and correct stale information promptly.
+
+======================================================================
+12. PRIVACY AND SAFETY
+======================================================================
+
+Publish public business and product information only. Do not publish
+customer identities, purchase histories, patient status, private employee
+details, or non-public production and security records.
+
+Do not include instructions that facilitate evasion of age checks,
+purchase limits, product safeguards, or applicable law.
+
+======================================================================
+13. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+Describe ownership, licensing, manufacturing, cultivation, distribution,
+retail, and event relationships explicitly and link to public sources.
+Do not imply endorsement from a simple listing or event appearance.
+
+For general industry terminology, see cannabis.txt. For retail context,
+see cannabis-dispensary.txt. For delivery context, see
+cannabis-delivery.txt.
+
+======================================================================
+14. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+Title: [Cannabis Flower Brand Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Organization]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Brand Name: [Name]
+Brand Owner: [Organization or unknown]
+Website: [URL]
+Products: [Public product URLs]
+Markets: [Jurisdictions]
+Sources: [Public source URLs]
+
+Publishers may extend this structure with clearly named fields.
+
+======================================================================
+15. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows semantic versioning:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+16. DISCLAIMER
+======================================================================
+
+This file is an informational publishing convention, not legal, medical,
+scientific, product-safety, or compliance advice. It does not verify a
+brand, product, test result, license, or claim. Consult relevant official
+sources and qualified professionals.
+
+======================================================================
+END OF CANNABIS-FLOWER-BRAND.TXT
+======================================================================

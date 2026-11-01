@@ -1,13 +1,13 @@
 # Implementation
 
-How to publish a compatible cannabis.txt or cannabis-events.txt file.
+How to publish compatible files in the cannabis.txt specification family.
 
 ## Baseline requirements
 
-A compatible file SHOULD:
+A compatible core or extension file SHOULD:
 
-- Be available at `/cannabis.txt` (or `/cannabis-events.txt`) on the publishing
-  domain, served as `text/plain; charset=utf-8`
+- Be available at its specified root path on the publishing domain, served as
+  `text/plain; charset=utf-8`
 - Identify its version, status, publisher, and last-updated date
 - Explain the publisher's relationship to the information
 - Use recognizable section headings and the defined vocabulary where practical
@@ -36,7 +36,7 @@ Language: en
 Contact: [Public contact URL]
 ```
 
-For cannabis-events.txt, additionally declare the parent version:
+Every specialized extension additionally declares its compatible parent:
 
 ```
 Depends on: cannabis.txt version 1.0.0 or compatible
@@ -48,9 +48,9 @@ Depends on: cannabis.txt version 1.0.0 or compatible
    or the `examples/` directory as a starting point.
 2. **Replace publisher placeholders.** Identify your organization, canonical
    URL, update date, and contact. Describe only what is true of your own site —
-   your taxonomy usage, your entities, your events.
-3. **Publish at the domain root.** `https://example.com/cannabis.txt` (and
-   `https://example.com/cannabis-events.txt` if you cover events).
+   your taxonomy usage, entities, products, services, professionals, or events.
+3. **Publish at the domain root.** Publish `/cannabis.txt` and any applicable
+   extension files at their specified root paths.
 4. **Link it.** From your homepage, About page, public documentation, sitemap,
    or developer resources. You may reference it in `robots.txt` as a comment —
    do not invent a directive for it.
@@ -106,6 +106,14 @@ Current extensions:
   operations.
 - `/cannabis-delivery.txt` — cannabis delivery operators and fulfillment
   services.
+- `/cannabis-flower-brand.txt` — brands and public information about cannabis
+  flower products.
+- `/cannabis-edible-brand.txt` — brands and public information about cannabis
+  edible products.
+- `/cannabis-concentrate-brand.txt` — brands and public information about
+  cannabis concentrate products.
+- `/cannabis-physician.txt` — public profiles and service information for
+  physicians with cannabis-related clinical or educational services.
 
 Each extension SHOULD:
 
@@ -118,14 +126,34 @@ Each extension SHOULD:
   information sources accurately.
 - Distinguish the seller, retailer, delivery operator, marketplace, and
   technology provider when they are different entities.
+- Distinguish brand ownership from licensing, cultivation, processing,
+  manufacturing, and distribution relationships.
 - Link to public authoritative pages for locations, menus, service areas,
   policies, and regulator records where useful.
 - Qualify legal and licensing claims with jurisdiction, source, and effective
   date.
+- Attribute product, batch, label, and testing data to a public source; preserve
+  the source's units and dates.
+- Do not infer product potency, effects, quality, safety, or medical benefit.
+- For physician profiles, use verified public titles and credentials, link to
+  official licensing sources, and do not publish patient information or
+  individualized medical advice.
 
 A business that operates a dispensary and also provides delivery may publish
 both `cannabis-dispensary.txt` and `cannabis-delivery.txt`. The files describe
 different business functions; they do not imply separate legal entities.
+
+Product brands may publish one or more product extensions when their public
+catalog includes those categories. Brand, manufacturer, processor, cultivator,
+licensee, and distributor roles SHOULD be distinguished when they differ. A
+product or batch listing does not establish current inventory, authorization,
+or a safety or efficacy claim.
+
+A physician or practice may publish `cannabis-physician.txt` when it maintains
+public information about relevant professional services. Use the accurate
+professional title, identify the source and jurisdiction for credentials, and
+do not imply patient eligibility, a treatment outcome, or authorization that
+the cited source does not establish.
 
 ## Suggested discovery links
 
@@ -136,10 +164,12 @@ list an extension unless it is actually published and maintained.
 
 ## Data freshness and privacy
 
-Treat menus, inventory, service areas, fees, hours, and delivery windows as
-changeable information. Include source and last-updated timestamps where
-practical. Do not expose customer/order data, patient status, private
-addresses, driver routes, credentials, or sensitive operational information.
+Treat menus, inventory, product formulations, label values, test records,
+service areas, fees, hours, delivery windows, credentials, and license status
+as changeable information. Include sources and last-updated timestamps where
+practical. Do not expose customer/order data, patient status, medical records,
+private addresses, driver routes, credentials, or sensitive operational
+information.
 
 ## Legal and licensing claims
 

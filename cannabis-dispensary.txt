@@ -313,7 +313,10 @@ Use stable public URLs where available. Distinguish ownership, operation,
 brand affiliation, partnership, and simple listing relationships.
 
 If the dispensary offers or coordinates delivery, see cannabis-delivery.txt.
-For general industry terminology, see cannabis.txt.
+For brand and product information beyond retail listings, see
+cannabis-flower-brand.txt, cannabis-edible-brand.txt, or
+cannabis-concentrate-brand.txt as applicable. For general industry terminology,
+see cannabis.txt.
 
 ======================================================================
 14. RECOMMENDED PUBLISHER FIELDS

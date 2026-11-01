@@ -1,0 +1,64 @@
+Illustrative example only. Replace placeholders and publish only verified
+public information.
+
+Title: Cannabis Flower Brand Knowledge File
+Version: 1.0.0
+Status: Example
+Publisher: [Brand owner or authorized representative]
+Canonical URL: https://[brand-domain]/cannabis-flower-brand.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Information Role: [Brand owner / representative / retailer / third party]
+Contact: https://[brand-domain]/contact
+
+BRAND
+
+Brand Name: [Public brand name]
+Brand Owner: [Organization or unknown]
+Website: https://[brand-domain]/
+Markets: [Jurisdictions where public product information applies]
+
+SUPPLY-CHAIN ROLES
+
+- Licensee: [Organization or unknown]
+- Cultivator: [Organization or unknown]
+- Manufacturer or packager: [Organization or unknown]
+- Distributor: [Organization or unknown]
+- Source: [Public source URL for each stated relationship]
+
+PRODUCT EXAMPLE
+
+- Product Name: [Public product name]
+- Product URL: [Public product page]
+- Format: [Whole flower / ground flower / pre-roll / other]
+- Cultivar Name: [As stated on the source label]
+- Package Weight: [Value and unit as labeled]
+- Cannabinoid Values: [As stated, including units and source]
+- Terpene Values: [As stated, including units and source]
+- Batch or Lot: [Public identifier, if appropriate]
+- Availability: [Source-reported status]
+- Last Verified: [YYYY-MM-DD]
+
+TESTING
+
+- Laboratory: [Name or unknown]
+- Tested Batch or Lot: [Public identifier or unknown]
+- Report Date: [YYYY-MM-DD]
+- Certificate of Analysis: [Public URL]
+
+JURISDICTION AND AUTHORIZATION
+
+- Jurisdiction: [Jurisdiction]
+- Responsible Organization: [Organization]
+- Public Regulator Source: [Official URL]
+- Date Checked: [YYYY-MM-DD]
+
+RELATED FILES
+
+- https://[brand-domain]/cannabis.txt
+- https://[brand-domain]/cannabis-dispensary.txt, if applicable
+
+This example is an informational convention, not proof of licensure,
+product quality, safety, effects, or medical benefit. Do not infer
+characteristics that are not supported by the cited sources.
