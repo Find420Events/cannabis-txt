@@ -29,6 +29,7 @@ cannabis-related subject matter.
 - **Published:** 2026-10-31
 - **Founding publisher:** [Find420.Events](https://find420.events/)
 - **Reference implementation:** https://find420.events/cannabis.txt · https://find420.events/cannabis-events.txt
+- **Public validator:** https://find420.events/validator
 
 ## What this is — and is not
 
