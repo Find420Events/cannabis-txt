@@ -192,3 +192,108 @@ workflow states — do not confuse them with public event status.
 - Members Only
 
 These describe access conditions and do not establish legal eligibility.
+
+## Dispensary and retail taxonomy (`cannabis-dispensary.txt`)
+
+### Business types
+
+- Cannabis dispensary
+- Adult-use cannabis retailer
+- Medical cannabis dispensary
+- Medical and adult-use retailer
+- Cannabis retail chain
+- Independent cannabis retailer
+- Cannabis retail cooperative, where recognized
+- Cannabis retail franchise, where applicable
+- Cannabis retail operator
+
+### Retail location and access
+
+- Storefront location
+- In-store shopping
+- Walk-in service
+- Appointment-based service
+- Online menu
+- Online pre-order
+- In-store pickup
+- Curbside pickup, where lawful
+- Accessibility accommodations
+
+### Retail product categories
+
+- Flower
+- Pre-roll
+- Vaporizer product
+- Concentrate
+- Edible
+- Beverage
+- Tincture
+- Capsule or tablet
+- Topical
+- Transdermal product
+- Accessory
+- Other regulated retail product
+
+### Inventory descriptors
+
+- In stock
+- Limited availability
+- Out of stock
+- Available for pre-order
+- Coming soon
+- Discontinued
+- Availability unknown
+
+## Delivery taxonomy (`cannabis-delivery.txt`)
+
+### Business and service types
+
+- Cannabis delivery operator
+- Dispensary-operated delivery service
+- Retailer-managed delivery
+- Third-party delivery service
+- Delivery technology platform
+- Order marketplace or ordering platform
+- Contracted logistics provider, where lawful
+- Medical cannabis delivery service, where authorized
+- Adult-use cannabis delivery service, where authorized
+
+### Ordering channels
+
+- Business website
+- Online menu and checkout
+- Mobile application
+- Telephone ordering
+- In-store order with delivery fulfillment
+- Authorized third-party ordering platform
+
+### Fulfillment and delivery status
+
+- Cart or order submitted
+- Order received
+- Order under review
+- Eligibility check pending
+- Order accepted
+- Order rejected or cancelled
+- Preparing order
+- Awaiting dispatch
+- Assigned for delivery
+- Out for delivery
+- Delivery attempted
+- Awaiting customer handoff
+- Delivered
+- Returned or undeliverable
+- Refunded or otherwise resolved
+
+### Service availability
+
+- Active
+- Temporarily unavailable
+- Paused
+- Coming soon
+- Discontinued
+- Unknown
+
+Publishers may add subcategories. Preserve the shared primary term and use a
+descriptive subtype when needed. See each extension for definitions and
+safeguards.

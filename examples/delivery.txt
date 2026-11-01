@@ -1,0 +1,41 @@
+# Illustrative example only — replace every placeholder before publication.
+
+Title: Example Cannabis Delivery Knowledge File
+Version: 1.0.0
+Status: Example
+Publisher: [Delivery operator or retailer name]
+Canonical URL: https://example.com/cannabis-delivery.txt
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Contact: [Public contact URL]
+
+Business Name: [Public business name]
+Business Type: [Cannabis delivery operator / dispensary-operated delivery]
+Seller: [Legal or public seller name]
+Delivery Operator: [Delivery operator name]
+Website: [Official website URL]
+Ordering URL: [Public ordering URL]
+Menu URL: [Public menu URL]
+
+Service Areas:
+- [Publicly named city, region, or coverage URL]
+- Coverage Source: [Operator-confirmed / third-party / estimated]
+- Last Verified: [YYYY-MM-DD]
+
+Delivery Information:
+- Public Hours: [Hours URL]
+- Fees: [Public fee policy URL]
+- Minimum Order: [Public policy URL, if applicable]
+- Estimated Window: [Public policy URL]
+- Handoff Policy: [Public policy URL]
+- Cancellation and Refund Policy: [Public policy URL]
+
+Licensing:
+- Jurisdiction: [Jurisdiction]
+- Authorized Activity: [Publicly stated activity]
+- Issuing Authority: [Regulator]
+- Public Verification URL: [Official lookup URL]
+- Date Checked: [YYYY-MM-DD]
+
+Information Source: [Operator / official source / third party]

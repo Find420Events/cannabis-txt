@@ -92,3 +92,58 @@ extension should state which cannabis.txt version it builds on, define its own
 scope, and avoid redefining core terms inconsistently.
 
 Compatibility never requires using Find420 or implies endorsement by it.
+
+## Specialized extension files
+
+A publisher may publish one or more specialized extensions alongside
+`/cannabis.txt` when those extensions describe business activities covered by
+the publisher's public information.
+
+Current extensions:
+
+- `/cannabis-events.txt` — events and event participation.
+- `/cannabis-dispensary.txt` — cannabis retail businesses and storefront
+  operations.
+- `/cannabis-delivery.txt` — cannabis delivery operators and fulfillment
+  services.
+
+Each extension SHOULD:
+
+- Be served as `text/plain; charset=utf-8`.
+- Identify its own version, status, publisher, canonical URL, and last-updated
+  date.
+- Declare `Depends on: cannabis.txt version 1.0.0 or compatible` (or the
+  compatible parent version actually used).
+- Describe only the publisher's own business, services, locations, or
+  information sources accurately.
+- Distinguish the seller, retailer, delivery operator, marketplace, and
+  technology provider when they are different entities.
+- Link to public authoritative pages for locations, menus, service areas,
+  policies, and regulator records where useful.
+- Qualify legal and licensing claims with jurisdiction, source, and effective
+  date.
+
+A business that operates a dispensary and also provides delivery may publish
+both `cannabis-dispensary.txt` and `cannabis-delivery.txt`. The files describe
+different business functions; they do not imply separate legal entities.
+
+## Suggested discovery links
+
+Publishers may list applicable extension URLs in the core `/cannabis.txt` file
+under an `Extensions` or `Related Specifications` section. This is a
+human-readable cross-reference, not an automated discovery guarantee. Do not
+list an extension unless it is actually published and maintained.
+
+## Data freshness and privacy
+
+Treat menus, inventory, service areas, fees, hours, and delivery windows as
+changeable information. Include source and last-updated timestamps where
+practical. Do not expose customer/order data, patient status, private
+addresses, driver routes, credentials, or sensitive operational information.
+
+## Legal and licensing claims
+
+A taxonomy label is not evidence of authorization. Identify the responsible
+legal entity, activity, jurisdiction, issuing authority, status source, and
+date checked where available. Do not attribute one entity's license to another
+entity or present a publisher statement as regulator verification.

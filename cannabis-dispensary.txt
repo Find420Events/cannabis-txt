@@ -1,0 +1,360 @@
+CANNABIS-DISPENSARY.TXT
+
+Open Cannabis Dispensary Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-dispensary.txt
+Suggested location: https://example.com/cannabis-dispensary.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-dispensary.txt is a proposed, human-readable extension for
+ describing cannabis retail dispensaries and the public-facing services,
+ locations, products, and operations associated with them.
+
+It establishes a shared vocabulary for describing dispensary businesses,
+physical storefronts, retail access, product categories, menus, inventory
+availability, customer services, and business relationships.
+
+This extension complements cannabis.txt. It does not replace official
+business websites, menus, point-of-sale systems, inventory feeds, APIs,
+structured data, or regulatory records.
+
+Publication does not guarantee search ranking, AI retrieval, business
+verification, licensing, or inclusion in any directory or recommendation.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public business information about cannabis retail
+operations, including:
+
+- Adult-use / recreational retail, where authorized
+- Medical cannabis retail, where authorized
+- Hybrid medical and adult-use retail, where authorized
+- Physical dispensary storefronts
+- Retail chains and multi-location operators
+- Retail menus and product categories
+- Publicly stated inventory and availability
+- In-store shopping, pickup, and customer services
+- Store hours, accessibility, and location information
+- Retail promotions and loyalty programs, where lawful
+
+A dispensary may operate one or more locations and may also offer delivery.
+Delivery operations should additionally be described using
+cannabis-delivery.txt when applicable.
+
+This file describes business information; it does not establish that a
+business is legally authorized to conduct any regulated activity.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published at /cannabis-dispensary.txt on the publisher's domain.
+- Be served as UTF-8 plain text (text/plain; charset=utf-8).
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify whether information describes the organization, a location,
+  a brand, or a third-party listing.
+- Use the shared vocabulary in cannabis.txt where practical.
+- Link to authoritative public pages for locations, menus, policies, and
+  licensing information where appropriate.
+- Mark information that is unknown, estimated, or subject to change.
+- State the jurisdiction and effective date for legal or licensing claims.
+
+A compatible file MUST NOT:
+
+- Claim that publication guarantees ranking, citations, traffic, or sales.
+- Present a business category as proof of licensure or regulatory approval.
+- Present one jurisdiction's retail rules as universal.
+- Claim real-time inventory accuracy unless supported by a current source.
+- Publish private customer, employee, or patient information.
+- Publish credentials, access tokens, or non-public operational records.
+- Imply regulator certification or endorsement without evidence.
+
+======================================================================
+4. DISPENSARY BUSINESS TYPES
+======================================================================
+
+Use one or more descriptive business types where applicable:
+
+- Cannabis dispensary
+- Adult-use cannabis retailer
+- Medical cannabis dispensary
+- Medical and adult-use retailer
+- Cannabis retail chain
+- Independent cannabis retailer
+- Cannabis retail cooperative, where recognized
+- Cannabis retail franchise, where applicable
+- Cannabis retail operator
+
+These labels are descriptive. The publisher SHOULD separately identify
+any applicable license type and issuing jurisdiction when verified.
+
+======================================================================
+5. RETAIL LOCATION MODEL
+======================================================================
+
+A retail business may operate multiple physical locations. Describe each
+location separately when its address, hours, access, services, or license
+differs.
+
+Common location attributes include:
+
+- Business name
+- Public-facing store name
+- Parent organization
+- Brand
+- Location identifier (publisher-defined, non-sensitive)
+- Public street address
+- Locality, region, postal code, and country
+- Public telephone number
+- Public contact page or email
+- Website URL
+- Menu URL
+- Directions URL
+- Geographic coordinates, when intentionally published
+- Time zone (IANA identifier)
+- Regular business hours
+- Holiday or temporary hours
+- Public accessibility information
+- Parking and transit information
+- Storefront status (open, temporarily closed, permanently closed,
+  coming soon, or unknown)
+
+Do not expose non-public entrances, security arrangements, staff schedules,
+or sensitive location details.
+
+======================================================================
+6. RETAIL ACCESS AND CUSTOMER ELIGIBILITY
+======================================================================
+
+Describe access requirements only as applicable to the stated jurisdiction
+and retail operation. Possible descriptors include:
+
+- Adult-use access
+- Medical access
+- Medical patient registration required
+- Government-issued identification required
+- Age verification required
+- Visitor check-in required
+- Appointment recommended
+- Appointment required
+- Walk-in service available
+- Online pre-order available
+- In-store shopping available
+- Curbside pickup available, where lawful
+- Accessibility accommodations
+
+Do not state a universal minimum age. Age, patient, identification, and
+purchase requirements vary by jurisdiction and may change.
+
+======================================================================
+7. PRODUCT AND MENU VOCABULARY
+======================================================================
+
+A dispensary menu may describe products using the shared product
+vocabulary in cannabis.txt and more specific retail categories, including:
+
+- Flower
+- Pre-roll
+- Vaporizer product
+- Concentrate
+- Edible
+- Beverage
+- Tincture
+- Capsule or tablet
+- Topical
+- Transdermal product
+- Accessory
+- Other regulated retail product
+
+Publishers may add product subcategories. Product names and descriptions
+should be factual and attributable to the source.
+
+Where available and lawful to publish, menu entries may include:
+
+- Product name
+- Brand
+- Product category
+- Product format
+- Package size or unit
+- Publicly listed price and currency
+- Applicable taxes or tax-not-included notice
+- THC/CBD content as displayed by the source
+- Batch or lot reference only when public and appropriate
+- Laboratory or certificate-of-analysis URL, if public
+- Menu item URL
+- Availability status
+- Last verified or last updated timestamp
+
+Do not infer potency, effects, medical benefit, safety, or product quality.
+Do not imply a menu listing means the item is currently in stock.
+
+======================================================================
+8. INVENTORY AND AVAILABILITY
+======================================================================
+
+Inventory descriptions SHOULD distinguish among:
+
+- In stock
+- Limited availability
+- Out of stock
+- Available for pre-order
+- Coming soon
+- Discontinued
+- Availability unknown
+
+Inventory changes frequently. If availability is published, identify its
+source and last-updated time. Do not represent cached, estimated, or
+publisher-submitted information as live point-of-sale inventory.
+
+A menu may be a static catalog, periodically refreshed feed, or live
+inventory integration. Describe the actual update method when known.
+
+======================================================================
+9. RETAIL SERVICES
+======================================================================
+
+Publicly offered services may include:
+
+- In-store consultation or product education
+- Online menu browsing
+- Online ordering or pre-order
+- In-store pickup
+- Curbside pickup, where lawful
+- Loyalty or rewards program
+- Discount or promotion program
+- Accessibility support
+- Customer support
+- Delivery (cross-reference cannabis-delivery.txt)
+
+Describe eligibility, restrictions, and availability without implying that
+any service is lawful in every jurisdiction.
+
+======================================================================
+10. LICENSE AND JURISDICTION CONTEXT
+======================================================================
+
+For each licensing claim, identify where known:
+
+- License or authorization type
+- License number, only if public
+- Issuing regulator or authority
+- Jurisdiction (country, state/province, locality as applicable)
+- License status as reported by the cited source
+- Effective date or date checked
+- Public regulator lookup URL
+
+Use status labels such as verified from regulator source, publisher-stated,
+third-party-reported, expired, suspended, pending, or unknown only when the
+source supports the description. A publisher's statement is not regulator
+verification.
+
+Never infer that a business is licensed from its name, address, menu, or
+presence in a directory.
+
+======================================================================
+11. DATA QUALITY AND FRESHNESS
+======================================================================
+
+Publishers SHOULD distinguish:
+
+- Business- or operator-submitted information
+- Information copied from an official public source
+- Third-party directory information
+- Estimated or inferred information
+- Unknown or unverified information
+
+Recommended timestamps use ISO 8601. Include a timezone or UTC offset
+where time-of-day precision matters. Keep closed locations, changed hours,
+expired promotions, and stale menus from appearing current.
+
+======================================================================
+12. PRIVACY AND SAFETY
+======================================================================
+
+Publish public business information only. Do not publish customer identities,
+patient status, purchase histories, order details, personal contact data,
+precise employee schedules, or other private information.
+
+Do not include instructions that facilitate evasion of age checks, purchase
+limits, licensing controls, or other legal requirements.
+
+======================================================================
+13. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+A dispensary may be related to:
+
+- Parent company or retail operator
+- One or more storefront locations
+- Cannabis brands and product manufacturers
+- Distributors and wholesalers
+- Testing laboratories
+- Menu or point-of-sale technology providers
+- Delivery operators
+- Events and community organizations
+
+Use stable public URLs where available. Distinguish ownership, operation,
+brand affiliation, partnership, and simple listing relationships.
+
+If the dispensary offers or coordinates delivery, see cannabis-delivery.txt.
+For general industry terminology, see cannabis.txt.
+
+======================================================================
+14. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+The following is a recommended plain-text structure, not a mandatory
+machine-readable schema:
+
+Title: [Cannabis Dispensary Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Organization]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Contact: [Public contact URL]
+Business Name: [Name]
+Business Type: [Type]
+Website: [URL]
+Locations: [Public location URLs]
+Menu: [Menu URL]
+Delivery Information: [URL, if applicable]
+Jurisdictions: [Applicable jurisdictions]
+Information Source: [Publisher / official source / third party]
+
+Publishers may extend this structure with clearly named fields.
+
+======================================================================
+15. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows the project's semantic versioning approach:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+END OF CANNABIS-DISPENSARY.TXT
+======================================================================

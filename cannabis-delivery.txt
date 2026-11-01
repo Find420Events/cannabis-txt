@@ -1,0 +1,400 @@
+CANNABIS-DELIVERY.TXT
+
+Open Cannabis Delivery Knowledge Extension
+
+Version: 1.0.0
+Status: Proposed Community Specification
+Published: 2026-11-01
+Founding publisher: Find420.Events
+Canonical project: https://github.com/Find420Events/cannabis-txt
+Canonical URL: https://find420.events/cannabis-delivery.txt
+Suggested location: https://example.com/cannabis-delivery.txt
+Encoding: UTF-8
+Media type: text/plain; charset=utf-8
+Depends on: cannabis.txt version 1.0.0 or compatible
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+cannabis-delivery.txt is a proposed, human-readable extension for
+ describing cannabis delivery businesses, delivery services, and the
+ public-facing processes used to receive and fulfill delivery orders.
+
+It defines shared terminology for delivery operators, service areas,
+ordering channels, fulfillment models, dispatch, delivery windows,
+customer handoff, delivery status, and jurisdictional restrictions.
+
+This extension complements cannabis.txt. It does not replace official
+business websites, ordering systems, point-of-sale platforms, dispatch
+software, APIs, structured data, or regulatory records.
+
+Publication does not guarantee search ranking, AI retrieval, business
+verification, licensing, or inclusion in any directory or recommendation.
+
+======================================================================
+2. SCOPE
+======================================================================
+
+This extension covers public information about cannabis delivery activity,
+including:
+
+- Licensed cannabis delivery operators, where authorized
+- Dispensaries that provide their own delivery service
+- Third-party delivery arrangements, where lawful
+- Online ordering and order submission channels
+- Delivery service areas and geographic restrictions
+- Order acceptance and fulfillment workflows
+- Dispatch and delivery windows
+- Pickup or handoff options associated with delivery operations
+- Public delivery fees, minimums, and service policies
+- Delivery status descriptions and customer support
+
+A business may operate both a retail storefront and a delivery service.
+Publish cannabis-dispensary.txt as well when describing its storefront
+retail operations.
+
+This file describes public business information; it does not establish
+that a business, driver, vehicle, or delivery transaction is authorized.
+
+======================================================================
+3. CONFORMANCE
+======================================================================
+
+A compatible file SHOULD:
+
+- Be published at /cannabis-delivery.txt on the publisher's domain.
+- Be served as UTF-8 plain text (text/plain; charset=utf-8).
+- Identify version, status, publisher, canonical URL, and last-updated date.
+- Declare the compatible cannabis.txt parent version.
+- Identify whether the publisher is the operator, retailer, platform,
+  technology provider, or third-party directory.
+- Use shared vocabulary from cannabis.txt where practical.
+- Link to public ordering, service-area, policy, and licensing pages.
+- Identify the source and freshness of service-area and availability data.
+- Qualify legal and licensing statements by jurisdiction and effective date.
+
+A compatible file MUST NOT:
+
+- Claim that publication guarantees ranking, citations, traffic, or sales.
+- Present a business category as proof of licensure or authorization.
+- Present one jurisdiction's delivery rules as universal.
+- Claim real-time order or driver status without a live authoritative source.
+- Publish customer identities, order histories, delivery addresses, or
+  other private transaction information.
+- Publish driver personal details, schedules, routes, or credentials.
+- Include access tokens, credentials, or non-public operational records.
+- Imply regulator certification or endorsement without evidence.
+
+======================================================================
+4. DELIVERY BUSINESS AND SERVICE TYPES
+======================================================================
+
+Use one or more descriptive types where applicable:
+
+- Cannabis delivery operator
+- Dispensary-operated delivery service
+- Retailer-managed delivery
+- Third-party delivery service
+- Delivery technology platform
+- Order marketplace or ordering platform
+- Contracted logistics provider, where lawful
+- Medical cannabis delivery service, where authorized
+- Adult-use cannabis delivery service, where authorized
+
+These categories describe business functions, not legal authorization.
+A technology platform or marketplace should not be described as the
+licensed seller or delivery operator unless that is factually accurate.
+
+======================================================================
+5. DELIVERY SERVICE MODEL
+======================================================================
+
+Describe how the service is operated, where publicly known:
+
+- Retailer-owned and operated
+- Operator-owned and operated
+- Third-party contracted fulfillment
+- Marketplace connecting customers and retailers
+- Platform providing ordering technology only
+- Hybrid or multi-operator model
+
+Identify the responsible seller and delivery operator separately when
+they are different entities. Do not imply that an ordering platform
+possesses inventory, sells products, or performs delivery if it does not.
+
+======================================================================
+6. ORDERING CHANNELS
+======================================================================
+
+Public ordering channels may include:
+
+- Business website
+- Online menu and checkout
+- Mobile application
+- Telephone ordering
+- In-store order with delivery fulfillment
+- Authorized third-party ordering platform
+
+Where available, publish:
+
+- Public ordering URL
+- Menu URL
+- Supported ordering channel
+- Order acceptance hours
+- Whether pre-orders are supported
+- Whether account creation is required
+- Publicly stated payment methods
+- Order minimum, if applicable
+- Publicly stated delivery fee
+- Cancellation and refund policy URL
+
+Do not publish private account, payment, or customer information.
+
+======================================================================
+7. SERVICE AREA AND COVERAGE
+======================================================================
+
+Describe service coverage at a level appropriate for public discovery:
+
+- Country
+- State or province
+- County or regional area
+- City or municipality
+- Publicly named neighborhoods
+- Postal codes or postal-code ranges, where appropriate
+- Published coverage map URL
+
+State whether service areas are confirmed by the operator, supplied by a
+third party, estimated, or unknown. Identify last-updated time where known.
+
+Do not expose individual delivery addresses, customer locations, driver
+GPS traces, private route plans, or sensitive operational boundaries.
+
+Service availability may depend on the customer's address, operating
+hours, inventory, order eligibility, and local rules. A published service
+area is not a guarantee that a particular order can be fulfilled.
+
+======================================================================
+8. DELIVERY ELIGIBILITY AND JURISDICTION
+======================================================================
+
+Eligibility requirements vary by jurisdiction and may include:
+
+- Age verification
+- Medical patient or caregiver eligibility
+- Valid identification
+- Address within an authorized service area
+- Recipient identity verification at handoff
+- Purchase or possession limits
+- Order-time restrictions
+- Delivery-time restrictions
+- Other regulator-defined requirements
+
+Describe only requirements supported by the applicable authority or
+operator policy. Identify the jurisdiction and source. Do not provide a
+universal age, purchase limit, or delivery rule.
+
+======================================================================
+9. ORDER FULFILLMENT AND DISPATCH
+======================================================================
+
+A delivery workflow may include these descriptive stages:
+
+- Cart or order submitted
+- Order received
+- Order under review
+- Eligibility check pending
+- Order accepted
+- Order rejected or cancelled
+- Preparing order
+- Awaiting dispatch
+- Assigned for delivery
+- Out for delivery
+- Delivery attempted
+- Awaiting customer handoff
+- Delivered
+- Returned or undeliverable
+- Refunded or otherwise resolved
+
+These are vocabulary terms, not mandatory system states. Publishers may
+use different internal workflows and map them to the closest public term.
+Do not expose internal dispatch data or private transaction records.
+
+Where relevant, describe:
+
+- Typical preparation window
+- Published delivery window
+- Whether scheduled delivery is offered
+- Whether same-day delivery is offered
+- Whether delivery tracking is available
+- Whether customer notifications are provided
+- Public procedure for failed or undeliverable orders
+
+Avoid presenting estimates as guarantees.
+
+======================================================================
+10. DELIVERY HANDOFF
+======================================================================
+
+Publicly describe applicable handoff methods and requirements, such as:
+
+- Recipient identity verification
+- Age or patient eligibility verification
+- Recipient must be present
+- Signature or acknowledgement required
+- Delivery to an authorized recipient only
+- No unattended delivery, where applicable
+- Failed delivery and return procedure
+
+Actual requirements must be tied to the applicable jurisdiction and
+operator policy. Do not describe methods that would bypass required
+identity, age, or eligibility checks.
+
+======================================================================
+11. FEES, TIMING, AND SERVICE POLICIES
+======================================================================
+
+Where publicly available, a publisher may identify:
+
+- Delivery fee and currency
+- Minimum order amount
+- Fee waiver threshold
+- Published delivery hours
+- Estimated delivery window
+- Scheduled delivery availability
+- Service interruptions
+- Cancellation policy
+- Refund and return policy
+- Customer support channel
+
+Clearly distinguish fixed fees from estimates, promotions, and conditional
+charges. Include a source URL and last-updated date where practical.
+
+======================================================================
+12. LICENSE AND JURISDICTION CONTEXT
+======================================================================
+
+For each licensing or authorization claim, identify where known:
+
+- License or authorization type
+- License number, only if public
+- Licensed legal entity
+- Issuing regulator or authority
+- Jurisdiction (country, state/province, locality as applicable)
+- Authorized activity (retail, delivery, transport, or other)
+- License status as reported by the cited source
+- Effective date or date checked
+- Public regulator lookup URL
+
+Distinguish the retailer, seller, delivery operator, platform, and any
+contracted logistics provider. One entity's authorization must not be
+attributed to another entity without evidence.
+
+Use labels such as verified from regulator source, publisher-stated,
+third-party-reported, expired, suspended, pending, or unknown only when
+the cited source supports the description. Never infer authorization from
+an app listing, website, menu, vehicle, or directory entry.
+
+======================================================================
+13. DATA QUALITY, FRESHNESS, AND STATUS
+======================================================================
+
+Publishers SHOULD distinguish:
+
+- Operator-submitted service information
+- Information from an official public source
+- Third-party directory information
+- Estimated coverage or timing
+- Unknown or unverified information
+
+Use ISO 8601 timestamps for update times. Identify time zones using IANA
+time-zone identifiers when publishing local operating hours or windows.
+Keep service areas, fees, operating hours, and policies current.
+
+A service may be described as active, temporarily unavailable, paused,
+coming soon, discontinued, or unknown when supported by the source.
+
+======================================================================
+14. PRIVACY AND SECURITY
+======================================================================
+
+This extension is for public business information only. Never publish:
+
+- Customer names, phone numbers, email addresses, or delivery addresses
+- Order contents linked to an identifiable customer
+- Patient status or medical records
+- Payment details or account credentials
+- Driver identities where not already intentionally public
+- Driver schedules, live locations, or route histories
+- Security procedures or sensitive operational details
+
+Use aggregated or generalized information where appropriate.
+
+======================================================================
+15. RELATIONSHIPS AND CROSS-REFERENCES
+======================================================================
+
+A delivery service may be related to:
+
+- A cannabis dispensary or retailer
+- A licensed delivery operator
+- A parent company or retail chain
+- A cannabis brand or product supplier
+- An ordering or menu platform
+- A payment provider
+- A logistics or technology provider
+- A service-area or local business directory
+
+Distinguish ownership, operation, fulfillment, technology provision,
+contractual relationships, and simple directory listings.
+
+If the operator also runs storefront retail locations, see
+cannabis-dispensary.txt. For general industry terminology, see cannabis.txt.
+
+======================================================================
+16. RECOMMENDED PUBLISHER FIELDS
+======================================================================
+
+The following is a recommended plain-text structure, not a mandatory
+machine-readable schema:
+
+Title: [Cannabis Delivery Knowledge File]
+Version: 1.0.0
+Status: [Proposed / Published]
+Publisher: [Organization]
+Canonical URL: [URL]
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Depends on: cannabis.txt version 1.0.0 or compatible
+Contact: [Public contact URL]
+Business Name: [Name]
+Business Type: [Type]
+Seller: [Legal or public business name]
+Delivery Operator: [Name]
+Ordering URL: [URL]
+Menu URL: [URL]
+Service Areas: [Public coverage URL or description]
+Delivery Hours: [Public hours URL or description]
+Delivery Policy: [URL]
+Jurisdictions: [Applicable jurisdictions]
+Information Source: [Operator / official source / third party]
+
+Publishers may extend this structure with clearly named fields.
+
+======================================================================
+17. VERSIONING AND GOVERNANCE
+======================================================================
+
+This extension follows the project's semantic versioning approach:
+
+- MAJOR: incompatible changes to definitions or required fields.
+- MINOR: backward-compatible additions.
+- PATCH: clarifications and corrections.
+
+The extension is community-oriented and may be implemented without
+permission, payment, or use of Find420 services.
+
+======================================================================
+END OF CANNABIS-DELIVERY.TXT
+======================================================================

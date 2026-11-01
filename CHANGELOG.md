@@ -7,6 +7,30 @@ here. Both specifications use [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.1.0] — 2026-11-01
+
+Backward-compatible additions to the proposed community specification family.
+
+### New extensions
+
+- Added `cannabis-dispensary.txt` for dispensary business types, retail
+  locations, customer access, menus, inventory freshness, retail services,
+  licensing context, and privacy.
+- Added `cannabis-delivery.txt` for delivery business models, ordering
+  channels, service areas, fulfillment states, handoff, fees, licensing
+  context, and privacy.
+- Added illustrative dispensary and delivery publisher examples.
+
+### Documentation
+
+- Expanded the repository index to list the new extensions.
+- Added dispensary and delivery vocabulary to the shared taxonomy.
+- Expanded implementation guidance for extension dependencies,
+  cross-references, business-role distinctions, data freshness, and privacy.
+
+The core `cannabis.txt` and `cannabis-events.txt` 1.0.0 definitions are
+unchanged by these additions.
+
 ## [1.0.0] — 2026-10-31
 
 Initial proposed community specification.
