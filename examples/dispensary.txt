@@ -1,7 +1,7 @@
 # Illustrative example only — replace every placeholder before publication.
 
 Title: Example Cannabis Dispensary Knowledge File
-Version: 1.0.0
+Version: 1.1.0
 Status: Example
 Publisher: [Dispensary or operator name]
 Canonical URL: https://example.com/cannabis-dispensary.txt
@@ -15,7 +15,18 @@ Business Type: [Cannabis dispensary / adult-use retailer / medical dispensary]
 Website: [Official website URL]
 
 Locations:
-- Name: [Store location name]
+- Location ID: [Publisher-defined identifier, e.g. store-001]
+  Name: [Store location name]
+  Address: [Public street address]
+  Locality: [City, region, postal code, country]
+  Time Zone: [IANA time zone]
+  Hours: [Public hours URL]
+  Menu: [Public menu URL]
+  Store Status: [Open / temporarily closed / coming soon / unknown]
+  Accessibility: [Public accessibility information URL]
+
+- Location ID: [Publisher-defined identifier, e.g. store-002]
+  Name: [Second store location name]
   Address: [Public street address]
   Locality: [City, region, postal code, country]
   Time Zone: [IANA time zone]

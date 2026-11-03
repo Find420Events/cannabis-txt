@@ -2,7 +2,7 @@ CANNABIS-PHYSICIAN.TXT
 
 Open Cannabis Physician Knowledge Extension
 
-Version: 1.0.0
+Version: 1.1.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -95,6 +95,12 @@ Describe these entities separately when they are not the same:
 A practice profile must not imply that every listed clinician provides
 every service, or that the practice's authorization applies to all
 locations or jurisdictions.
+
+A physician or practice may operate at multiple public practice locations
+and may offer telehealth across multiple jurisdictions. Describe each
+location separately when its services, hours, appointment channels,
+jurisdiction, or authorization differs. Publish only locations that are
+open to patients or already intentionally public.
 
 ======================================================================
 5. PROFESSIONAL PROFILE
@@ -241,7 +247,7 @@ education activity, see cannabis-events.txt where applicable.
 ======================================================================
 
 Title: [Cannabis Physician Knowledge File]
-Version: 1.0.0
+Version: 1.1.0
 Status: [Proposed / Published]
 Publisher: [Physician / practice / directory]
 Canonical URL: [URL]
@@ -255,8 +261,19 @@ Credentials: [Credential and public verification source]
 License Jurisdictions: [Jurisdictions and official sources]
 Practice: [Name and public URL]
 Services: [Public service descriptions]
-Locations: [Public location URLs]
 Appointment Contact: [Official public contact URL]
+
+A practice with multiple locations SHOULD describe each location with a
+repeating Practice Locations block:
+
+Practice Locations:
+- Location Name: [Public clinic or office name]
+  Address: [Public street address]
+  Locality: [City, region, postal code, country]
+  Jurisdiction: [Jurisdiction]
+  Hours: [Public hours or URL]
+  Appointment URL: [Public scheduling URL]
+  Telehealth: [Publicly stated availability for this jurisdiction]
 
 Publishers may extend this structure with clearly named fields. Do not
 include patient information or private personal identifiers.

@@ -7,6 +7,33 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.3.0] — 2026-11-03
+
+Backward-compatible additions for businesses with multiple locations,
+service areas, or markets. The core `cannabis.txt` and
+`cannabis-events.txt` 1.0.0 definitions are unchanged.
+
+### Multi-location and multi-market support
+
+- `cannabis-dispensary.txt` 1.1.0 — clarified that multi-storefront
+  businesses describe each location with a repeating `Locations` block
+  using the Section 5 location attributes, including a publisher-defined
+  location identifier.
+- `cannabis-physician.txt` 1.1.0 — added guidance for practices operating
+  at multiple public locations and a repeating `Practice Locations` block
+  with per-location jurisdiction, hours, and appointment fields.
+- `cannabis-delivery.txt` 1.1.0 — added per-city and per-hub coverage for
+  operators serving multiple cities or dispatching from multiple
+  operating bases, via a repeating `Service Areas` block.
+- `cannabis-flower-brand.txt`, `cannabis-edible-brand.txt`, and
+  `cannabis-concentrate-brand.txt` 1.1.0 — added a repeating `Markets`
+  block for brands selling in multiple jurisdictions, with per-market
+  availability, catalog links, and distributor attribution.
+- Updated the dispensary, delivery, physician, and product-brand examples
+  to illustrate the repeating location, service-area, and market blocks.
+- Expanded the shared taxonomy with multi-location, service-area, and
+  market vocabulary.
+
 ## [1.2.0] - 2026-11-01
 
 Backward-compatible additions of four specialized extensions. The core

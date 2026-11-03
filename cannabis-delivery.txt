@@ -2,7 +2,7 @@ CANNABIS-DELIVERY.TXT
 
 Open Cannabis Delivery Knowledge Extension
 
-Version: 1.0.0
+Version: 1.1.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -163,7 +163,15 @@ Describe service coverage at a level appropriate for public discovery:
 - City or municipality
 - Publicly named neighborhoods
 - Postal codes or postal-code ranges, where appropriate
+- Publicly named service city or market
+- Publicly named hub or operating base, at city or regional level only
 - Published coverage map URL
+
+An operator may serve multiple cities or dispatch orders from multiple
+hubs. Describe each service city or hub separately when coverage, ordering
+channels, hours, fees, or eligibility differ. A hub SHOULD be identified
+at city or regional level only; do not publish addresses or locations of
+facilities that are not open to the public.
 
 State whether service areas are confirmed by the operator, supplied by a
 third party, estimated, or unknown. Identify last-updated time where known.
@@ -360,7 +368,7 @@ The following is a recommended plain-text structure, not a mandatory
 machine-readable schema:
 
 Title: [Cannabis Delivery Knowledge File]
-Version: 1.0.0
+Version: 1.1.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
@@ -374,11 +382,21 @@ Seller: [Legal or public business name]
 Delivery Operator: [Name]
 Ordering URL: [URL]
 Menu URL: [URL]
-Service Areas: [Public coverage URL or description]
 Delivery Hours: [Public hours URL or description]
 Delivery Policy: [URL]
 Jurisdictions: [Applicable jurisdictions]
 Information Source: [Operator / official source / third party]
+
+An operator serving multiple cities or operating multiple hubs SHOULD
+describe each area with a repeating Service Areas block:
+
+Service Areas:
+- Service City or Region: [Publicly named area]
+  Hub City: [Publicly named operating base, city level, if applicable]
+  Ordering URL: [URL for this area, if it differs]
+  Delivery Hours: [Hours or URL for this area, if it differs]
+  Coverage Source: [Operator-confirmed / third-party / estimated]
+  Last Verified: [YYYY-MM-DD]
 
 Publishers may extend this structure with clearly named fields.
 

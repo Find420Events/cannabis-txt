@@ -211,6 +211,10 @@ These describe access conditions and do not establish legal eligibility.
 ### Retail location and access
 
 - Storefront location
+- Multi-location retail operator
+- Location identifier (publisher-defined, non-sensitive)
+- Storefront status (open, temporarily closed, permanently closed,
+  coming soon, unknown)
 - In-store shopping
 - Walk-in service
 - Appointment-based service
@@ -286,6 +290,16 @@ These describe access conditions and do not establish legal eligibility.
 - Returned or undeliverable
 - Refunded or otherwise resolved
 
+### Service areas and coverage
+
+- Service city or market
+- Publicly named hub city or operating base
+- Published coverage map
+- Operator-confirmed, third-party, or estimated coverage
+
+Hub locations are described at city or regional level only; facilities
+that are not open to the public should not be given street addresses.
+
 ### Service availability
 
 - Active
@@ -298,6 +312,22 @@ These describe access conditions and do not establish legal eligibility.
 Publishers may add subcategories. Preserve the shared primary term and use a
 descriptive subtype when needed. See each extension for definitions and
 safeguards.
+
+## Multi-location and multi-market conventions
+
+Publishers with more than one location, service area, or market describe
+each with a repeating block of fields — one entry per record:
+
+- `Locations:` — dispensary storefronts; per-location identifier, name,
+  address, locality, jurisdiction, hours, menu, and public contact fields
+- `Practice Locations:` — physician practice locations; per-location
+  name, address, jurisdiction, hours, appointment, and telehealth fields
+- `Service Areas:` — delivery service cities or regions, with an optional
+  publicly named hub city and per-area ordering, hours, and coverage
+  source
+- `Markets:` — product-brand market jurisdictions, with per-market
+  availability status, catalog or menu URL, distributor, and
+  last-verified date
 
 ## Flower brand vocabulary (`cannabis-flower-brand.txt`)
 
@@ -387,6 +417,7 @@ regulatory compliance.
 - Healthcare professional
 - Practice or clinic
 - Public practice location
+- Multi-location practice
 - Professional license
 - Separate jurisdiction-specific service authorization
 

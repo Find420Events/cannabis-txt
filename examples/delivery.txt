@@ -1,7 +1,7 @@
 # Illustrative example only — replace every placeholder before publication.
 
 Title: Example Cannabis Delivery Knowledge File
-Version: 1.0.0
+Version: 1.1.0
 Status: Example
 Publisher: [Delivery operator or retailer name]
 Canonical URL: https://example.com/cannabis-delivery.txt
@@ -19,9 +19,19 @@ Ordering URL: [Public ordering URL]
 Menu URL: [Public menu URL]
 
 Service Areas:
-- [Publicly named city, region, or coverage URL]
-- Coverage Source: [Operator-confirmed / third-party / estimated]
-- Last Verified: [YYYY-MM-DD]
+- Service City or Region: [Publicly named city or region]
+  Hub City: [Publicly named operating base, city level, if applicable]
+  Ordering URL: [URL for this area, if it differs]
+  Delivery Hours: [Hours or URL for this area, if it differs]
+  Coverage Source: [Operator-confirmed / third-party / estimated]
+  Last Verified: [YYYY-MM-DD]
+
+- Service City or Region: [Second publicly named city or region]
+  Hub City: [Publicly named operating base, city level, if applicable]
+  Ordering URL: [URL for this area, if it differs]
+  Delivery Hours: [Hours or URL for this area, if it differs]
+  Coverage Source: [Operator-confirmed / third-party / estimated]
+  Last Verified: [YYYY-MM-DD]
 
 Delivery Information:
 - Public Hours: [Hours URL]

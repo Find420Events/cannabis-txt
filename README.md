@@ -38,8 +38,9 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.2.0
-- **File versions:** 1.0.0 for the core and all current extensions
+- **Family changelog:** 1.3.0
+- **File versions:** 1.0.0 for the core and events specifications; 1.1.0
+  for the dispensary, delivery, product-brand, and physician extensions
 - **Status:** Proposed Community Specifications
 - **Published:** 2026-10-31 for the core and events specifications; 2026-11-01
   for the dispensary, delivery, flower-brand, edible-brand, concentrate-brand,

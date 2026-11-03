@@ -2,7 +2,7 @@ Illustrative example only. Replace placeholders with public, verified
 professional information. Never include patient information.
 
 Title: Cannabis Physician Knowledge File
-Version: 1.0.0
+Version: 1.1.0
 Status: Example
 Publisher: [Physician / practice / directory]
 Canonical URL: https://[practice-domain]/cannabis-physician.txt
@@ -33,10 +33,25 @@ LICENSE AND AUTHORIZATION
 PRACTICE
 
 Practice Name: [Public clinic or practice name]
-Public Locations: [Practice location URLs]
 Public Contact: [Official appointment or contact URL]
 Languages: [Publicly confirmed languages or unknown]
 Telehealth: [Publicly stated availability and jurisdictions, if applicable]
+
+PRACTICE LOCATIONS
+
+- Location Name: [Public clinic or office name]
+  Address: [Public street address]
+  Locality: [City, region, postal code, country]
+  Jurisdiction: [Jurisdiction]
+  Hours: [Public hours or URL]
+  Appointment URL: [Public scheduling URL]
+
+- Location Name: [Second public clinic or office name, if applicable]
+  Address: [Public street address]
+  Locality: [City, region, postal code, country]
+  Jurisdiction: [Jurisdiction]
+  Hours: [Public hours or URL]
+  Appointment URL: [Public scheduling URL]
 
 PUBLIC SERVICE DESCRIPTIONS
 

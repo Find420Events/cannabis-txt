@@ -2,7 +2,7 @@ Illustrative example only. Replace placeholders and publish only verified
 public information.
 
 Title: Cannabis Edible Brand Knowledge File
-Version: 1.0.0
+Version: 1.1.0
 Status: Example
 Publisher: [Brand owner or authorized representative]
 Canonical URL: https://[brand-domain]/cannabis-edible-brand.txt
@@ -17,7 +17,20 @@ BRAND
 Brand Name: [Public brand name]
 Brand Owner: [Organization or unknown]
 Website: https://[brand-domain]/
-Markets: [Jurisdictions where public product information applies]
+
+MARKETS
+
+- Jurisdiction: [Country / state or province]
+  Availability: [Source-reported status in this market]
+  Catalog or Menu URL: [Market-specific URL, if applicable]
+  Distributor: [Organization or unknown]
+  Last Verified: [YYYY-MM-DD]
+
+- Jurisdiction: [Additional market, if applicable]
+  Availability: [Source-reported status in this market]
+  Catalog or Menu URL: [Market-specific URL, if applicable]
+  Distributor: [Organization or unknown]
+  Last Verified: [YYYY-MM-DD]
 
 SUPPLY-CHAIN ROLES
 

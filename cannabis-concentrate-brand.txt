@@ -2,7 +2,7 @@ CANNABIS-CONCENTRATE-BRAND.TXT
 
 Open Cannabis Concentrate Brand Knowledge Extension
 
-Version: 1.0.0
+Version: 1.1.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -186,6 +186,16 @@ Availability may be described as in stock, limited, out of stock,
 discontinued, coming soon, or unknown. Identify the source and update time.
 Do not imply real-time inventory unless supported by the source.
 
+A brand may offer products in multiple markets. Describe each market
+separately when availability, product catalog, distribution, or pricing
+differs. For each market, identify where known:
+
+- Jurisdiction (country, state or province, locality as applicable)
+- Publicly stated availability status
+- Market-specific catalog, menu, or retailer URL
+- Responsible distributor or licensee for that market, if public
+- Source and last-verified date
+
 Distinguish brand-operated sales channels from retailer listings. Retail,
 delivery, promotion, and purchase rules vary by jurisdiction. See
 cannabis-dispensary.txt and cannabis-delivery.txt where applicable.
@@ -244,7 +254,7 @@ cannabis-delivery.txt.
 ======================================================================
 
 Title: [Cannabis Concentrate Brand Knowledge File]
-Version: 1.0.0
+Version: 1.1.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
@@ -256,8 +266,17 @@ Brand Name: [Name]
 Brand Owner: [Organization or unknown]
 Website: [URL]
 Products: [Public product URLs]
-Markets: [Jurisdictions]
 Sources: [Public source URLs]
+
+A brand selling in multiple markets SHOULD describe each market with a
+repeating Markets block:
+
+Markets:
+- Jurisdiction: [Country, state or province, locality]
+  Availability: [Source-reported status in this market]
+  Catalog or Menu URL: [Market-specific URL, if applicable]
+  Distributor: [Organization or unknown]
+  Last Verified: [YYYY-MM-DD]
 
 Publishers may extend this structure with clearly named fields.
 
