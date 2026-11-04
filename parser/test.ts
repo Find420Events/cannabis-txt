@@ -88,6 +88,13 @@ check('parse output of every repository file satisfies the document schema', () 
   const all = [...specFiles.map((f) => f), ...exampleFiles, ...find420Files];
   for (const file of all) {
     const result = parseCannabisTxt(read(file));
+    // Example files are publisher templates carrying [bracketed] placeholders
+    // in metadata — skip them; the schema validates real values only (same
+    // convention as the licensing-record check below).
+    const hasPlaceholder = Object.values(result.metadata).some(
+      (v) => typeof v === 'string' && /^\[.*\]$/.test(v),
+    );
+    if (hasPlaceholder) continue;
     const errors = validateJson(result, documentSchema);
     assert.deepEqual(errors, [], `${file}: ${errors.join('; ')}`);
   }
@@ -245,6 +252,7 @@ check('legacy licensing field names warn as deprecated', () => {
 check('licensing schema enforces conditional requirements', () => {
   const valid = {
     jurisdiction: 'Colorado',
+    'license-type': 'Retail store',
     'license-status': 'active',
     'verification-status': 'source-matched',
     'source-url': 'https://gov.example/1',
@@ -253,9 +261,63 @@ check('licensing schema enforces conditional requirements', () => {
   assert.deepEqual(validateJson(valid, licensingSchema), []);
   const { 'source-url': _dropped, ...noSource } = valid;
   assert.ok(validateJson(noSource, licensingSchema).some((e) => e.includes('source-url')));
-  const noVerifier = { jurisdiction: 'Colorado', 'verification-status': 'independently-verified', 'source-url': 'https://gov.example/1' };
+  const noVerifier = { jurisdiction: 'Colorado', 'license-type': 'Retail store', 'verification-status': 'independently-verified', 'source-url': 'https://gov.example/1' };
   assert.ok(validateJson(noVerifier, licensingSchema).some((e) => e.includes('verified-by')));
-  assert.ok(validateJson({ jurisdiction: 'Colorado', 'license-status': 'bogus' }, licensingSchema).some((e) => e.includes('license-status')));
+  assert.ok(validateJson({ jurisdiction: 'Colorado', 'license-type': 'Retail store', 'license-status': 'bogus' }, licensingSchema).some((e) => e.includes('license-status')));
+  assert.ok(validateJson({ jurisdiction: 'Colorado' }, licensingSchema).some((e) => e.includes('license-type')));
+});
+
+// --- Level 3 extension checks (grammar.md section 9) ---------------------
+
+const level3Doc = (extBlock: string) =>
+  'CANNABIS.TXT\n\nProfile\n\nVersion: 1.0.0\nStatus: Published\nPublisher: Example\n' +
+  'Canonical URL: https://example.com/cannabis.txt\nLast-Updated: 2026-11-04\nContact: https://example.com/c\n' +
+  `Extensions:\n${extBlock}`;
+
+check('unrecognized extension identifier caps conformance at level 2', () => {
+  const r = parseCannabisTxt(level3Doc('- custom-thing: https://example.com/custom.txt\n'));
+  const { level, diagnostics } = conformance(r);
+  assert.equal(level, 2);
+  assert.ok(diagnostics.some((d) => d.code === 'unrecognized-extension'));
+});
+
+check('extension URL off the publisher domain caps conformance at level 2', () => {
+  const r = parseCannabisTxt(level3Doc('- events: https://other.example.net/cannabis-events.txt\n'));
+  const { level, diagnostics } = conformance(r);
+  assert.equal(level, 2);
+  assert.ok(diagnostics.some((d) => d.code === 'extension-domain'));
+});
+
+check('extension URL on a publisher subdomain reaches level 3', () => {
+  const r = parseCannabisTxt(level3Doc('- events: https://files.example.com/cannabis-events.txt\n'));
+  assert.equal(conformance(r).level, 3);
+});
+
+check('non-http(s) extension URL caps conformance below level 3', () => {
+  const r = parseCannabisTxt(level3Doc('- events: not-a-url\n'));
+  assert.ok(conformance(r).level < 3);
+});
+
+// --- URL validation --------------------------------------------------------
+
+check('URL fields require http(s) schemes', () => {
+  const r = parseCannabisTxt('Website: ftp://files.example.com\nWebsite 2: not a url\n');
+  const urls = r.diagnostics.filter((d) => d.code === 'invalid-url');
+  assert.ok(urls.length >= 1);
+});
+
+check('contact accepts any absolute scheme such as mailto', () => {
+  const r = parseCannabisTxt('Contact: mailto:hello@example.com\n');
+  assert.ok(!r.diagnostics.some((d) => d.code === 'invalid-url'));
+});
+
+check('canonical-url must be an absolute http(s) URL', () => {
+  const r = parseCannabisTxt(
+    'Version: 1.0.0\nStatus: Published\nPublisher: Example\nCanonical URL: ftp://example.com/cannabis.txt\nLast-Updated: 2026-11-04\n',
+  );
+  const { level, diagnostics } = conformance(r);
+  assert.ok(level <= 1);
+  assert.ok(diagnostics.some((d) => d.code === 'invalid-url'));
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures above)' : ''}.`);

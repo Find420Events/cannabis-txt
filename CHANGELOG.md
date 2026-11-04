@@ -7,6 +7,44 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.8.0] - 2026-11-04
+
+Conformance fixes, schema tightening, and tooling updates; extension
+dependency declarations are now consistent across the family.
+
+- `cannabis-events.txt` 1.1.1 → 1.1.2 — raised the declared minimum core
+  dependency to `cannabis.txt` 1.1.0, matching the other extensions and the
+  licensing-record structure it references. The events examples now declare
+  1.1.0 as well, and the README dependency text is aligned.
+- `parser/` — the reference parser now enforces the Level 3 extension rules
+  from `specification/grammar.md` section 9: `extensions` entries must use
+  recognized identifiers and resolve absolute http(s) URLs on the
+  publisher's domain (the host of `canonical-url`; subdomains accepted).
+  Violations emit errors and cap conformance at level 2.
+- `parser/` — URL validation now uses real URL parsing (`new URL`) instead
+  of a scheme regex: URL-bearing fields warn unless they are absolute
+  http(s); `contact` accepts any absolute scheme (e.g. `mailto:`);
+  `canonical-url` must be http(s).
+- `parser/cli.ts` — `--json` now prints a structured validation report
+  (`{ specification, version, conformance-level, valid, errors, warnings,
+  notes }`) and the text output includes a badge line
+  (`cannabis.txt: v1.1.0 ✓`). The full canonical model moved to `--model`.
+- `schemas/cannabis-txt.schema.json` — typed constraints for metadata-block
+  fields (semver `version`, ISO dates, BCP 47 `language`, http(s) URL
+  patterns), typed `fields`/`lists` maps on sections, and an http(s)
+  pattern on extension URLs.
+- `schemas/licensing.schema.json` — `license-type` is now required with
+  `jurisdiction`; added optional `id`, `effective-date`, and `authority-id`
+  fields.
+- Added `schemas/licensing-authorities.schema.json` for a registry of
+  issuing authorities that license records can reference via
+  `authority-id`.
+- `package.json` — `engines` now targets active LTS releases
+  (`^22.18.0 || >=24.0.0`) instead of the EOL Node 23 line; Node 22.18+
+  supports native TypeScript type stripping.
+- Added `.github/workflows/ci.yml` running the test suite and CLI
+  validation on Node 22.x and 24.x.
+
 ## [1.7.0] - 2026-11-04
 
 Added JSON Schema definitions for machine validation; no normative

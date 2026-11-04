@@ -4,8 +4,12 @@
   "title": "Cannabis.txt Licensing Record",
   "description": "Validates one record inside a Licensing: block, as defined in cannabis.txt section 8. Canonical keys only; `unknown`/`n/a` values normalize to null before validation.",
   "type": "object",
-  "required": ["jurisdiction"],
+  "required": ["jurisdiction", "license-type"],
   "properties": {
+    "id": {
+      "type": ["string", "null"],
+      "description": "Publisher-defined stable identifier for the license record, when assigned."
+    },
     "jurisdiction": {
       "type": ["string", "null"],
       "description": "Jurisdiction that issued or administers the license."
@@ -25,6 +29,15 @@
     "issuing-authority": {
       "type": ["string", "null"],
       "description": "Regulatory agency or body."
+    },
+    "authority-id": {
+      "type": ["string", "null"],
+      "description": "Identifier linking the issuing authority to a licensing-authorities registry entry."
+    },
+    "effective-date": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the license took effect (YYYY-MM-DD)."
     },
     "license-status": {
       "type": ["string", "null"],

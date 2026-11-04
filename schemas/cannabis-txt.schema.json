@@ -30,12 +30,63 @@
     },
     "metadata": {
       "type": "object",
-      "description": "Metadata-block fields under canonical keys, first-seen order."
+      "description": "Metadata-block fields under canonical keys, first-seen order. Values are strings; `unknown`/`n/a`/`-` normalize to null.",
+      "properties": {
+        "version": {
+          "type": ["string", "null"],
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of the published file."
+        },
+        "status": { "type": ["string", "null"] },
+        "publisher": { "type": ["string", "null"] },
+        "founding-publisher": { "type": ["string", "null"] },
+        "publisher-type": { "type": ["string", "null"] },
+        "canonical-url": {
+          "type": ["string", "null"],
+          "pattern": "^https?://",
+          "description": "Absolute http(s) URL where the file is canonically served."
+        },
+        "canonical-project": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "suggested-location": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "last-updated": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "ISO 8601 calendar date (YYYY-MM-DD)."
+        },
+        "published": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "ISO 8601 calendar date (YYYY-MM-DD)."
+        },
+        "language": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z]{2}(-[A-Za-z]{2,8})?$",
+          "description": "BCP 47 language tag such as en or pt-BR."
+        },
+        "encoding": { "type": ["string", "null"] },
+        "media-type": { "type": ["string", "null"] },
+        "contact": { "type": ["string", "null"] },
+        "website": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "depends-on": { "type": ["string", "null"] }
+      },
+      "additionalProperties": { "type": ["string", "null"] }
     },
     "lists": {
       "type": "object",
       "description": "Block lists appearing in the metadata region.",
-      "additionalProperties": { "type": "array" }
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": ["string", "object", "null"] }
+      }
     },
     "extensions": {
       "type": "array",
@@ -44,8 +95,16 @@
         "required": ["type", "url"],
         "additionalProperties": false,
         "properties": {
-          "type": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
-          "url": { "type": "string" }
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "description": "Lowercase-hyphenated identifier. Level-3 conformance requires one of the recognized identifiers: events, dispensary, delivery, flower-brand, edible-brand, concentrate-brand, physician."
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://",
+            "description": "Absolute http(s) URL; Level 3 requires it to resolve on the publisher's domain."
+          }
         }
       }
     },
@@ -65,10 +124,16 @@
       "additionalProperties": false,
       "properties": {
         "heading": { "type": ["string", "null"] },
-        "fields": { "type": "object" },
+        "fields": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "null"] }
+        },
         "lists": {
           "type": "object",
-          "additionalProperties": { "type": "array" }
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": ["string", "object", "null"] }
+          }
         },
         "text": { "type": "string" }
       }

@@ -7,7 +7,7 @@ Status: Published
 Publisher: Find420.Events
 Canonical URL: https://find420.events/cannabis-events.txt
 Specification: https://find420.events/specs/cannabis-events.txt
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Last-Updated: 2026-11-04
 Language: en
 Publisher Type: Cannabis event discovery platform

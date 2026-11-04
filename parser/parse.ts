@@ -4,7 +4,7 @@
  * continuation lines, list and record structure, value normalization,
  * the Extensions manifest, and the canonical JSON output model.
  *
- * Zero dependencies. Runs on Node.js >= 23 (native type stripping).
+ * Zero dependencies. Runs on Node.js >= 22.18 (native type stripping).
  */
 
 export type DiagnosticLevel = 'error' | 'warning' | 'note';
@@ -69,7 +69,25 @@ const LIST_ITEM_RE = /^(\s*)-\s+(.*)$/;
 const RECORD_FIELD_RE = /^([A-Za-z][A-Za-z0-9 -]*):(?:\s+(.*))?$/;
 const BANNER_RE = /^CANNABIS(-[A-Z0-9-]+)?\.TXT\s*$/i;
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:?\d{2})?)?$/;
-const ABSOLUTE_URL_RE = /^[a-z][a-z0-9+.-]*:/i;
+/** True when `value` parses as an absolute URL (any scheme). */
+const isAbsoluteUrl = (value: string): boolean => {
+  try {
+    new URL(value);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+/** True when `value` parses as an absolute http(s) URL. */
+const isHttpUrl = (value: string): boolean => {
+  try {
+    const u = new URL(value);
+    return u.protocol === 'http:' || u.protocol === 'https:';
+  } catch {
+    return false;
+  }
+};
 
 /** Lowercase the name and collapse whitespace runs to single hyphens. */
 export function canonicalKey(name: string): string {
@@ -151,7 +169,10 @@ export function parseCannabisTxt(
       }
     }
     if (key.includes('url') || key === 'website' || key.includes('link') || key === 'contact') {
-      if (!value.includes('{') && !ABSOLUTE_URL_RE.test(value) && value.length > 0) {
+      // URL-bearing fields must be absolute; web links additionally require
+      // http(s). `contact` accepts any absolute scheme (https, mailto, tel).
+      const ok = key === 'contact' ? isAbsoluteUrl(value) : isHttpUrl(value);
+      if (!value.includes('{') && !ok && value.length > 0) {
         diag('warning', 'invalid-url', lineNo, `Field "${key}" is not an absolute URL: "${value}".`);
       }
     }
@@ -318,7 +339,7 @@ export function parseCannabisTxt(
           } else if (!EXTENSION_IDS.has(type)) {
             diag('note', 'unknown-extension-id', 0, `Unrecognized extension identifier "${type}".`);
           }
-          if (!ABSOLUTE_URL_RE.test(url)) {
+          if (!isAbsoluteUrl(url)) {
             diag('error', 'invalid-extension-url', 0, `Extension "${type}" URL is not absolute: "${url}".`);
           }
         }
@@ -367,8 +388,8 @@ export function conformance(result: ParseResult): ConformanceResult {
     diag('error', 'missing-field', 'A "last-updated" or "published" date is required.');
   }
   const canonical = result.metadata['canonical-url'];
-  if (typeof canonical === 'string' && !ABSOLUTE_URL_RE.test(canonical)) {
-    diag('error', 'invalid-url', '"canonical-url" must be an absolute URL.');
+  if (typeof canonical === 'string' && !isHttpUrl(canonical)) {
+    diag('error', 'invalid-url', '"canonical-url" must be an absolute http(s) URL.');
   }
   if (!('contact' in result.metadata)) {
     diag('warning', 'missing-contact', 'A "contact" field is recommended.');
@@ -439,6 +460,30 @@ export function conformance(result: ParseResult): ConformanceResult {
   }
   if (dependsOn && !/^cannabis\.txt\s+version\s+\d+\.\d+\.\d+/i.test(String(dependsOn))) {
     diag('error', 'invalid-depends-on', '"depends-on" must name cannabis.txt and a semantic version.');
+  }
+
+  // Level 3 also requires `extensions` entries to use recognized identifiers
+  // and absolute URLs on the publisher's domain (grammar.md section 9). The
+  // publisher's domain is the host of `canonical-url`.
+  let publisherHost: string | null = null;
+  try {
+    publisherHost = new URL(String(result.metadata['canonical-url'])).hostname.toLowerCase();
+  } catch {
+    publisherHost = null;
+  }
+  for (const ext of result.extensions) {
+    if (!EXTENSION_IDS.has(ext.type)) {
+      diag('error', 'unrecognized-extension', `Extension identifier "${ext.type}" is not recognized (Level 3).`);
+    }
+    let extHost: string | null = null;
+    if (isHttpUrl(ext.url)) {
+      extHost = new URL(ext.url).hostname.toLowerCase();
+    } else {
+      diag('error', 'invalid-extension-url', `Extension "${ext.type}" URL must be an absolute http(s) URL: "${ext.url}".`);
+    }
+    if (extHost && publisherHost && extHost !== publisherHost && !extHost.endsWith(`.${publisherHost}`)) {
+      diag('error', 'extension-domain', `Extension "${ext.type}" URL must resolve on the publisher's domain (${publisherHost}): "${ext.url}".`);
+    }
   }
   if (diagnostics.some((d) => d.level === 'error')) {
     return { level: 2, diagnostics };

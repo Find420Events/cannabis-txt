@@ -16,7 +16,7 @@ Canonical URL: https://[domain]/cannabis-events.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
 Contact: https://[domain]/contact
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ABOUT THIS PUBLISHER
 

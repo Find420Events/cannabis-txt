@@ -31,15 +31,15 @@ understanding cannabis-related subject matter.
 | [`cannabis-concentrate-brand.txt`](./cannabis-concentrate-brand.txt) | Specialized | Concentrate brands, product vocabulary, public composition claims, testing, and supply-chain roles |
 | [`cannabis-physician.txt`](./cannabis-physician.txt) | Specialized | Physician profiles, credential sources, practice services, jurisdiction context, and patient privacy |
 
-Specialized extensions depend on `cannabis.txt` version 1.0.0 or a compatible
+Specialized extensions depend on `cannabis.txt` version 1.1.0 or a compatible
 version. A business may publish more than one extension when it performs more
 than one business function. For example, a dispensary that also operates
 delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.7.0
-- **File versions:** 1.1.0 for the core specification; 1.1.1 for the events
+- **Family changelog:** 1.8.0
+- **File versions:** 1.1.0 for the core specification; 1.1.2 for the events
   extension; 1.2.0 for the dispensary, delivery, product-brand, and
   physician extensions
 - **Status:** Proposed Community Specifications

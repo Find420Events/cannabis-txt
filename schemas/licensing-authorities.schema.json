@@ -1,0 +1,31 @@
+{
+  "$id": "https://find420.events/schemas/licensing-authorities.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cannabis.txt Licensing Authorities Registry",
+  "description": "Validates a licensing-authorities registry: a list of official regulatory bodies that issue or administer cannabis licenses. Licensing records link to an entry via their `authority-id` field.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "jurisdiction"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Stable identifier referenced by a license record's `authority-id`."
+      },
+      "name": {
+        "type": "string",
+        "description": "Official name of the regulatory agency or body."
+      },
+      "jurisdiction": {
+        "type": "string",
+        "description": "Jurisdiction the authority administers."
+      },
+      "url": {
+        "type": "string",
+        "pattern": "^https?://",
+        "description": "Official website or license lookup page."
+      }
+    }
+  }
+}

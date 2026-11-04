@@ -7,7 +7,7 @@ Status: Example template - replace placeholders before publishing
 Publisher: [Organization name]
 Canonical URL: https://your-domain.example/cannabis-events.txt
 Specification: https://find420.events/specs/cannabis-events.txt
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Last-Updated: [YYYY-MM-DD]
 Language: en
 Website: https://your-domain.example/
