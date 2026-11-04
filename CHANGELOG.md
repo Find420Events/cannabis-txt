@@ -7,6 +7,16 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.5.0] - 2026-11-04
+
+`cannabis-events.txt` 1.0.0 → 1.1.0: backward-compatible addition.
+
+- Added an explicit Schema.org crosswalk in section 15: field mapping for
+  the event data model, a status mapping onto `EventStatusType`
+  (including `SoldOut` via `Offer.availability`), and an attendance-mode
+  mapping onto `eventAttendanceMode`.
+- No existing definitions or required fields changed.
+
 ## [1.4.0] - 2026-11-04
 
 Added a formal machine-readable grammar for the specification family; no

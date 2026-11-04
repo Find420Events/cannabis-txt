@@ -2,7 +2,7 @@ CANNABIS-EVENTS.TXT
 
 Open Cannabis Events Knowledge Specification
 
-Version: 1.0.0
+Version: 1.1.0
 Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
@@ -333,6 +333,55 @@ Use accurate values for:
 - performer
 - image
 - offers, when applicable
+
+15.1 Field mapping
+
+Recommended correspondences between the event data model (section 11)
+and Schema.org Event properties:
+
+- Event Name -> name
+- Event URL -> url
+- Description -> description
+- Organizer -> organizer (Organization or Person)
+- Start Date and Time -> startDate (ISO 8601 with timezone offset)
+- End Date and Time -> endDate
+- Venue and address -> location (Place with PostalAddress)
+- Online location -> location (VirtualLocation with url)
+- Event Status -> eventStatus (see 15.2)
+- Event Format -> eventAttendanceMode (see 15.3)
+- Registration URL -> offers.url, or url when no offer applies
+- Admission Information -> offers (Offer with price, priceCurrency,
+  and availability)
+- Event Image -> image
+- Sponsors -> sponsor
+- Speakers and performers -> performer
+- Exhibitors and vendors -> sponsor, or descriptive text; Schema.org
+  defines no dedicated exhibitor property
+
+15.2 Status mapping
+
+Schema.org EventStatusType currently defines EventScheduled,
+EventCancelled, EventPostponed, EventRescheduled, and EventMovedOnline.
+Map the public status vocabulary from section 6 as follows:
+
+- Scheduled -> EventScheduled
+- Cancelled -> EventCancelled
+- Postponed -> EventPostponed
+- Rescheduled -> EventRescheduled
+- Sold Out -> keep EventScheduled; express through an Offer whose
+  availability is SoldOut (ItemAvailability, not EventStatusType)
+- Registration Open -> EventScheduled with an active Offer
+- Draft, Announced, Live, Completed, Unknown -> no direct
+  EventStatusType equivalent; omit eventStatus rather than approximate
+
+15.3 Attendance mode mapping
+
+- In Person -> OfflineEventAttendanceMode
+- Online -> OnlineEventAttendanceMode
+- Hybrid -> MixedEventAttendanceMode
+- Multiple Locations -> OfflineEventAttendanceMode with multiple
+  location entries, or one event record per location
+- Location To Be Announced -> omit eventAttendanceMode until known
 
 Structured data must match visible page content. This specification does
 not replace search-engine documentation or eligibility rules.
