@@ -181,6 +181,10 @@ Recognized identifiers are `events`, `dispensary`, `delivery`, `flower-brand`,
 that the publisher actually maintains; omit the block when none are published.
 List publisher files here, not links to the normative specification documents.
 
+For machine-readability rules — field syntax, lists and records, value
+normalization, duplicate handling, and the canonical JSON output model — see
+[`specification/grammar.md`](./grammar.md).
+
 ## Data freshness and privacy
 
 Treat menus, inventory, product formulations, label values, test records,

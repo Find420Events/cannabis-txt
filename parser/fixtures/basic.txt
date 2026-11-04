@@ -1,0 +1,34 @@
+CANNABIS.TXT
+
+Example Publisher Profile
+
+Version: 1.0.0
+Status: Published
+Publisher: Example Publisher
+Canonical URL: https://example.com/cannabis.txt
+Last-Updated: 2026-11-04
+Language: en
+Contact: https://example.com/contact
+Extensions:
+- events: https://example.com/cannabis-events.txt
+
+======================================================================
+1. ABOUT
+======================================================================
+
+An example publisher profile for the parser test fixture.
+
+======================================================================
+2. LOCATIONS
+======================================================================
+
+Event detail URL pattern:
+  https://example.com/events/{event-slug}
+
+Locations:
+- Location ID: store-001
+  Name: Flagship Store
+  Locality: Denver, Colorado
+- Location ID: store-002
+  Name: Second Store
+  Locality: Boulder, Colorado

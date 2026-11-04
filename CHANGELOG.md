@@ -7,6 +7,21 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.4.0] - 2026-11-04
+
+Added a formal machine-readable grammar for the specification family; no
+normative definitions or specification file versions changed.
+
+- Added `specification/grammar.md`: line classification, field syntax and
+  canonical keys, continuation lines, list and record structure, value
+  normalization (dates, URLs, unknown values), duplicate and unknown field
+  handling, the `Extensions` manifest block, three conformance levels, and a
+  canonical JSON output model.
+- Added `parser/`: a zero-dependency TypeScript reference implementation of
+  the grammar with a CLI validator (`node parser/cli.ts <path-or-url>`) and
+  public conformance fixtures (`parser/fixtures/`).
+- Linked the grammar from the README and implementation guidance.
+
 ## [1.3.2] - 2026-11-04
 
 Completed the hosted-specification path migration and clarified extension

@@ -1,0 +1,15 @@
+{
+  "name": "cannabis-txt",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Open, human-readable knowledge specifications for the cannabis industry, with a reference parser and conformance fixtures.",
+  "scripts": {
+    "test": "node parser/test.ts",
+    "validate": "node parser/cli.ts"
+  },
+  "engines": {
+    "node": ">=23"
+  },
+  "license": "CC0-1.0"
+}

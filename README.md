@@ -38,7 +38,7 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.3.2
+- **Family changelog:** 1.4.0
 - **File versions:** 1.0.0 for the core and events specifications; 1.1.0
   for the dispensary, delivery, product-brand, and physician extensions
 - **Status:** Proposed Community Specifications
@@ -114,6 +114,10 @@ root; keep them in sync when those profiles change.
   industry, participant, event, retail, product-brand, and physician vocabulary
 - [`specification/implementation.md`](./specification/implementation.md) — how
   to publish compatible files
+- [`specification/grammar.md`](./specification/grammar.md) — formal
+  machine-readable grammar for parsers and validators
+- [`parser/`](./parser/) — zero-dependency TypeScript reference parser, CLI
+  validator, and conformance fixtures (`npm test`)
 - [`specification/governance.md`](./specification/governance.md) — versioning
   and the change process
 

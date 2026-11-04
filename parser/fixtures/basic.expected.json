@@ -1,0 +1,53 @@
+{
+  "specification": "cannabis.txt",
+  "document": {
+    "title": "Example Publisher Profile",
+    "text": ""
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "status": "Published",
+    "publisher": "Example Publisher",
+    "canonical-url": "https://example.com/cannabis.txt",
+    "last-updated": "2026-11-04",
+    "language": "en",
+    "contact": "https://example.com/contact"
+  },
+  "lists": {},
+  "extensions": [
+    {
+      "type": "events",
+      "url": "https://example.com/cannabis-events.txt"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "1. ABOUT",
+      "fields": {},
+      "lists": {},
+      "text": "An example publisher profile for the parser test fixture."
+    },
+    {
+      "heading": "2. LOCATIONS",
+      "fields": {
+        "event-detail-url-pattern": "https://example.com/events/{event-slug}"
+      },
+      "lists": {
+        "locations": [
+          {
+            "location-id": "store-001",
+            "name": "Flagship Store",
+            "locality": "Denver, Colorado"
+          },
+          {
+            "location-id": "store-002",
+            "name": "Second Store",
+            "locality": "Boulder, Colorado"
+          }
+        ]
+      },
+      "text": ""
+    }
+  ],
+  "diagnostics": []
+}
