@@ -363,12 +363,12 @@ Website: https://find420.events/
 Repository: https://github.com/Find420Events/cannabis-txt
 Related specifications:
 - cannabis-events.txt: https://find420.events/specs/cannabis-events.txt
-- cannabis-dispensary.txt: https://find420.events/cannabis-dispensary.txt
-- cannabis-delivery.txt: https://find420.events/cannabis-delivery.txt
-- cannabis-flower-brand.txt: https://find420.events/cannabis-flower-brand.txt
-- cannabis-edible-brand.txt: https://find420.events/cannabis-edible-brand.txt
-- cannabis-concentrate-brand.txt: https://find420.events/cannabis-concentrate-brand.txt
-- cannabis-physician.txt: https://find420.events/cannabis-physician.txt
+- cannabis-dispensary.txt: https://find420.events/specs/cannabis-dispensary.txt
+- cannabis-delivery.txt: https://find420.events/specs/cannabis-delivery.txt
+- cannabis-flower-brand.txt: https://find420.events/specs/cannabis-flower-brand.txt
+- cannabis-edible-brand.txt: https://find420.events/specs/cannabis-edible-brand.txt
+- cannabis-concentrate-brand.txt: https://find420.events/specs/cannabis-concentrate-brand.txt
+- cannabis-physician.txt: https://find420.events/specs/cannabis-physician.txt
 
 The objective is a common, transparent vocabulary for describing the
 cannabis industry across the open internet.

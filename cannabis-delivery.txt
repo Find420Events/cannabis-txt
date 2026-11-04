@@ -7,7 +7,7 @@ Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
 Canonical project: https://github.com/Find420Events/cannabis-txt
-Canonical URL: https://find420.events/cannabis-delivery.txt
+Canonical URL: https://find420.events/specs/cannabis-delivery.txt
 Suggested location: https://example.com/cannabis-delivery.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8

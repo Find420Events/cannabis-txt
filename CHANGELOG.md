@@ -7,6 +7,15 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.3.2] - 2026-11-04
+
+Completed the hosted-specification path migration and clarified extension
+discovery for publisher files.
+
+- Moved all six remaining hosted extension specification URLs under `/specs/`.
+- Added an `Extensions:` manifest to the Find420 first-party core profile.
+- Documented the optional extension-manifest format and updated examples.
+
 ## [1.3.1] - 2026-11-04
 
 Repository and hosted-reference updates; no normative definitions or

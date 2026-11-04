@@ -13,6 +13,8 @@ Publisher Type: Cannabis event discovery platform
 Website: https://find420.events/
 Instagram: https://www.instagram.com/find420.events/
 Contact: https://www.instagram.com/find420.events/
+Extensions:
+- events: https://find420.events/cannabis-events.txt
 
 ======================================================================
 1. ABOUT FIND420.EVENTS
@@ -116,6 +118,18 @@ Core specification:
   https://find420.events/specs/cannabis.txt
 Events specification:
   https://find420.events/specs/cannabis-events.txt
+Dispensary specification:
+  https://find420.events/specs/cannabis-dispensary.txt
+Delivery specification:
+  https://find420.events/specs/cannabis-delivery.txt
+Flower brand specification:
+  https://find420.events/specs/cannabis-flower-brand.txt
+Edible brand specification:
+  https://find420.events/specs/cannabis-edible-brand.txt
+Concentrate brand specification:
+  https://find420.events/specs/cannabis-concentrate-brand.txt
+Physician specification:
+  https://find420.events/specs/cannabis-physician.txt
 Core starter example:
   https://find420.events/examples/cannabis.txt
 Events starter example:

@@ -38,7 +38,7 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.3.1
+- **Family changelog:** 1.3.2
 - **File versions:** 1.0.0 for the core and events specifications; 1.1.0
   for the dispensary, delivery, product-brand, and physician extensions
 - **Status:** Proposed Community Specifications
@@ -49,14 +49,15 @@ delivery may publish both dispensary and delivery files.
 - **Find420 publisher profiles:** https://find420.events/cannabis.txt ·
   https://find420.events/cannabis-events.txt
 - **Hosted specifications:** https://find420.events/specs/cannabis.txt ·
-  https://find420.events/specs/cannabis-events.txt
+  https://find420.events/specs/cannabis-events.txt and the extension
+  specifications under `https://find420.events/specs/`
 - **Public validator:** https://find420.events/validator
-- **Extension specifications:** https://find420.events/cannabis-dispensary.txt,
-  https://find420.events/cannabis-delivery.txt,
-  https://find420.events/cannabis-flower-brand.txt,
-  https://find420.events/cannabis-edible-brand.txt,
-  https://find420.events/cannabis-concentrate-brand.txt, and
-  https://find420.events/cannabis-physician.txt
+- **Extension specifications:** https://find420.events/specs/cannabis-dispensary.txt,
+  https://find420.events/specs/cannabis-delivery.txt,
+  https://find420.events/specs/cannabis-flower-brand.txt,
+  https://find420.events/specs/cannabis-edible-brand.txt,
+  https://find420.events/specs/cannabis-concentrate-brand.txt, and
+  https://find420.events/specs/cannabis-physician.txt
 - **Canonical project:** https://github.com/Find420Events/cannabis-txt
 
 ## What this is — and is not

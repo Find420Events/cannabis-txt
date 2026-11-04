@@ -167,6 +167,20 @@ under an `Extensions` or `Related Specifications` section. This is a
 human-readable cross-reference, not an automated discovery guarantee. Do not
 list an extension unless it is actually published and maintained.
 
+For consistent parsing, use a top-level `Extensions:` block with one
+lowercase extension identifier and absolute publisher-file URL per line:
+
+```
+Extensions:
+- events: https://example.com/cannabis-events.txt
+- dispensary: https://example.com/cannabis-dispensary.txt
+```
+
+Recognized identifiers are `events`, `dispensary`, `delivery`, `flower-brand`,
+`edible-brand`, `concentrate-brand`, and `physician`. Include only extensions
+that the publisher actually maintains; omit the block when none are published.
+List publisher files here, not links to the normative specification documents.
+
 ## Data freshness and privacy
 
 Treat menus, inventory, product formulations, label values, test records,

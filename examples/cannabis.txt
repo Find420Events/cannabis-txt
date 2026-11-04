@@ -13,6 +13,10 @@ Publisher Type: [Organization, business, publisher, or platform]
 Website: https://your-domain.example/
 Contact: [Public contact URL]
 
+Remove this block if no extensions are published.
+Extensions:
+- events: https://your-domain.example/cannabis-events.txt
+
 Replace every bracketed value and example-domain URL with accurate
 public information for your organization. Do not publish unsupported
 legal, licensing, medical, safety, or verification claims.
