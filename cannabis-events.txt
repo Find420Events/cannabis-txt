@@ -2,7 +2,7 @@ CANNABIS-EVENTS.TXT
 
 Open Cannabis Events Knowledge Specification
 
-Version: 1.1.0
+Version: 1.1.1
 Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
@@ -402,6 +402,10 @@ at that event.
 Where relevant, identify the jurisdiction and link to official
 regulatory or venue information. Avoid unsupported claims such as "fully
 licensed," "legal everywhere," or "regulator approved."
+
+Events and venues may require jurisdiction-specific permits. A future
+permit record for events would reuse the Licensing record structure
+defined in cannabis.txt section 8.
 
 ======================================================================
 17. PRIVACY AND SAFETY

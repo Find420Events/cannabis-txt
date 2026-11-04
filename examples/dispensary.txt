@@ -7,7 +7,7 @@ Publisher: [Dispensary or operator name]
 Canonical URL: https://example.com/cannabis-dispensary.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Contact: [Public contact URL]
 
 Business Name: [Public business name]
@@ -43,9 +43,14 @@ Retail Services:
 
 Licensing:
 - Jurisdiction: [Jurisdiction]
-- License Type: [Publicly stated type]
-- Issuing Authority: [Regulator]
-- Public Verification URL: [Official lookup URL]
-- Date Checked: [YYYY-MM-DD]
+  License Holder: [Legal entity named on the license]
+  License Type: [Publicly stated type]
+  License Number: [Public license number, if published]
+  Issuing Authority: [Regulator]
+  License Status: [active / expired / suspended / revoked / pending / unknown]
+  Verification Status: [publisher-reported / source-matched / independently-verified / unknown]
+  Source URL: [Official lookup URL]
+  Last Verified: [YYYY-MM-DD]
+  Location ID: [Location ID from the Locations block, if the license is site-specific]
 
 Information Source: [Operator / official source / third party]

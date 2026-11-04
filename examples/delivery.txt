@@ -7,7 +7,7 @@ Publisher: [Delivery operator or retailer name]
 Canonical URL: https://example.com/cannabis-delivery.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Contact: [Public contact URL]
 
 Business Name: [Public business name]
@@ -43,9 +43,13 @@ Delivery Information:
 
 Licensing:
 - Jurisdiction: [Jurisdiction]
-- Authorized Activity: [Publicly stated activity]
-- Issuing Authority: [Regulator]
-- Public Verification URL: [Official lookup URL]
-- Date Checked: [YYYY-MM-DD]
+  License Holder: [Legal entity named on the license]
+  License Type: [Delivery, transport, or other authorized activity]
+  License Number: [Public license number, if published]
+  Issuing Authority: [Regulator]
+  License Status: [active / expired / suspended / revoked / pending / unknown]
+  Verification Status: [publisher-reported / source-matched / independently-verified / unknown]
+  Source URL: [Official lookup URL]
+  Last Verified: [YYYY-MM-DD]
 
 Information Source: [Operator / official source / third party]

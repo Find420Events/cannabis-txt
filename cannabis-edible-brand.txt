@@ -2,7 +2,7 @@ CANNABIS-EDIBLE-BRAND.TXT
 
 Open Cannabis Edible Brand Knowledge Extension
 
-Version: 1.1.0
+Version: 1.2.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -11,7 +11,7 @@ Canonical URL: https://find420.events/specs/cannabis-edible-brand.txt
 Suggested location: https://example.com/cannabis-edible-brand.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ======================================================================
 1. PURPOSE
@@ -220,6 +220,15 @@ For a public licensing or authorization statement, provide where known:
 A product listing, brand website, or retailer menu does not prove that a
 brand or supply-chain participant is authorized.
 
+Publishers SHOULD express licensing claims using the standardized
+Licensing record structure and the License Status and Verification
+Status vocabularies defined in cannabis.txt section 8. Identify the
+correct License Holder: a brand, licensee, processor, or manufacturer
+may hold separate authorizations, and a brand relying on a contract
+manufacturer's license should name the manufacturer as the holder.
+Public Verification URL and Date Checked are legacy names for Source
+URL and Last Verified.
+
 ======================================================================
 12. DATA QUALITY AND FRESHNESS
 ======================================================================
@@ -258,13 +267,13 @@ cannabis-delivery.txt.
 ======================================================================
 
 Title: [Cannabis Edible Brand Knowledge File]
-Version: 1.1.0
+Version: 1.2.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Information Role: [Brand owner / representative / retailer / third party]
 Brand Name: [Name]
 Brand Owner: [Organization or unknown]

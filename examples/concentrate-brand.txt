@@ -8,7 +8,7 @@ Publisher: [Brand owner or authorized representative]
 Canonical URL: https://[brand-domain]/cannabis-concentrate-brand.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Information Role: [Brand owner / representative / retailer / third party]
 Contact: https://[brand-domain]/contact
 
@@ -56,10 +56,16 @@ PRODUCT EXAMPLE
 
 JURISDICTION AND AUTHORIZATION
 
+Licensing:
 - Jurisdiction: [Jurisdiction]
-- Responsible Organization: [Organization]
-- Public Regulator Source: [Official URL]
-- Date Checked: [YYYY-MM-DD]
+  License Holder: [Legal entity named on the license]
+  License Type: [License category as named by the issuing authority]
+  Issuing Authority: [Regulator]
+  License Status: [active / expired / suspended / revoked / pending / unknown]
+  Verification Status: [publisher-reported / source-matched / independently-verified / unknown]
+  Source URL: [Official regulator URL]
+  Last Verified: [YYYY-MM-DD]
+  Responsible Organization: [Organization]
 
 RELATED FILES
 

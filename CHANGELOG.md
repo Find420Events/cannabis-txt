@@ -7,6 +7,43 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.6.0] - 2026-11-04
+
+Standardized licensing records and provenance vocabularies; all changes
+are backward-compatible additions.
+
+- `cannabis.txt` 1.0.0 → 1.1.0 — section 8 now defines the shared
+  `Licensing:` record block (jurisdiction, license holder, type, number,
+  issuing authority, status, verification, source, dates, and `Location ID`
+  linkage), a License Status vocabulary describing what the regulatory
+  source reports, and a Verification Status vocabulary describing how the
+  claim was checked (`publisher-reported`, `source-matched`,
+  `independently-verified`, `unknown`).
+- Dispensary, delivery, flower-brand, edible-brand, concentrate-brand, and
+  physician extensions 1.1.0 → 1.2.0 — licensing sections now reference the
+  shared core structure, and `Depends on` declarations require cannabis.txt
+  1.1.0 or compatible.
+- `cannabis-events.txt` 1.1.0 → 1.1.1 — clarified that event and venue
+  permits are jurisdiction-specific and would reuse the core structure.
+- `specification/grammar.md` — added licensing keys to the defined-keys
+  list and documented the `source-matched`/`independently-verified`
+  semantics, status vocabularies, and legacy aliases
+  (`Public Verification URL` → `Source URL`, `Date Checked` →
+  `Last Verified`).
+- `specification/taxonomy.md` — documented the licensing record fields and
+  both status vocabularies.
+- `specification/implementation.md` — added licensing-record guidance and
+  verification expectations.
+- `parser/` — added semantic validation for licensing records: enum
+  warnings for `license-status`/`verification-status`, conditional checks
+  (`source-matched`/`independently-verified` need `Source URL`,
+  `independently-verified` needs `Verified By`, regulator status claims
+  need a source), and deprecation warnings for legacy field names. New
+  fixtures cover multi-license, multi-jurisdiction, location-linked,
+  unknown, expired, and third-party verification cases.
+- `examples/` — converted dispensary, delivery, physician, and product
+  brand examples to the standardized `Licensing:` record block.
+
 ## [1.5.0] - 2026-11-04
 
 `cannabis-events.txt` 1.0.0 → 1.1.0: backward-compatible addition.

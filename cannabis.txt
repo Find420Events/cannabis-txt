@@ -2,7 +2,7 @@ CANNABIS.TXT
 
 Open Cannabis Industry Knowledge Specification
 
-Version: 1.0.0
+Version: 1.1.0
 Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
@@ -229,6 +229,92 @@ When making a legal or licensing statement, publishers SHOULD provide:
 Do not use labels such as "licensed" or "legal" as unqualified marketing
 claims. A directory listing or user-submitted profile is not proof of
 authorization.
+
+8.1 Standardized licensing records
+
+Publishers describing licenses, permits, or regulatory authorizations
+SHOULD use a Licensing block: a list of records, one per license or
+authorization. Recommended record fields:
+
+- Jurisdiction: the jurisdiction that issued or administers the license
+- License Holder: the legal entity or individual named on the license
+- License Type: the license category as named by the issuing authority
+- License Number: the public license or file number, when published
+- Issuing Authority: the regulatory agency or body
+- License Status: the status reported by the regulatory source (8.2)
+- License Status Detail: the regulator's exact wording when it does not
+  map cleanly to the shared vocabulary
+- Verification Status: how the claim was checked (8.3)
+- Source URL: the official regulatory record or lookup page
+- Verified By: the third party that performed verification; expected
+  when Verification Status is independently-verified
+- Verification URL: public evidence or verification report, when
+  available
+- Last Verified: the date the information was last checked (YYYY-MM-DD)
+- Expiration Date: the expiration reported by the source (YYYY-MM-DD)
+- Location ID: links the license to a Locations record when the license
+  applies to a specific site
+
+Example:
+
+Licensing:
+- Jurisdiction: Colorado
+  License Holder: Example Cannabis Retail LLC
+  License Type: Retail marijuana store
+  License Number: 402R-00001
+  Issuing Authority: Colorado Marijuana Enforcement Division
+  License Status: active
+  Verification Status: source-matched
+  Source URL: https://official-lookup.example.gov/402R-00001
+  Last Verified: 2026-10-15
+  Expiration Date: 2027-03-31
+  Location ID: store-001
+
+A business may hold several licenses; publish one record each. Identify
+the license holder accurately — a brand may rely on a contract
+manufacturer's license, and a multi-location operator may hold separate
+licenses issued to individual entities or sites.
+
+8.2 License status vocabulary
+
+License Status describes what the regulatory source reports:
+
+- active: the source identifies the license as active
+- expired: the source identifies the license as expired
+- suspended: the source identifies the license as suspended
+- revoked: the source identifies the license as revoked
+- pending: the source identifies an application or authorization as
+  pending
+- unknown: status cannot be established from the available information
+
+License Status asserts what a regulator reports. A publisher MUST NOT
+present an unverified claim of active status as regulator-confirmed.
+When no authoritative status is available, omit the field or use
+unknown.
+
+8.3 Verification status vocabulary
+
+Verification Status describes how the claim was checked:
+
+- publisher-reported: asserted by the publisher without independent
+  checking
+- source-matched: compared against the identified official regulatory
+  record cited in Source URL
+- independently-verified: checked by an identifiable third party
+  independent of the publisher and license holder; identify it with
+  Verified By and, where available, Verification URL
+- unknown: verification cannot be established
+
+A link to a regulatory database is evidence, not verification. This
+specification standardizes how claims and evidence are stated; it does
+not authenticate them.
+
+8.4 Earlier licensing field names
+
+Earlier revision examples used Public Verification URL and Date Checked
+in licensing information. These are legacy names for Source URL and
+Last Verified. Publishers SHOULD use the standardized names; tools
+SHOULD recognize both during the 1.x transition.
 
 ======================================================================
 9. ENTITY AND RELATIONSHIP MODEL

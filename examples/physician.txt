@@ -8,7 +8,7 @@ Publisher: [Physician / practice / directory]
 Canonical URL: https://[practice-domain]/cannabis-physician.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Information Role: [Physician / practice / third party]
 Contact: https://[practice-domain]/contact
 
@@ -22,13 +22,17 @@ Professional Website: https://[practice-domain]/
 
 LICENSE AND AUTHORIZATION
 
+Licensing:
 - Jurisdiction: [Jurisdiction]
-- License Type: [As displayed by official source]
-- License Status: [As displayed by official source]
-- Issuing Authority: [Professional board or regulator]
-- Official Verification URL: [Public source URL]
-- Date Checked: [YYYY-MM-DD]
-- Separate Service Authorization: [Public source or unknown]
+  License Holder: [Physician or practice entity named on the license]
+  License Type: [As displayed by official source]
+  License Number: [Public license number, if published]
+  Issuing Authority: [Professional board or regulator]
+  License Status: [As displayed by official source / active / pending / unknown]
+  Verification Status: [publisher-reported / source-matched / independently-verified / unknown]
+  Source URL: [Official verification source URL]
+  Last Verified: [YYYY-MM-DD]
+  Separate Service Authorization: [Public source or unknown]
 
 PRACTICE
 

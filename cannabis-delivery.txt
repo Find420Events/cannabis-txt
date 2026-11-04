@@ -2,7 +2,7 @@ CANNABIS-DELIVERY.TXT
 
 Open Cannabis Delivery Knowledge Extension
 
-Version: 1.1.0
+Version: 1.2.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -11,7 +11,7 @@ Canonical URL: https://find420.events/specs/cannabis-delivery.txt
 Suggested location: https://example.com/cannabis-delivery.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ======================================================================
 1. PURPOSE
@@ -304,6 +304,14 @@ third-party-reported, expired, suspended, pending, or unknown only when
 the cited source supports the description. Never infer authorization from
 an app listing, website, menu, vehicle, or directory entry.
 
+Publishers SHOULD express licensing claims using the standardized
+Licensing record structure and the License Status and Verification
+Status vocabularies defined in cannabis.txt section 8. Identify the
+correct License Holder for each record: the retailer, seller, delivery
+operator, and contracted logistics provider may hold separate
+authorizations. Public Verification URL and Date Checked are legacy
+names for Source URL and Last Verified.
+
 ======================================================================
 13. DATA QUALITY, FRESHNESS, AND STATUS
 ======================================================================
@@ -368,13 +376,13 @@ The following is a recommended plain-text structure, not a mandatory
 machine-readable schema:
 
 Title: [Cannabis Delivery Knowledge File]
-Version: 1.1.0
+Version: 1.2.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Contact: [Public contact URL]
 Business Name: [Name]
 Business Type: [Type]

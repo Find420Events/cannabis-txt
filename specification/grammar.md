@@ -297,7 +297,17 @@ Parsers recognize these canonical keys without requiring them:
 `specification`, `last-updated`, `published`, `language`, `encoding`,
 `media-type`, `contact`, `website`, `depends-on`, `extensions`,
 `information-source`, `jurisdiction`, `effective-date`, `last-verified`,
-`date-checked`, `source-url`, `public-verification-url`.
+`date-checked`, `source-url`, `public-verification-url`, `license-holder`,
+`license-type`, `license-number`, `issuing-authority`, `license-status`,
+`license-status-detail`, `verification-status`, `verified-by`,
+`verification-url`, `expiration-date`, `location-id`, `license-reference`,
+`licensing`.
+
+`license-status` and `verification-status` use the lowercase vocabularies
+defined in cannabis.txt section 8; validators MAY warn on unrecognized
+values while parsers preserve them verbatim. `public-verification-url` and
+`date-checked` are legacy aliases for `source-url` and `last-verified`;
+parsers preserve them as written and validators SHOULD note the deprecation.
 
 Extensions define additional keys in their own documents. Keys not listed
 anywhere are unknown fields (section 7): preserved, never errors.

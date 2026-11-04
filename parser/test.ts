@@ -140,4 +140,69 @@ check('missing required metadata caps conformance below level 2', () => {
   assert.ok(conformance(r).level <= 1);
 });
 
+// --- Licensing records (cannabis.txt §8) -----------------------------------
+
+const licensingDoc = (block: string) =>
+  `Version: 1.0.0\nStatus: Published\nPublisher: Example\nCanonical URL: https://example.com/cannabis.txt\nLast-Updated: 2026-11-04\nContact: https://example.com/c\n\n1. LICENSES\n\n${block}`;
+
+check('licensing block parses multiple records across jurisdictions', () => {
+  const r = parseCannabisTxt(
+    licensingDoc(
+      'Licensing:\n' +
+        '- Jurisdiction: Colorado\n  License Holder: Retail LLC\n  License Type: Retail store\n  License Status: active\n  Verification Status: source-matched\n  Source URL: https://gov.example/co/1\n  Last Verified: 2026-10-15\n  Location ID: store-001\n\n' +
+        '- Jurisdiction: Oregon\n  License Holder: Retail OR LLC\n  License Type: Retail store\n  License Status: expired\n  Verification Status: source-matched\n  Source URL: https://gov.example/or/2\n',
+    ),
+  );
+  const recs = r.sections[0]?.lists['licensing'] as Record<string, unknown>[];
+  assert.equal(recs.length, 2);
+  assert.equal(recs[0]['license-holder'], 'Retail LLC');
+  assert.equal(recs[0]['location-id'], 'store-001');
+  assert.equal(recs[1]['license-status'], 'expired');
+  assert.equal(conformance(r).level, 3);
+});
+
+check('unknown license values normalize to null', () => {
+  const r = parseCannabisTxt(
+    licensingDoc('Licensing:\n- Jurisdiction: Colorado\n  License Status: unknown\n  License Number: unknown\n'),
+  );
+  const rec = (r.sections[0]?.lists['licensing'] as Record<string, unknown>[])[0];
+  assert.equal(rec['license-status'], null);
+  assert.equal(rec['license-number'], null);
+});
+
+check('independently-verified without verified-by warns', () => {
+  const r = parseCannabisTxt(
+    licensingDoc(
+      'Licensing:\n- Jurisdiction: Colorado\n  Verification Status: independently-verified\n  Source URL: https://gov.example/1\n  Verification URL: https://v.example/r/1\n',
+    ),
+  );
+  assert.ok(conformance(r).diagnostics.some((d) => d.code === 'missing-verified-by'));
+});
+
+check('source-matched without source-url warns', () => {
+  const r = parseCannabisTxt(
+    licensingDoc('Licensing:\n- Jurisdiction: Colorado\n  Verification Status: source-matched\n'),
+  );
+  assert.ok(conformance(r).diagnostics.some((d) => d.code === 'missing-source-url'));
+});
+
+check('regulator status claim without a source warns', () => {
+  const r = parseCannabisTxt(
+    licensingDoc(
+      'Licensing:\n- Jurisdiction: Colorado\n  License Status: active\n  Verification Status: publisher-reported\n',
+    ),
+  );
+  assert.ok(conformance(r).diagnostics.some((d) => d.code === 'unverified-status-claim'));
+});
+
+check('legacy licensing field names warn as deprecated', () => {
+  const r = parseCannabisTxt(
+    licensingDoc(
+      'Licensing:\n- Jurisdiction: Colorado\n  Public Verification URL: https://gov.example/1\n  Date Checked: 2026-10-01\n',
+    ),
+  );
+  const codes = conformance(r).diagnostics.map((d) => d.code);
+  assert.ok(codes.filter((c) => c === 'deprecated-field').length === 2);
+});
+
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures above)' : ''}.`);

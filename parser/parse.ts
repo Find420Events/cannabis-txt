@@ -386,6 +386,52 @@ export function conformance(result: ParseResult): ConformanceResult {
     return { level: 1, diagnostics };
   }
 
+  // Licensing record semantics (cannabis.txt §8). Warnings preserve the
+  // published values; they flag consistency and provenance issues.
+  const LICENSE_STATUS = new Set(['active', 'expired', 'suspended', 'revoked', 'pending', 'unknown']);
+  const VERIFICATION_STATUS = new Set([
+    'publisher-reported',
+    'source-matched',
+    'independently-verified',
+    'unknown',
+  ]);
+  const licensingRecords = [
+    ...(result.lists['licensing'] ?? []),
+    ...result.sections.flatMap((s) => s.lists['licensing'] ?? []),
+  ];
+  licensingRecords.forEach((item, idx) => {
+    if (!item || typeof item !== 'object' || Array.isArray(item)) return;
+    const rec = item as RecordObject;
+    const label = `licensing record ${idx + 1}`;
+    const licenseStatus = rec['license-status'];
+    const verificationStatus = rec['verification-status'];
+    const sourceUrl = rec['source-url'];
+    if (typeof licenseStatus === 'string' && !LICENSE_STATUS.has(licenseStatus.toLowerCase())) {
+      diag('warning', 'invalid-enum', `${label}: unrecognized license-status "${licenseStatus}".`);
+    }
+    if (
+      typeof verificationStatus === 'string' &&
+      !VERIFICATION_STATUS.has(verificationStatus.toLowerCase())
+    ) {
+      diag('warning', 'invalid-enum', `${label}: unrecognized verification-status "${verificationStatus}".`);
+    }
+    const vs = typeof verificationStatus === 'string' ? verificationStatus.toLowerCase() : null;
+    if ((vs === 'source-matched' || vs === 'independently-verified') && !sourceUrl) {
+      diag('warning', 'missing-source-url', `${label}: verification-status "${vs}" needs a source-url.`);
+    }
+    if (vs === 'independently-verified' && !rec['verified-by']) {
+      diag('warning', 'missing-verified-by', `${label}: independently-verified needs verified-by.`);
+    }
+    if (typeof licenseStatus === 'string' && licenseStatus.toLowerCase() !== 'unknown' && !sourceUrl && vs !== 'source-matched' && vs !== 'independently-verified') {
+      diag('warning', 'unverified-status-claim', `${label}: license-status reports a regulator status without a source-url.`);
+    }
+    for (const legacy of ['public-verification-url', 'date-checked']) {
+      if (legacy in rec) {
+        diag('warning', 'deprecated-field', `${label}: "${legacy}" is deprecated; use ${legacy === 'public-verification-url' ? 'source-url' : 'last-verified'}.`);
+      }
+    }
+  });
+
   // Level 3 — extension conformance.
   const dependsOn = result.metadata['depends-on'];
   if (result.specification && result.specification !== 'cannabis.txt' && !dependsOn) {

@@ -2,7 +2,7 @@ CANNABIS-PHYSICIAN.TXT
 
 Open Cannabis Physician Knowledge Extension
 
-Version: 1.1.0
+Version: 1.2.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -11,7 +11,7 @@ Canonical URL: https://find420.events/specs/cannabis-physician.txt
 Suggested location: https://example.com/cannabis-physician.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ======================================================================
 1. PURPOSE
@@ -160,6 +160,13 @@ authorization required to provide a cannabis-related service. Do not infer
 one authorization from another. A directory listing, self-description, or
 practice website is not independent verification.
 
+Publishers SHOULD express professional licenses and authorizations using
+the standardized Licensing record structure and the License Status and
+Verification Status vocabularies defined in cannabis.txt section 8. The
+License Holder is the physician or practice entity named on the
+credential. Public Verification URL and Date Checked are legacy names
+for Source URL and Last Verified.
+
 ======================================================================
 8. MEDICAL CLAIMS AND EDUCATIONAL CONTENT
 ======================================================================
@@ -247,13 +254,13 @@ education activity, see cannabis-events.txt where applicable.
 ======================================================================
 
 Title: [Cannabis Physician Knowledge File]
-Version: 1.1.0
+Version: 1.2.0
 Status: [Proposed / Published]
 Publisher: [Physician / practice / directory]
 Canonical URL: [URL]
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Information Role: [Physician / practice / third party]
 Professional Name: [Public name]
 Professional Title: [Verified title]

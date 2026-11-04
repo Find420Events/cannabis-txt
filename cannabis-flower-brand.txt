@@ -2,7 +2,7 @@ CANNABIS-FLOWER-BRAND.TXT
 
 Open Cannabis Flower Brand Knowledge Extension
 
-Version: 1.1.0
+Version: 1.2.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -11,7 +11,7 @@ Canonical URL: https://find420.events/specs/cannabis-flower-brand.txt
 Suggested location: https://example.com/cannabis-flower-brand.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ======================================================================
 1. PURPOSE
@@ -216,6 +216,15 @@ For a public licensing or authorization statement, provide where known:
 A brand's presence in a catalog, retailer menu, or directory does not
 prove that the brand or any supply-chain participant is authorized.
 
+Publishers SHOULD express licensing claims using the standardized
+Licensing record structure and the License Status and Verification
+Status vocabularies defined in cannabis.txt section 8. Identify the
+correct License Holder: a brand, licensee, cultivator, processor,
+manufacturer, or distributor may each hold separate authorizations, and
+a brand relying on a contract manufacturer's license should name the
+manufacturer as the holder. Public Verification URL and Date Checked
+are legacy names for Source URL and Last Verified.
+
 ======================================================================
 11. DATA QUALITY AND FRESHNESS
 ======================================================================
@@ -254,13 +263,13 @@ cannabis-delivery.txt.
 ======================================================================
 
 Title: [Cannabis Flower Brand Knowledge File]
-Version: 1.1.0
+Version: 1.2.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Information Role: [Brand owner / representative / retailer / third party]
 Brand Name: [Name]
 Brand Owner: [Organization or unknown]

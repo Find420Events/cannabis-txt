@@ -200,3 +200,42 @@ A taxonomy label is not evidence of authorization. Identify the responsible
 legal entity, activity, jurisdiction, issuing authority, status source, and
 date checked where available. Do not attribute one entity's license to another
 entity or present a publisher statement as regulator verification.
+
+## Licensing records
+
+Express licenses, permits, and regulatory authorizations as a `Licensing:`
+block — one record per license (see `cannabis.txt` §8 for the full
+definition):
+
+```
+Licensing:
+- Jurisdiction: Colorado
+  License Holder: Example Cannabis Retail LLC
+  License Type: Retail marijuana store
+  License Number: 402R-00001
+  Issuing Authority: Colorado Marijuana Enforcement Division
+  License Status: active
+  Verification Status: source-matched
+  Source URL: https://official-lookup.example.gov/402R-00001
+  Last Verified: 2026-10-15
+  Expiration Date: 2027-03-31
+  Location ID: store-001
+```
+
+Rules of thumb:
+
+- Identify the **license holder** accurately. A brand relying on a contract
+  manufacturer's license names the manufacturer; a multi-location operator
+  may hold separate licenses per entity or site (use `Location ID`).
+- `License Status` reports what the regulator's record says — never present
+  an unverified claim as regulator-confirmed. Omit it or use `unknown` when
+  no authoritative status is available.
+- `Verification Status` describes how the claim was checked:
+  `publisher-reported`, `source-matched`, `independently-verified`, or
+  `unknown`. For `independently-verified`, identify the verifier with
+  `Verified By` and link evidence with `Verification URL` where available.
+- `Source URL` should be the official regulatory record or lookup page — a
+  link to a regulator's site is evidence, not verification.
+- Legacy names `Public Verification URL` and `Date Checked` remain
+  recognized during the 1.x transition; prefer `Source URL` and
+  `Last Verified`.

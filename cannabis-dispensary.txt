@@ -2,7 +2,7 @@ CANNABIS-DISPENSARY.TXT
 
 Open Cannabis Dispensary Knowledge Extension
 
-Version: 1.1.0
+Version: 1.2.0
 Status: Proposed Community Specification
 Published: 2026-11-01
 Founding publisher: Find420.Events
@@ -11,7 +11,7 @@ Canonical URL: https://find420.events/specs/cannabis-dispensary.txt
 Suggested location: https://example.com/cannabis-dispensary.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 
 ======================================================================
 1. PURPOSE
@@ -267,6 +267,13 @@ verification.
 Never infer that a business is licensed from its name, address, menu, or
 presence in a directory.
 
+Publishers SHOULD express licensing claims using the standardized
+Licensing record structure and the License Status and Verification
+Status vocabularies defined in cannabis.txt section 8. Public
+Verification URL and Date Checked are legacy names for Source URL and
+Last Verified. Use Location ID to associate a license with a specific
+storefront when locations are described separately.
+
 ======================================================================
 11. DATA QUALITY AND FRESHNESS
 ======================================================================
@@ -326,13 +333,13 @@ The following is a recommended plain-text structure, not a mandatory
 machine-readable schema:
 
 Title: [Cannabis Dispensary Knowledge File]
-Version: 1.1.0
+Version: 1.2.0
 Status: [Proposed / Published]
 Publisher: [Organization]
 Canonical URL: [URL]
 Last-Updated: [YYYY-MM-DD]
 Language: en
-Depends on: cannabis.txt version 1.0.0 or compatible
+Depends on: cannabis.txt version 1.1.0 or compatible
 Contact: [Public contact URL]
 Business Name: [Name]
 Business Type: [Type]

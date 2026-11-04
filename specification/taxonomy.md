@@ -328,6 +328,62 @@ each with a repeating block of fields — one entry per record:
 - `Markets:` — product-brand market jurisdictions, with per-market
   availability status, catalog or menu URL, distributor, and
   last-verified date
+- `Licensing:` — licenses, permits, and regulatory authorizations, one
+  record per license; see the licensing vocabularies below
+
+## Licensing and verification vocabularies (cannabis.txt §8)
+
+A `Licensing:` block holds one record per license or authorization.
+Recommended record fields:
+
+| Field | Purpose |
+|---|---|
+| `Jurisdiction` | Jurisdiction that issued or administers the license |
+| `License Holder` | Legal entity or individual named on the license |
+| `License Type` | License category as named by the issuing authority |
+| `License Number` | Public license or file number, when published |
+| `Issuing Authority` | Regulatory agency or body |
+| `License Status` | Status reported by the regulatory source (below) |
+| `License Status Detail` | Regulator's exact wording when it does not map |
+| `Verification Status` | How the claim was checked (below) |
+| `Source URL` | Official regulatory record or lookup page |
+| `Verified By` | Third party that performed verification |
+| `Verification URL` | Public evidence or verification report |
+| `Last Verified` | Date the information was last checked (YYYY-MM-DD) |
+| `Expiration Date` | Expiration reported by the source (YYYY-MM-DD) |
+| `Location ID` | Links the license to a `Locations` record |
+
+### License Status — what the regulatory source reports
+
+| Value | Definition |
+|---|---|
+| `active` | Source identifies the license as active |
+| `expired` | Source identifies the license as expired |
+| `suspended` | Source identifies the license as suspended |
+| `revoked` | Source identifies the license as revoked |
+| `pending` | Source identifies an application or authorization as pending |
+| `unknown` | Status cannot be established from the available information |
+
+License Status asserts what a regulator reports. Do not present an
+unverified claim of active status as regulator-confirmed; omit the field
+or use `unknown` when no authoritative status is available.
+
+### Verification Status — how the claim was checked
+
+| Value | Definition |
+|---|---|
+| `publisher-reported` | Asserted by the publisher without independent checking |
+| `source-matched` | Compared against the official record cited in `Source URL` |
+| `independently-verified` | Checked by an identifiable third party independent of the publisher and license holder; identify it with `Verified By` and `Verification URL` |
+| `unknown` | Verification cannot be established |
+
+A link to a regulatory database is evidence, not verification. The
+specification standardizes how claims and evidence are stated; it does
+not authenticate them.
+
+Legacy names: `Public Verification URL` → `Source URL`;
+`Date Checked` → `Last Verified`. Use the standardized names; tools
+recognize both during the 1.x transition.
 
 ## Flower brand vocabulary (`cannabis-flower-brand.txt`)
 
