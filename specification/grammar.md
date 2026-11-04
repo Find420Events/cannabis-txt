@@ -288,6 +288,10 @@ Rules for the output model:
 - The output MUST be representable as JSON with no information loss for
   fields and lists; prose may be normalized (whitespace collapsed).
 
+Machine-readable validation of this output model is defined in
+`schemas/cannabis-txt.schema.json`; the `Licensing:` record shape has a
+dedicated schema at `schemas/licensing.schema.json`.
+
 ## 11. Reserved and defined keys
 
 Parsers recognize these canonical keys without requiring them:

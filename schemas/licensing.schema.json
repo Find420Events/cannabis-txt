@@ -1,0 +1,90 @@
+{
+  "$id": "https://find420.events/schemas/licensing.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cannabis.txt Licensing Record",
+  "description": "Validates one record inside a Licensing: block, as defined in cannabis.txt section 8. Canonical keys only; `unknown`/`n/a` values normalize to null before validation.",
+  "type": "object",
+  "required": ["jurisdiction"],
+  "properties": {
+    "jurisdiction": {
+      "type": ["string", "null"],
+      "description": "Jurisdiction that issued or administers the license."
+    },
+    "license-holder": {
+      "type": ["string", "null"],
+      "description": "Legal entity or individual named on the license."
+    },
+    "license-type": {
+      "type": ["string", "null"],
+      "description": "License category as named by the issuing authority."
+    },
+    "license-number": {
+      "type": ["string", "null"],
+      "description": "Public license or file number, when published."
+    },
+    "issuing-authority": {
+      "type": ["string", "null"],
+      "description": "Regulatory agency or body."
+    },
+    "license-status": {
+      "type": ["string", "null"],
+      "enum": ["active", "expired", "suspended", "revoked", "pending", "unknown", null],
+      "description": "Status reported by the regulatory source."
+    },
+    "license-status-detail": {
+      "type": ["string", "null"],
+      "description": "Regulator's exact wording when it does not map to the shared vocabulary."
+    },
+    "verification-status": {
+      "type": ["string", "null"],
+      "enum": ["publisher-reported", "source-matched", "independently-verified", "unknown", null],
+      "description": "How the claim was checked."
+    },
+    "source-url": {
+      "type": ["string", "null"],
+      "description": "Official regulatory record or lookup page."
+    },
+    "verified-by": {
+      "type": ["string", "null"],
+      "description": "Third party that performed verification."
+    },
+    "verification-url": {
+      "type": ["string", "null"],
+      "description": "Public evidence or verification report."
+    },
+    "last-verified": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the information was last checked (YYYY-MM-DD)."
+    },
+    "expiration-date": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Expiration reported by the source (YYYY-MM-DD)."
+    },
+    "location-id": {
+      "type": ["string", "null"],
+      "description": "Links the license to a Locations record."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification-status": { "enum": ["source-matched", "independently-verified"] }
+        },
+        "required": ["verification-status"]
+      },
+      "then": { "required": ["source-url"] }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification-status": { "const": "independently-verified" }
+        },
+        "required": ["verification-status"]
+      },
+      "then": { "required": ["verified-by"] }
+    }
+  ]
+}

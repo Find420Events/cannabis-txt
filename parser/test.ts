@@ -15,9 +15,12 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 import { parseCannabisTxt, conformance } from './parse.ts';
+import { validateJson } from './schema.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p: string) => readFileSync(join(root, p), 'utf8');
+const documentSchema = JSON.parse(read('schemas/cannabis-txt.schema.json'));
+const licensingSchema = JSON.parse(read('schemas/licensing.schema.json'));
 
 let passed = 0;
 const check = (name: string, fn: () => void) => {
@@ -78,6 +81,40 @@ for (const file of find420Files) {
     assert.equal(level, 3, `level ${level}; diagnostics: ${JSON.stringify(diagnostics)}`);
   });
 }
+
+// --- JSON Schema validation ---------------------------------------------------
+
+check('parse output of every repository file satisfies the document schema', () => {
+  const all = [...specFiles.map((f) => f), ...exampleFiles, ...find420Files];
+  for (const file of all) {
+    const result = parseCannabisTxt(read(file));
+    const errors = validateJson(result, documentSchema);
+    assert.deepEqual(errors, [], `${file}: ${errors.join('; ')}`);
+  }
+});
+
+check('licensing records in repository files satisfy the licensing schema', () => {
+  for (const file of [...specFiles, ...exampleFiles, ...find420Files]) {
+    const result = parseCannabisTxt(read(file));
+    const records = [
+      ...(result.lists['licensing'] ?? []),
+      ...result.sections.flatMap((s) => s.lists['licensing'] ?? []),
+    ];
+    for (const rec of records) {
+      if (rec && typeof rec === 'object' && !Array.isArray(rec)) {
+        // Example files contain [bracketed] placeholders — templates, not
+        // real data — so skip records carrying them; the schema validates
+        // real values only.
+        const hasPlaceholder = Object.values(rec).some(
+          (v) => typeof v === 'string' && /^\[.*\]$/.test(v),
+        );
+        if (hasPlaceholder) continue;
+        const errors = validateJson(rec, licensingSchema);
+        assert.deepEqual(errors, [], `${file}: ${errors.join('; ')}`);
+      }
+    }
+  }
+});
 
 // --- Unit assertions --------------------------------------------------------
 
@@ -203,6 +240,22 @@ check('legacy licensing field names warn as deprecated', () => {
   );
   const codes = conformance(r).diagnostics.map((d) => d.code);
   assert.ok(codes.filter((c) => c === 'deprecated-field').length === 2);
+});
+
+check('licensing schema enforces conditional requirements', () => {
+  const valid = {
+    jurisdiction: 'Colorado',
+    'license-status': 'active',
+    'verification-status': 'source-matched',
+    'source-url': 'https://gov.example/1',
+    'last-verified': '2026-10-15',
+  };
+  assert.deepEqual(validateJson(valid, licensingSchema), []);
+  const { 'source-url': _dropped, ...noSource } = valid;
+  assert.ok(validateJson(noSource, licensingSchema).some((e) => e.includes('source-url')));
+  const noVerifier = { jurisdiction: 'Colorado', 'verification-status': 'independently-verified', 'source-url': 'https://gov.example/1' };
+  assert.ok(validateJson(noVerifier, licensingSchema).some((e) => e.includes('verified-by')));
+  assert.ok(validateJson({ jurisdiction: 'Colorado', 'license-status': 'bogus' }, licensingSchema).some((e) => e.includes('license-status')));
 });
 
 console.log(`\n${passed} checks passed${process.exitCode ? ' (with failures above)' : ''}.`);

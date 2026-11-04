@@ -7,6 +7,20 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.7.0] - 2026-11-04
+
+Added JSON Schema definitions for machine validation; no normative
+definitions changed.
+
+- Added `schemas/cannabis-txt.schema.json` validating the canonical JSON
+  output model from `specification/grammar.md` section 10.
+- Added `schemas/licensing.schema.json` validating a `Licensing:` record:
+  enum constraints for `license-status`/`verification-status`, ISO date
+  patterns, and the conditional `source-url`/`verified-by` requirements.
+- Added `parser/schema.ts`, a minimal zero-dependency JSON Schema
+  validator covering the subset used by these schemas, and wired both
+  schemas into the conformance test suite (40 checks).
+
 ## [1.6.0] - 2026-11-04
 
 Standardized licensing records and provenance vocabularies; all changes

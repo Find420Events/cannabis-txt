@@ -1,0 +1,88 @@
+{
+  "$id": "https://find420.events/schemas/cannabis-txt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cannabis.txt Canonical Document",
+  "description": "Validates the canonical JSON output model defined in specification/grammar.md section 10 — the object produced by the reference parser (parser/parse.ts).",
+  "type": "object",
+  "required": [
+    "specification",
+    "document",
+    "metadata",
+    "lists",
+    "extensions",
+    "sections",
+    "diagnostics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "specification": {
+      "type": ["string", "null"],
+      "description": "File name such as cannabis.txt or cannabis-events.txt; null when not derivable."
+    },
+    "document": {
+      "type": "object",
+      "required": ["title", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": ["string", "null"] },
+        "text": { "type": "string" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata-block fields under canonical keys, first-seen order."
+    },
+    "lists": {
+      "type": "object",
+      "description": "Block lists appearing in the metadata region.",
+      "additionalProperties": { "type": "array" }
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/diagnostic" }
+    }
+  },
+  "$defs": {
+    "section": {
+      "type": "object",
+      "required": ["heading", "fields", "lists", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "heading": { "type": ["string", "null"] },
+        "fields": { "type": "object" },
+        "lists": {
+          "type": "object",
+          "additionalProperties": { "type": "array" }
+        },
+        "text": { "type": "string" }
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "required": ["level", "code", "line", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "level": { "enum": ["error", "warning", "note"] },
+        "code": { "type": "string" },
+        "line": { "type": "integer", "minimum": 0 },
+        "message": { "type": "string" }
+      }
+    }
+  }
+}

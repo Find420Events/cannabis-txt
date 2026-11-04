@@ -38,7 +38,7 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.6.0
+- **Family changelog:** 1.7.0
 - **File versions:** 1.1.0 for the core specification; 1.1.1 for the events
   extension; 1.2.0 for the dispensary, delivery, product-brand, and
   physician extensions
@@ -119,6 +119,8 @@ root; keep them in sync when those profiles change.
   machine-readable grammar for parsers and validators
 - [`parser/`](./parser/) — zero-dependency TypeScript reference parser, CLI
   validator, and conformance fixtures (`npm test`)
+- [`schemas/`](./schemas/) — JSON Schema definitions for the canonical
+  document model and licensing records
 - [`specification/governance.md`](./specification/governance.md) — versioning
   and the change process
 
