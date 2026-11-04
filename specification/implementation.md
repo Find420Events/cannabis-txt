@@ -15,6 +15,11 @@ A compatible core or extension file SHOULD:
 - Distinguish the publisher's own information from general definitions
 - Be kept current; correct outdated information promptly
 
+The specification documents published by a project steward may be hosted
+under a documented path such as `/specs/`. This does not change the required
+root path for a publisher's compatible implementation: `/cannabis.txt` and
+any applicable extension files remain on that publisher's domain root.
+
 A compatible file MUST NOT:
 
 - Claim that publication guarantees search ranking or AI citations

@@ -38,7 +38,7 @@ delivery may publish both dispensary and delivery files.
 
 ## Status
 
-- **Family changelog:** 1.3.0
+- **Family changelog:** 1.3.1
 - **File versions:** 1.0.0 for the core and events specifications; 1.1.0
   for the dispensary, delivery, product-brand, and physician extensions
 - **Status:** Proposed Community Specifications
@@ -46,8 +46,10 @@ delivery may publish both dispensary and delivery files.
   for the dispensary, delivery, flower-brand, edible-brand, concentrate-brand,
   and physician extensions
 - **Founding publisher:** [Find420.Events](https://find420.events/)
-- **Reference implementation:** https://find420.events/cannabis.txt ·
+- **Find420 publisher profiles:** https://find420.events/cannabis.txt ·
   https://find420.events/cannabis-events.txt
+- **Hosted specifications:** https://find420.events/specs/cannabis.txt ·
+  https://find420.events/specs/cannabis-events.txt
 - **Public validator:** https://find420.events/validator
 - **Extension specifications:** https://find420.events/cannabis-dispensary.txt,
   https://find420.events/cannabis-delivery.txt,
@@ -93,6 +95,17 @@ New extension examples:
 - [`examples/edible-brand.txt`](./examples/edible-brand.txt)
 - [`examples/concentrate-brand.txt`](./examples/concentrate-brand.txt)
 - [`examples/physician.txt`](./examples/physician.txt)
+
+Core publisher examples:
+
+- Generic starter files: [`examples/cannabis.txt`](./examples/cannabis.txt)
+  and [`examples/cannabis-events.txt`](./examples/cannabis-events.txt)
+- Find420's first-party profiles:
+  [`examples/find420/cannabis.txt`](./examples/find420/cannabis.txt) and
+  [`examples/find420/cannabis-events.txt`](./examples/find420/cannabis-events.txt)
+
+The Find420 examples mirror the publisher profiles served from the domain
+root; keep them in sync when those profiles change.
 
 ## Documentation
 

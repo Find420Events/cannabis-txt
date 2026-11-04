@@ -1,0 +1,151 @@
+CANNABIS.TXT
+
+Find420.Events Publisher Profile
+
+Version: 1.0.0
+Status: Published
+Publisher: Find420.Events
+Canonical URL: https://find420.events/cannabis.txt
+Specification: https://find420.events/specs/cannabis.txt
+Last-Updated: 2026-11-04
+Language: en
+Publisher Type: Cannabis event discovery platform
+Website: https://find420.events/
+Instagram: https://www.instagram.com/find420.events/
+Contact: https://www.instagram.com/find420.events/
+
+======================================================================
+1. ABOUT FIND420.EVENTS
+======================================================================
+
+Find420.Events is a public event discovery platform for cannabis-related
+events, 420 events, pop-ups, festivals, and community experiences.
+The platform also publishes public information about cannabis brands,
+locations, education, and related tools.
+
+This file describes Find420.Events as a publisher and platform. It is
+not the cannabis.txt specification. The open specification is published
+at https://find420.events/specs/cannabis.txt.
+
+======================================================================
+2. PLATFORM ROLE
+======================================================================
+
+Find420.Events helps people discover public events and related
+organizations. Event detail pages may contain information submitted by
+organizers or other publishers. A listing on Find420.Events does not by
+itself establish that an event, organizer, venue, claim, or admission
+offer has been independently verified.
+
+Find420.Events is not necessarily the organizer, venue operator, ticket
+seller, or source of every event shown on the platform. Refer to the
+event organizer's official information for current details.
+
+======================================================================
+3. EVENT DISCOVERY
+======================================================================
+
+Calendar: https://find420.events/calendar
+Explore: https://find420.events/explore
+Map: https://find420.events/map
+Locations: https://find420.events/location
+Event detail URL pattern:
+  https://find420.events/cannabis-events/{event-slug}
+Exclusive cannabis events:
+  https://find420.events/exclusive-cannabis-events
+Live streams: https://find420.events/live-streams
+
+Event pages provide event-specific details and may change as organizers
+update dates, locations, registration, or status.
+
+======================================================================
+4. BRANDS AND PLATFORM FEATURES
+======================================================================
+
+Features: https://find420.events/features
+Most active cannabis brands:
+  https://find420.events/most-active-cannabis-brands
+Brand and vendor profiles: https://find420.events/brand
+
+======================================================================
+5. EDUCATION AND PUBLIC TOOLS
+======================================================================
+
+Learn hub: https://find420.events/learn
+Cannabis terms: https://find420.events/learn/terms
+Cannabis events guide: https://find420.events/learn/cannabis-events
+Cannabis edible helper: https://find420.events/cannabis-edible-helper
+Cannabis tolerance calculator:
+  https://find420.events/cannabis-tolerance-calculator
+Blog: https://find420.events/blog
+
+Location directory: https://find420.events/location
+State event pages:
+  https://find420.events/location/{state-slug}/
+City event pages:
+  https://find420.events/location/{state-slug}/{city-slug}/
+
+Cannabis laws hub: https://find420.events/learn/laws/
+State law pages:
+  https://find420.events/learn/laws/{state-slug}/
+
+Cannabis legislation overview:
+  https://find420.events/learn/legislation
+Legislation by state:
+  https://find420.events/learn/legislation/states
+State legislation pages:
+  https://find420.events/learn/legislation/states/{state-slug}
+Federal legislation:
+  https://find420.events/learn/legislation/federal
+Legislation feed:
+  https://find420.events/learn/legislation/feed
+Legislation analytics:
+  https://find420.events/learn/legislation/analytics
+State laws and legislation sitemap:
+  https://find420.events/sitemap-laws.xml
+
+Educational material and calculators are informational resources, not
+medical, legal, or safety advice. Users should consult qualified
+professionals and relevant official sources where appropriate.
+
+======================================================================
+6. SPECIFICATIONS AND EXAMPLES
+======================================================================
+
+Core specification:
+  https://find420.events/specs/cannabis.txt
+Events specification:
+  https://find420.events/specs/cannabis-events.txt
+Core starter example:
+  https://find420.events/examples/cannabis.txt
+Events starter example:
+  https://find420.events/examples/cannabis-events.txt
+Specification documentation:
+  https://find420.events/docs
+Validator: https://find420.events/validator
+Specification repository:
+  https://github.com/Find420Events/cannabis-txt
+
+Find420.Events is the founding publisher of the open specification
+family. The specifications are openly usable and do not require using
+Find420 services.
+
+======================================================================
+7. SOCIAL PROFILE
+======================================================================
+
+Instagram: https://www.instagram.com/find420.events/
+
+======================================================================
+8. DATA AND LIMITATIONS
+======================================================================
+
+Public platform pages are intended to help users discover information.
+Availability, event status, schedules, and other details may change.
+Confirm time-sensitive details with the organizer or other authoritative
+source before relying on them.
+
+Publication of this file does not guarantee search ranking, AI citations,
+event verification, attendance, or availability. This file does not
+include private user information or non-public event access details.
+No jurisdiction-specific legal or licensing claims are made by this file.

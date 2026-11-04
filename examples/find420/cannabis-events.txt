@@ -1,0 +1,103 @@
+CANNABIS-EVENTS.TXT
+
+Find420.Events Event Discovery Profile
+
+Version: 1.0.0
+Status: Published
+Publisher: Find420.Events
+Canonical URL: https://find420.events/cannabis-events.txt
+Specification: https://find420.events/specs/cannabis-events.txt
+Depends on: cannabis.txt version 1.0.0 or compatible
+Last-Updated: 2026-11-04
+Language: en
+Publisher Type: Cannabis event discovery platform
+Website: https://find420.events/
+Contact: https://www.instagram.com/find420.events/
+
+======================================================================
+1. PURPOSE
+======================================================================
+
+This file describes Find420.Events' role and public resources for
+discovering cannabis-related events. It is a Find420.Events publisher
+profile, not the generic cannabis-events.txt specification.
+
+The specification is published at:
+  https://find420.events/specs/cannabis-events.txt
+
+======================================================================
+2. PLATFORM ROLE
+======================================================================
+
+Find420.Events provides public event discovery pages and related
+resources. It may list events submitted by organizers or other
+publishers. Find420.Events is not necessarily the organizer or venue
+operator for events shown on the platform.
+
+A listing is not, by itself, a guarantee that an event is verified,
+available, licensed, or accepting registration. Refer to the event
+organizer's official information for current details.
+Event information and applicable requirements may vary by jurisdiction.
+Consult relevant official sources for jurisdiction-specific requirements.
+
+======================================================================
+3. EVENT DISCOVERY RESOURCES
+======================================================================
+
+Calendar: https://find420.events/calendar
+Explore: https://find420.events/explore
+Map: https://find420.events/map
+Events by location: https://find420.events/location
+Exclusive cannabis events:
+  https://find420.events/exclusive-cannabis-events
+Live streams: https://find420.events/live-streams
+
+Event detail pages use this URL pattern:
+  https://find420.events/cannabis-events/{event-slug}
+
+Individual event pages are the source for event-specific descriptions,
+dates, venues, registration links, and status when those details are
+available. There is no separate event index at /cannabis-events; use the
+calendar, explore, map, or location pages to browse events.
+
+======================================================================
+4. RELATED PUBLIC RESOURCES
+======================================================================
+
+Event guides: https://find420.events/learn/cannabis-events
+Cannabis terms: https://find420.events/learn/terms
+Learn hub: https://find420.events/learn
+Blog: https://find420.events/blog
+Platform features: https://find420.events/features
+Instagram: https://www.instagram.com/find420.events/
+
+Other Find420.Events resources, including brand discovery and public
+tools, are listed in:
+  https://find420.events/cannabis.txt
+
+======================================================================
+5. SPECIFICATION AND EXAMPLES
+======================================================================
+
+Parent publisher profile: https://find420.events/cannabis.txt
+Parent specification: https://find420.events/specs/cannabis.txt
+Events specification:
+  https://find420.events/specs/cannabis-events.txt
+Events starter example:
+  https://find420.events/examples/cannabis-events.txt
+Specification documentation:
+  https://find420.events/docs/cannabis-events-txt
+Validator: https://find420.events/validator
+
+======================================================================
+6. DATA QUALITY AND PRIVACY
+======================================================================
+
+Event details can change. Users should confirm dates, locations,
+registration, admission, and event status with the organizer or another
+authoritative source.
+
+This file does not publish private attendee identities, personal contact
+information, invitation codes, or non-public venue access details.
+Publication does not guarantee event verification, admission, search
+ranking, or AI retrieval.

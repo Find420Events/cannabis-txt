@@ -7,7 +7,7 @@ Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
 Canonical project: https://github.com/Find420Events/cannabis-txt
-Canonical URL: https://find420.events/cannabis.txt
+Canonical URL: https://find420.events/specs/cannabis.txt
 Suggested location: https://example.com/cannabis.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
@@ -362,7 +362,7 @@ Founding publisher: Find420.Events
 Website: https://find420.events/
 Repository: https://github.com/Find420Events/cannabis-txt
 Related specifications:
-- cannabis-events.txt: https://find420.events/cannabis-events.txt
+- cannabis-events.txt: https://find420.events/specs/cannabis-events.txt
 - cannabis-dispensary.txt: https://find420.events/cannabis-dispensary.txt
 - cannabis-delivery.txt: https://find420.events/cannabis-delivery.txt
 - cannabis-flower-brand.txt: https://find420.events/cannabis-flower-brand.txt

@@ -1,0 +1,67 @@
+CANNABIS-EVENTS.TXT
+
+Generic Events Publisher Starter Example
+
+Version: 1.0.0
+Status: Example template - replace placeholders before publishing
+Publisher: [Organization name]
+Canonical URL: https://your-domain.example/cannabis-events.txt
+Specification: https://find420.events/specs/cannabis-events.txt
+Depends on: cannabis.txt version 1.0.0 or compatible
+Last-Updated: [YYYY-MM-DD]
+Language: en
+Website: https://your-domain.example/
+Contact: [Public contact URL]
+
+Replace every bracketed value and example-domain URL before publishing.
+Link to public event pages and do not include private attendee
+information, access codes, or unsupported verification claims.
+
+======================================================================
+1. PUBLISHER ROLE
+======================================================================
+
+Organization: [Organization name]
+Role: [Organizer, venue, event platform, publisher, or other role]
+Description: [Brief, factual description of the publisher's event role]
+Public event index: https://your-domain.example/events
+
+======================================================================
+2. EVENT PAGES AND SOURCES
+======================================================================
+
+Event page URL pattern: [Public URL pattern, if applicable]
+Official event source: [Organizer or authoritative source URL]
+Registration destination: [Public registration URL, if applicable]
+Data notes: [Explain whether information is organizer-submitted, sourced,
+or independently verified]
+
+======================================================================
+3. EVENT CATEGORIES AND COVERAGE
+======================================================================
+
+Event categories: [Relevant event types from the specification]
+Locations or jurisdictions: [Public geographic coverage]
+Formats: [In person, online, hybrid, or other]
+
+======================================================================
+4. RELATED SPECIFICATIONS
+======================================================================
+
+Parent specification:
+  https://find420.events/specs/cannabis.txt
+Events specification:
+  https://find420.events/specs/cannabis-events.txt
+Parent publisher file: https://your-domain.example/cannabis.txt
+
+======================================================================
+5. STATUS, PRIVACY, AND LIMITATIONS
+======================================================================
+
+Last reviewed: [YYYY-MM-DD]
+Correction contact: [Public contact page]
+
+Update or remove information when an event changes or is cancelled.
+Do not expose private attendee identities, personal contact details, or
+non-public venue access information. A listing does not guarantee
+admission, availability, legal compliance, or event verification.

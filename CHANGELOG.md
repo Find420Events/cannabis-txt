@@ -7,6 +7,18 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [1.3.1] - 2026-11-04
+
+Repository and hosted-reference updates; no normative definitions or
+specification file versions changed.
+
+- Updated the hosted canonical URLs for the core and events specifications to
+  `/specs/cannabis.txt` and `/specs/cannabis-events.txt`.
+- Added generic core and events publisher starter examples.
+- Added Find420.Events first-party publisher profiles as reference examples.
+- Clarified the distinction between the hosted specification documents and
+  compatible publisher files served from a domain root.
+
 ## [1.3.0] — 2026-11-03
 
 Backward-compatible additions for businesses with multiple locations,
