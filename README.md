@@ -52,6 +52,8 @@ delivery may publish both dispensary and delivery files.
 - **Hosted specifications:** https://find420.events/specs/cannabis.txt ·
   https://find420.events/specs/cannabis-events.txt and the extension
   specifications under `https://find420.events/specs/`
+- **Public generator:** https://find420.events/generator — create a core
+  publisher profile and supported business extensions
 - **Public validator:** https://find420.events/validator
 - **Extension specifications:** https://find420.events/specs/cannabis-dispensary.txt,
   https://find420.events/specs/cannabis-delivery.txt,
