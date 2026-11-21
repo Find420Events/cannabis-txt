@@ -7,6 +7,18 @@ here. Each specification uses [semantic versioning](https://semver.org):
 - **MINOR** — backward-compatible additions
 - **PATCH** — clarifications and corrections
 
+## [Unreleased]
+
+Canonical hosting moved from `find420.events` to `cannabis-txt.org`:
+
+- All `Canonical URL`, `Specification:`, and related-specification links now
+  resolve under `https://cannabis-txt.org/specs/`
+- JSON Schema `$id` values now resolve under `https://cannabis-txt.org/schemas/`
+- README generator and validator links updated to the public tools at
+  `cannabis-txt.org`
+- Publisher-side references (Find420.Events website, publisher profiles,
+  and example resource URLs) intentionally unchanged
+
 ## [1.8.0] - 2026-11-04
 
 Conformance fixes, schema tightening, and tooling updates; extension

@@ -6,7 +6,7 @@ Version: 1.0.0
 Status: Example template - replace placeholders before publishing
 Publisher: [Organization name]
 Canonical URL: https://your-domain.example/cannabis-events.txt
-Specification: https://find420.events/specs/cannabis-events.txt
+Specification: https://cannabis-txt.org/specs/cannabis-events.txt
 Depends on: cannabis.txt version 1.1.0 or compatible
 Last-Updated: [YYYY-MM-DD]
 Language: en
@@ -49,9 +49,9 @@ Formats: [In person, online, hybrid, or other]
 ======================================================================
 
 Parent specification:
-  https://find420.events/specs/cannabis.txt
+  https://cannabis-txt.org/specs/cannabis.txt
 Events specification:
-  https://find420.events/specs/cannabis-events.txt
+  https://cannabis-txt.org/specs/cannabis-events.txt
 Parent publisher file: https://your-domain.example/cannabis.txt
 
 ======================================================================

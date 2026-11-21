@@ -243,7 +243,7 @@ A conforming parser produces a JSON object:
     "publisher": "Find420.Events",
     "publisher-type": "Cannabis event discovery platform",
     "canonical-url": "https://find420.events/cannabis.txt",
-    "specification": "https://find420.events/specs/cannabis.txt",
+    "specification": "https://cannabis-txt.org/specs/cannabis.txt",
     "last-updated": "2026-11-04",
     "language": "en",
     "website": "https://find420.events/",

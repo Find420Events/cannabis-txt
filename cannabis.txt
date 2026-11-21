@@ -7,7 +7,7 @@ Status: Proposed Community Specification
 Published: 2026-10-31
 Founding publisher: Find420.Events
 Canonical project: https://github.com/Find420Events/cannabis-txt
-Canonical URL: https://find420.events/specs/cannabis.txt
+Canonical URL: https://cannabis-txt.org/specs/cannabis.txt
 Suggested location: https://example.com/cannabis.txt
 Encoding: UTF-8
 Media type: text/plain; charset=utf-8
@@ -448,13 +448,13 @@ Founding publisher: Find420.Events
 Website: https://find420.events/
 Repository: https://github.com/Find420Events/cannabis-txt
 Related specifications:
-- cannabis-events.txt: https://find420.events/specs/cannabis-events.txt
-- cannabis-dispensary.txt: https://find420.events/specs/cannabis-dispensary.txt
-- cannabis-delivery.txt: https://find420.events/specs/cannabis-delivery.txt
-- cannabis-flower-brand.txt: https://find420.events/specs/cannabis-flower-brand.txt
-- cannabis-edible-brand.txt: https://find420.events/specs/cannabis-edible-brand.txt
-- cannabis-concentrate-brand.txt: https://find420.events/specs/cannabis-concentrate-brand.txt
-- cannabis-physician.txt: https://find420.events/specs/cannabis-physician.txt
+- cannabis-events.txt: https://cannabis-txt.org/specs/cannabis-events.txt
+- cannabis-dispensary.txt: https://cannabis-txt.org/specs/cannabis-dispensary.txt
+- cannabis-delivery.txt: https://cannabis-txt.org/specs/cannabis-delivery.txt
+- cannabis-flower-brand.txt: https://cannabis-txt.org/specs/cannabis-flower-brand.txt
+- cannabis-edible-brand.txt: https://cannabis-txt.org/specs/cannabis-edible-brand.txt
+- cannabis-concentrate-brand.txt: https://cannabis-txt.org/specs/cannabis-concentrate-brand.txt
+- cannabis-physician.txt: https://cannabis-txt.org/specs/cannabis-physician.txt
 
 The objective is a common, transparent vocabulary for describing the
 cannabis industry across the open internet.

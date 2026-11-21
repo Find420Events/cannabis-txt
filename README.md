@@ -49,18 +49,18 @@ delivery may publish both dispensary and delivery files.
 - **Founding publisher:** [Find420.Events](https://find420.events/)
 - **Find420 publisher profiles:** https://find420.events/cannabis.txt ·
   https://find420.events/cannabis-events.txt
-- **Hosted specifications:** https://find420.events/specs/cannabis.txt ·
-  https://find420.events/specs/cannabis-events.txt and the extension
-  specifications under `https://find420.events/specs/`
-- **Public generator:** https://find420.events/generator — create a core
+- **Hosted specifications:** https://cannabis-txt.org/specs/cannabis.txt ·
+  https://cannabis-txt.org/specs/cannabis-events.txt and the extension
+  specifications under `https://cannabis-txt.org/specs/`
+- **Public generator:** https://cannabis-txt.org/generator — create a core
   publisher profile and supported business extensions
-- **Public validator:** https://find420.events/validator
-- **Extension specifications:** https://find420.events/specs/cannabis-dispensary.txt,
-  https://find420.events/specs/cannabis-delivery.txt,
-  https://find420.events/specs/cannabis-flower-brand.txt,
-  https://find420.events/specs/cannabis-edible-brand.txt,
-  https://find420.events/specs/cannabis-concentrate-brand.txt, and
-  https://find420.events/specs/cannabis-physician.txt
+- **Public validator:** https://cannabis-txt.org/validator
+- **Extension specifications:** https://cannabis-txt.org/specs/cannabis-dispensary.txt,
+  https://cannabis-txt.org/specs/cannabis-delivery.txt,
+  https://cannabis-txt.org/specs/cannabis-flower-brand.txt,
+  https://cannabis-txt.org/specs/cannabis-edible-brand.txt,
+  https://cannabis-txt.org/specs/cannabis-concentrate-brand.txt, and
+  https://cannabis-txt.org/specs/cannabis-physician.txt
 - **Canonical project:** https://github.com/Find420Events/cannabis-txt
 
 ## What this is — and is not

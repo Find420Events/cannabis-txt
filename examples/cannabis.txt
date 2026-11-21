@@ -6,7 +6,7 @@ Version: 1.0.0
 Status: Example template - replace placeholders before publishing
 Publisher: [Organization name]
 Canonical URL: https://your-domain.example/cannabis.txt
-Specification: https://find420.events/specs/cannabis.txt
+Specification: https://cannabis-txt.org/specs/cannabis.txt
 Last-Updated: [YYYY-MM-DD]
 Language: en
 Publisher Type: [Organization, business, publisher, or platform]
@@ -52,7 +52,7 @@ Contact: [Public contact page or organization contact]
 ======================================================================
 
 Compatible specification:
-  https://find420.events/specs/cannabis.txt
+  https://cannabis-txt.org/specs/cannabis.txt
 Optional extensions: [List only the extensions that apply]
 Last reviewed: [YYYY-MM-DD]
 

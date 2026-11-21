@@ -1,5 +1,5 @@
 {
-  "$id": "https://find420.events/schemas/licensing-authorities.schema.json",
+  "$id": "https://cannabis-txt.org/schemas/licensing-authorities.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Cannabis.txt Licensing Authorities Registry",
   "description": "Validates a licensing-authorities registry: a list of official regulatory bodies that issue or administer cannabis licenses. Licensing records link to an entry via their `authority-id` field.",

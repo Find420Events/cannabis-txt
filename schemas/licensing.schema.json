@@ -1,5 +1,5 @@
 {
-  "$id": "https://find420.events/schemas/licensing.schema.json",
+  "$id": "https://cannabis-txt.org/schemas/licensing.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Cannabis.txt Licensing Record",
   "description": "Validates one record inside a Licensing: block, as defined in cannabis.txt section 8. Canonical keys only; `unknown`/`n/a` values normalize to null before validation.",

@@ -1,5 +1,5 @@
 {
-  "$id": "https://find420.events/schemas/cannabis-txt.schema.json",
+  "$id": "https://cannabis-txt.org/schemas/cannabis-txt.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Cannabis.txt Canonical Document",
   "description": "Validates the canonical JSON output model defined in specification/grammar.md section 10 — the object produced by the reference parser (parser/parse.ts).",
